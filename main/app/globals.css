@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Object%20Sans:700|Open%20Sans:400');
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Object Sans';
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 4.210rem;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem;
+  /* 12px */
+}
+
+@layer base {
+  :root {
+    --background: 235 87% 97%;
+    --foreground: 230 69% 5%;
+    --card: 235 87% 97%;
+    --card-foreground: 230 69% 5%;
+    --popover: 235 87% 97%;
+    --popover-foreground: 230 69% 5%;
+    --primary: 230 73% 30%;
+    --primary-foreground: 235 87% 97%;
+    --secondary: 308 73% 65%;
+    --secondary-foreground: 230 69% 5%;
+    --muted: 235 86% 20%;
+    --muted-foreground: 230 69% 70%;
+    --accent: 332 73% 49%;
+    --accent-foreground: 235 87% 97%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 230 69% 5%;
+    --border: 235 86% 20%;
+    --input: 235 86% 20%;
+    --ring: 332 73% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 235 87% 3%;
+    --foreground: 230 69% 95%;
+    --card: 235 87% 3%;
+    --card-foreground: 230 69% 95%;
+    --popover: 235 87% 3%;
+    --popover-foreground: 230 69% 95%;
+    --primary: 230 73% 70%;
+    --primary-foreground: 235 87% 3%;
+    --secondary: 308 73% 35%;
+    --secondary-foreground: 230 69% 95%;
+    --muted: 235 86% 80%;
+    --muted-foreground: 230 69% 95%;
+    --accent: 332 73% 51%;
+    --accent-foreground: 235 87% 3%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 230 69% 10%;
+    --border: 235 87% 60%;
+    --input: 235 86% 80%;
+    --ring: 332 73% 60%;
+  }
+}
