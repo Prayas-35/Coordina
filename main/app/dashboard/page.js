@@ -39,6 +39,27 @@ const WardProjectDashboard = () => {
   };
 
   const handleAddProject = () => {
+    // Calculate the end time of the new project
+    const newProjectEndTime = new Date(newProject.date);
+    newProjectEndTime.setHours(newProjectEndTime.getHours() + newProject.duration);
+  
+    // Check if the new project overlaps with any existing project
+    const isSlotTaken = projects.some((project) => {
+      const projectEndTime = new Date(project.date);
+      projectEndTime.setHours(projectEndTime.getHours() + project.duration);
+  
+      return (
+        isSameDay(project.date, newProject.date) && 
+        (newProject.date < projectEndTime && newProjectEndTime > project.date)
+      );
+    });
+  
+    if (isSlotTaken) {
+      alert('This time slot is already taken. Please choose another.');
+      return; // Prevent adding the project
+    }
+  
+    // Proceed with adding the project if the slot is free
     if (newProject.name && newProject.wardNumber && newProject.date) {
       const projectWithId = { ...newProject, id: Math.random().toString(36).substr(2, 9) };
       setProjects([...projects, projectWithId]);
@@ -48,6 +69,7 @@ const WardProjectDashboard = () => {
       setIsDialogOpen(false);
     }
   };
+  
 
   const handleDeleteProject = (id) => {
     setProjects(projects.filter((project) => project.id !== id));
