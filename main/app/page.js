@@ -24,7 +24,7 @@ function Landing() {
           </div>
         </div>
       </header>
-      <HeroHighlight className="inset-0">
+      <HeroHighlight>
         <motion.h1
           initial={{
             opacity: 0,
