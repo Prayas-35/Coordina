@@ -40,22 +40,22 @@ const WardProjectDashboard = () => {
   const handleAddProject = () => {
     const newProjectEndTime = new Date(newProject.date);
     newProjectEndTime.setHours(newProjectEndTime.getHours() + newProject.duration);
-  
+
     const isSlotTaken = projects.some((project) => {
       const projectEndTime = new Date(project.date);
       projectEndTime.setHours(projectEndTime.getHours() + project.duration);
-  
+
       return (
-        isSameDay(project.date, newProject.date) && 
+        isSameDay(project.date, newProject.date) &&
         (newProject.date < projectEndTime && newProjectEndTime > project.date)
       );
     });
-  
+
     if (isSlotTaken) {
       alert('This time slot is already taken. Please choose another.');
       return;
     }
-  
+
     if (newProject.name && newProject.wardNumber && newProject.date) {
       const projectWithId = { ...newProject, id: Math.random().toString(36).substr(2, 9) };
       setProjects([...projects, projectWithId]);
@@ -116,21 +116,21 @@ const WardProjectDashboard = () => {
               {weekDays.map((day, dayIndex) => {
                 const projectsForSlot = getProjectsForDateTime(day, time);
                 return (
-                  <div key={`${dayIndex}-${timeIndex}`} className="border-white relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
+                  <div key={`${dayIndex}-${timeIndex}`} className="border-white border relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
                     {projectsForSlot.map((project) => (
                       <div
                         key={project.id}
-                        className="bg-primary bg-opacity-20 p-2 text-xs overflow-hidden rounded"
+                        className="bg-[#c37affdc] p-2 text-xs overflow-hidden rounded"
                         style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}
                       >
-                        <div className="font-medium">{project.name}</div>
+                        <div className="font-medium text-primary-foreground">{project.name}</div>
                         <div className="text-muted-foreground">Ward {project.wardNumber}</div>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleDeleteProject(project.id);
                           }}
-                          className="mt-1 text-destructive hover:text-destructive-foreground transition-colors duration-200"
+                          className="mt-1 text-destructive transition-colors duration-200"
                         >
                           Delete
                         </button>
