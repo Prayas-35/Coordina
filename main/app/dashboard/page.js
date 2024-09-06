@@ -122,9 +122,9 @@ const WardProjectDashboard = () => {
                       <div
                         key={project.id}
                         className="bg-[#c494eb] p-2 text-xs overflow-hidden rounded-lg"
-                        style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}>
-                        <div className="text-xl text-black font-bold p-1 text-wrap leading-normal">{project.name}</div>
-                        <div className="text-black font-bold text-lg text-wrap p-1 leading-normal">Ward {project.wardNumber}</div>
+                        style={{ height: `${project.duration * 101}%`, minHeight: '100%' }}>
+                        <div className="text-xl text-black font-medium p-1 text-wrap leading-normal">{project.name}</div>
+                        <div className="text-black font-medium text-lg text-wrap p-1 leading-normal">Ward {project.wardNumber}</div>
                         
                           <button
                             onClick={(e) => {

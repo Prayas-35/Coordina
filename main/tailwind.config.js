@@ -24,7 +24,7 @@ module.exports = {
   		},
   		fontFamily: {
   			heading: 'Object Sans',
-  			body: 'Open Sans'
+  			body: 'Object Sans'
   		},
   		fontWeight: {
   			normal: '400',

@@ -6,8 +6,11 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { ModeToggle } from "@/components/theme/ThemeSwitcher";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
+import { useTheme } from "next-themes";
 
 function Landing() {
+  const { theme, setTheme } = useTheme();
+
   const words = ["Growth", "Innovation", "Technology"];
   return (
     <div className="flex flex-col min-h-screen">
@@ -15,6 +18,9 @@ function Landing() {
         <div className="container mx-auto flex items-center justify-between">
           <Link href="/">
             <span className="flex items-center gap-2 text-primary-foreground">
+              <img src={`${theme === 'dark' ? "Logo6.png" : "Logo6 dark.png"}`}
+                className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
+              />
               {/* <HospitalIcon className="h-6 w-6 sm:h-8 sm:w-8 text-black dark:text-white" /> */}
               <span className="text-lg sm:text-xl text-black dark:text-white font-bold relative">
                 CitySync
