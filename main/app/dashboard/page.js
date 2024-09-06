@@ -116,21 +116,21 @@ const WardProjectDashboard = () => {
               {weekDays.map((day, dayIndex) => {
                 const projectsForSlot = getProjectsForDateTime(day, time);
                 return (
-                  <div key={`${dayIndex}-${timeIndex}`} className="border-white border relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
+                  <div key={`${dayIndex}-${timeIndex}`} className="border-[#7c4da3a3] border relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
                     {projectsForSlot.map((project) => (
                       <div
                         key={project.id}
-                        className="bg-[#c37affdc] p-2 text-xs overflow-hidden rounded"
+                        className="bg-[#c494eb] p-2 text-xs overflow-hidden rounded"
                         style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}
                       >
-                        <div className="font-medium text-primary-foreground">{project.name}</div>
-                        <div className="text-muted-foreground">Ward {project.wardNumber}</div>
+                        <div className="font-medium text-white">{project.name}</div>
+                        <div className="text-white">Ward {project.wardNumber}</div>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleDeleteProject(project.id);
                           }}
-                          className="mt-1 text-destructive transition-colors duration-200"
+                          className="mt-1 text-red-600 transition-colors duration-200"
                         >
                           Delete
                         </button>
