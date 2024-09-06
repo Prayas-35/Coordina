@@ -5,7 +5,7 @@ import { FocusCards } from "@/components/ui/focus-cards";
 export function FocusCardsDemo() {
   const localCards = [
     {
-      title: "Prayas Pal" <br/ "(Team Lead)",
+      title: "Prayas Pal",
       src: "/Kaniska.jpg",
     },
     {
