@@ -5,11 +5,11 @@ import { FocusCards } from "@/components/ui/focus-cards";
 export function FocusCardsDemo() {
   const localCards = [
     {
-      title: "Kaniska Mitra",
+      title: "Prayas Pal" <br/ "(Team Lead)",
       src: "/Kaniska.jpg",
     },
     {
-      title: "Prayas Pal",
+      title: "Kaniska Mitra",
       src: "/Kaniska.jpg",
     },
     {
