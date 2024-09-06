@@ -1,9 +1,8 @@
-// Source:
 "use client";
 
 import React, { useState } from 'react';
 import { format, addDays, startOfWeek, addWeeks, subWeeks, isSameDay } from 'date-fns';
-import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search, Plus } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -39,11 +38,9 @@ const WardProjectDashboard = () => {
   };
 
   const handleAddProject = () => {
-    // Calculate the end time of the new project
     const newProjectEndTime = new Date(newProject.date);
     newProjectEndTime.setHours(newProjectEndTime.getHours() + newProject.duration);
   
-    // Check if the new project overlaps with any existing project
     const isSlotTaken = projects.some((project) => {
       const projectEndTime = new Date(project.date);
       projectEndTime.setHours(projectEndTime.getHours() + project.duration);
@@ -56,10 +53,9 @@ const WardProjectDashboard = () => {
   
     if (isSlotTaken) {
       alert('This time slot is already taken. Please choose another.');
-      return; // Prevent adding the project
+      return;
     }
   
-    // Proceed with adding the project if the slot is free
     if (newProject.name && newProject.wardNumber && newProject.date) {
       const projectWithId = { ...newProject, id: Math.random().toString(36).substr(2, 9) };
       setProjects([...projects, projectWithId]);
@@ -69,7 +65,6 @@ const WardProjectDashboard = () => {
       setIsDialogOpen(false);
     }
   };
-  
 
   const handleDeleteProject = (id) => {
     setProjects(projects.filter((project) => project.id !== id));
@@ -82,59 +77,60 @@ const WardProjectDashboard = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-900 text-white">
-      <header className="flex justify-between items-center p-4 border-b border-gray-700">
-        <h1 className="text-2xl font-bold">Ward Project Dashboard</h1>
+    <div className="flex flex-col h-screen bg-background text-foreground">
+      <header className="flex justify-between items-center p-6 border-b border-border">
+        <h1 className="text-3xl font-bold">Ward Project Dashboard</h1>
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
             <Input
               type="text"
               placeholder="Search by ward number"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-8 bg-gray-800 border-gray-700 text-white"
+              className="pl-10 bg-input text-foreground border-input focus:ring-primary"
             />
           </div>
         </div>
       </header>
 
-      <div className="flex items-center justify-between p-4">
-        <Button variant="ghost" onClick={handlePrevWeek}><ChevronLeft /></Button>
-        <h2 className="text-xl">{format(currentDate, 'MMMM yyyy')}</h2>
-        <Button variant="ghost" onClick={handleNextWeek}><ChevronRight /></Button>
+      <div className="flex items-center justify-between p-6">
+        <Button variant="outline" onClick={handlePrevWeek}><ChevronLeft className="mr-2" /> Previous Week</Button>
+        <h2 className="text-2xl font-semibold">{format(currentDate, 'MMMM yyyy')}</h2>
+        <Button variant="outline" onClick={handleNextWeek}>Next Week <ChevronRight className="ml-2" /></Button>
       </div>
 
-      <div className="flex-1 overflow-auto">
-        <div className="grid grid-cols-[auto_repeat(7,1fr)] grid-rows-[auto_repeat(24,1fr)] gap-px bg-gray-700 h-[150vh]">
-          <div className="bg-gray-900"></div>
+      <div className="flex-1 overflow-auto p-6">
+        <div className="grid grid-cols-[auto_repeat(7,1fr)] grid-rows-[auto_repeat(24,1fr)] gap-px bg-border border-2 rounded-lg overflow-hidden">
+          <div className="bg-background p-2"></div>
           {weekDays.map((day, index) => (
-            <div key={index} className={`p-2 text-center ${format(day, 'eeee') === 'Sunday' ? 'text-blue-400' : ''}`}>
-              <div>{format(day, 'EEE')}</div>
-              <div className="text-2xl">{format(day, 'dd')}</div>
+            <div key={index} className={`p-3 text-center bg-card ${format(day, 'eeee') === 'Sunday' ? 'text-primary' : ''}`}>
+              <div className="text-sm font-medium">{format(day, 'EEE')}</div>
+              <div className="text-2xl font-bold">{format(day, 'dd')}</div>
             </div>
           ))}
 
           {timeSlots.map((time, timeIndex) => (
             <React.Fragment key={time}>
-              <div className="p-2 text-right text-xs text-gray-400">{time}</div>
+              <div className="p-2 text-right text-xl text-foreground bg-card">{time}</div>
               {weekDays.map((day, dayIndex) => {
                 const projectsForSlot = getProjectsForDateTime(day, time);
                 return (
-                  <div key={`${dayIndex}-${timeIndex}`} className="border border-gray-600 relative hover:bg-gray-800" onClick={() => handleDateTimeClick(day, time)}>
+                  <div key={`${dayIndex}-${timeIndex}`} className="border-white relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
                     {projectsForSlot.map((project) => (
                       <div
                         key={project.id}
-                        className="bg-blue-500 bg-opacity-50 p-1 text-xs overflow-hidden"
-                        style={{ height: `${project.duration * 100}%`, minHeight: '100%' }} // Duration-based flexing
+                        className="bg-primary bg-opacity-20 p-2 text-xs overflow-hidden rounded"
+                        style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}
                       >
-                        {project.name} (Ward {project.wardNumber})
+                        <div className="font-medium">{project.name}</div>
+                        <div className="text-muted-foreground">Ward {project.wardNumber}</div>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleDeleteProject(project.id);
                           }}
-                          className="ml-2 text-red-500"
+                          className="mt-1 text-destructive hover:text-destructive-foreground transition-colors duration-200"
                         >
                           Delete
                         </button>
@@ -149,18 +145,19 @@ const WardProjectDashboard = () => {
       </div>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="bg-gray-800 text-white">
+        <DialogContent className="bg-background text-foreground">
           <DialogHeader>
-            <DialogTitle>Add New Project for {selectedDateTime && format(selectedDateTime, 'MMMM d, yyyy HH:mm')}</DialogTitle>
+            <DialogTitle className="text-2xl font-bold">Add New Project</DialogTitle>
+            <p className="text-muted-foreground">{selectedDateTime && format(selectedDateTime, 'MMMM d, yyyy HH:mm')}</p>
           </DialogHeader>
-          <div className="grid gap-4 py-4">
+          <div className="grid gap-6 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="projectName" className="text-right">Project Name</Label>
               <Input
                 id="projectName"
                 value={newProject.name}
                 onChange={(e) => setNewProject(prev => ({ ...prev, name: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -169,7 +166,7 @@ const WardProjectDashboard = () => {
                 id="wardNumber"
                 value={newProject.wardNumber}
                 onChange={(e) => setNewProject(prev => ({ ...prev, wardNumber: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -179,7 +176,7 @@ const WardProjectDashboard = () => {
                 type="number"
                 value={newProject.duration}
                 onChange={(e) => setNewProject(prev => ({ ...prev, duration: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -188,7 +185,7 @@ const WardProjectDashboard = () => {
                 id="location"
                 value={newProject.location}
                 onChange={(e) => setNewProject(prev => ({ ...prev, location: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -197,7 +194,7 @@ const WardProjectDashboard = () => {
                 id="supervision"
                 value={newProject.supervision}
                 onChange={(e) => setNewProject(prev => ({ ...prev, supervision: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -206,11 +203,13 @@ const WardProjectDashboard = () => {
                 id="resources"
                 value={newProject.resources}
                 onChange={(e) => setNewProject(prev => ({ ...prev, resources: e.target.value }))}
-                className="col-span-3 bg-gray-700 border-gray-600"
+                className="col-span-3 bg-input border-input"
               />
             </div>
           </div>
-          <Button className="w-full bg-blue-500 hover:bg-blue-600" onClick={handleAddProject}>Add Project</Button>
+          <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleAddProject}>
+            <Plus className="mr-2 h-4 w-4" /> Add Project
+          </Button>
         </DialogContent>
       </Dialog>
     </div>
