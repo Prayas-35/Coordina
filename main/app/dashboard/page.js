@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Trash } from 'lucide-react';
 
 const WardProjectDashboard = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -112,7 +113,7 @@ const WardProjectDashboard = () => {
 
           {timeSlots.map((time, timeIndex) => (
             <React.Fragment key={time}>
-              <div className="p-2 text-right text-xl text-foreground bg-card">{time}</div>
+              <div className="p-3 text-right text-xl text-foreground bg-card">{time}</div>
               {weekDays.map((day, dayIndex) => {
                 const projectsForSlot = getProjectsForDateTime(day, time);
                 return (
@@ -120,21 +121,20 @@ const WardProjectDashboard = () => {
                     {projectsForSlot.map((project) => (
                       <div
                         key={project.id}
-                        className="bg-[#c494eb] p-2 text-xs overflow-hidden rounded"
-                        style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}
-                      >
-                        <div className="font-medium text-white">{project.name}</div>
-                        <div className="text-white">Ward {project.wardNumber}</div>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleDeleteProject(project.id);
-                          }}
-                          className="mt-1 text-red-600 transition-colors duration-200"
-                        >
-                          Delete
-                        </button>
-                      </div>
+                        className="bg-[#c494eb] p-2 text-xs overflow-hidden rounded-lg"
+                        style={{ height: `${project.duration * 100}%`, minHeight: '100%' }}>
+                        <div className="font-medium text-xl text-white p-1 text-wrap leading-normal">{project.name}</div>
+                        <div className="text-white text-lg text-wrap p-1 leading-normal">Ward {project.wardNumber}</div>
+                        
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDeleteProject(project.id);
+                            }}
+                            className="absolute right-4 top-3 text-red-600 hover:text-red-800 transition-colors duration-200">
+                            <Trash size={20} />
+                          </button>
+                        </div>
                     ))}
                   </div>
                 );
