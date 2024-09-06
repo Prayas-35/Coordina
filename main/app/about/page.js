@@ -1,74 +1,35 @@
 "use client";
 
-import { FocusCards } from "@/components/ui/focus-cards";
+import React from 'react';
 
-export function FocusCardsDemo() {
-  const localCards = [
-    {
-      title: "Prayas Pal" <br/ "(Team Lead)",
-      src: "/Kaniska.jpg",
-    },
-    {
-      title: "Kaniska Mitra",
-      src: "/Kaniska.jpg",
-    },
-    {
-      title: "Swikriti Mukherjee",
-      src: "/Swikriti.jpg",
-    },
-    {
-      title: "Sudarshan Chaudhuri",
-      src: "/Sudarshan.jpeg",
-    },
-    {
-      title: "Swajan Khasnobis",
-      src: "/Kaniska.jpg",
-    },
-    {
-      title: "Sabittwa Banerjee",
-      src: "/Sabittwa.jpg",
-    },
+function Landing() {
+  const teamMembers = [
+    { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'placeholder.jpg' },
+    { name: 'Swikriti Mukherjee', role: 'UI/UX Designer', imgSrc: 'Swikriti.jpg' },
+    { name: 'Kaniska Mitra', role: 'Data Scientist', imgSrc: 'Kaniska.jpg' },
+    { name: 'Sudarshan Chaudhuri', role: 'Backend Developer', imgSrc: 'Sudarshan.jpeg' },
+    { name: 'Swajan Khasnobis', role: 'DevOps Engineer', imgSrc: 'placeholder.jpg' },
+    { name: 'Sabittwa Banerjee', role: 'Frontend Developer', imgSrc: 'Sabittwa.jpg' },
   ];
 
-
   return (
-    <>
-      <h3 className="flex justify-between items-center p-6 border-b border-border">About Us</h3>
-      <div className="cards-wrapper">
-        <FocusCards cards={localCards} />
+    <div className="bg-background min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold text-foreground mb-8">About Our Team</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="bg-foreground rounded-lg shadow-lg p-6 flex flex-col items-center">
+            <img 
+              src={member.imgSrc} 
+              alt={member.name} 
+              className="w-32 h-32 object-cover rounded-full mb-4"
+            />
+            <h2 className="text-xl font-semibold text-background">{member.name}</h2>
+            <p className="text-background">{member.role}</p>
+          </div>
+        ))}
       </div>
-
-      <style jsx>{`
-        .about-me-heading {
-          font-size: 2.5rem;
-          text-align: center;
-          margin-bottom: 2rem;
-          font-weight: bold;
-          color: #333;
-        }
-
-        .cards-wrapper {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-bottom: 3rem;
-        }
-
-        .cards-wrapper:hover :global(.card:not(:hover)) {
-          filter: grayscale(100%);
-        }
-
-        .cards-wrapper :global(.card) {
-          transition: filter 0.3s ease, transform 0.3s ease;
-          margin: 10px;
-        }
-
-        .cards-wrapper :global(.card:hover) {
-          transform: scale(1.05); /* Optional zoom on hover */
-        }
-      `}</style>
-    </>
+    </div>
   );
 }
 
-export default FocusCardsDemo;
+export default Landing;
