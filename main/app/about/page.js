@@ -6,8 +6,8 @@ function Landing() {
   const teamMembers = [
     { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'placeholder.jpg' },
     { name: 'Swikriti Mukherjee', role: 'Backend Developer', imgSrc: 'placeholder.jpg' },
-    { name: 'Kanska Mitra', role: 'UI/UX Designer', imgSrc: 'placeholder.jpg' },
-    { name: 'Sudarshan Chaudhary', role: 'Data Scientist', imgSrc: 'placeholder.jpg' },
+    { name: 'Kaniska Mitra', role: 'UI/UX Designer', imgSrc: 'placeholder.jpg' },
+    { name: 'Sudarshan Chaudhuri', role: 'Data Scientist', imgSrc: 'placeholder.jpg' },
     { name: 'Swajan Khasnobis', role: 'DevOps Engineer', imgSrc: 'placeholder.jpg' },
     { name: 'Sabittwa Banerjee', role: 'Frontend Developer', imgSrc: 'placeholder.jpg' },
   ];
