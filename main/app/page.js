@@ -9,7 +9,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { useTheme } from "next-themes";
 
 function Landing() {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const words = ["Growth", "Innovation", "Technology"];
   return (
