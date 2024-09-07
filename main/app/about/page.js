@@ -1,35 +1,36 @@
-"use client";
+"use client";;
+import React from "react";
+import Image from "next/image";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
-import React from 'react';
-
-function Landing() {
-  const teamMembers = [
-    { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'Prayas.jpg' },
-    { name: 'Swikriti Mukherjee', imgSrc: 'Swikriti.jpg' },
-    { name: 'Kaniska Mitra', imgSrc: 'Kaniska.jpg' },
-    { name: 'Sudarshan Chaudhuri', imgSrc: 'Sudarshan.jpeg' },
-    { name: 'Swajan Khasnobis',  imgSrc: 'Swajan.jpg' },
-    { name: 'Sabittwa Banerjee',  imgSrc: 'Sabittwa.jpg' },
-  ];
-
+export default function BackgroundGradientDemo() {
   return (
-    <div className="bg-background min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-foreground mb-8">About Our Team</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="bg-foreground rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <img 
-              src={member.imgSrc} 
-              alt={member.name} 
-              className="w-32 h-32 object-cover rounded-full mb-4"
-            />
-            <h2 className="text-xl font-semibold text-background">{member.name}</h2>
-            <p className="text-background">{member.role}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    (<div>
+      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+        <Image
+          src={`/jordans.webp`}
+          alt="jordans"
+          height="400"
+          width="400"
+          className="object-contain" />
+        <p
+          className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+          Air Jordan 4 Retro Reimagined
+        </p>
+
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
+          February 17, 2024. Your best opportunity to get these right now is by
+          entering raffles and waiting for the official releases.
+        </p>
+        <button
+          className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+          <span>Buy now </span>
+          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
+            $100
+          </span>
+        </button>
+      </BackgroundGradient>
+    </div>)
   );
 }
-
-export default Landing;
