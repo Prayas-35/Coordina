@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react';
 import { format, addDays, startOfWeek, addWeeks, subWeeks, isSameDay } from 'date-fns';
-import { ChevronLeft, ChevronRight, Search, Plus, Menu } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search, Plus, Menu, Edit } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { IoMdTrash } from "react-icons/io";
 import Link from 'next/link';
 import NavBar from '@/components/functions/NavBar';
@@ -16,18 +17,19 @@ import 'react-datepicker/dist/react-datepicker.css';
 export default function WardProjectDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [projects, setProjects] = useState([
-    { id: '1', name: 'Road Repair', wardNumber: '12', date: new Date(2024, 8, 2, 0, 0), time: '00:00', duration: 1, location: 'Main Street', supervision: 'Mr. A', resources: 'Equipment' },
-    { id: '2', name: 'Park Cleanup', wardNumber: '5', date: new Date(2024, 8, 3, 2, 0), time: '02:00', duration: 2, location: 'Central Park', supervision: 'Mr. B', resources: 'Volunteers' },
-    { id: '3', name: 'Bridge Maintenance', wardNumber: '7', date: new Date(2024, 8, 4, 3, 0), time: '03:00', duration: 1, location: 'River Road', supervision: 'Mr. C', resources: 'Tools' },
+    { id: '1', name: 'Road Repair', wardNumber: '12', date: new Date(2024, 8, 2, 0, 0), time: '00:00', duration: 1, location: 'Main Street', supervision: 'Mr. A', resources: 'Equipment', status: 'not-started' },
+    { id: '2', name: 'Park Cleanup', wardNumber: '5', date: new Date(2024, 8, 3, 2, 0), time: '02:00', duration: 2, location: 'Central Park', supervision: 'Mr. B', resources: 'Volunteers', status: 'working' },
+    { id: '3', name: 'Bridge Maintenance', wardNumber: '7', date: new Date(2024, 8, 4, 3, 0), time: '03:00', duration: 1, location: 'River Road', supervision: 'Mr. C', resources: 'Tools', status: 'finished' },
   ]);
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedProject, setSelectedProject] = useState(null);
   const [newProject, setNewProject] = useState({
-    name: '', wardNumber: '', date: new Date(), time: '', duration: 1, location: '', supervision: '', resources: ''
+    name: '', wardNumber: '', date: new Date(), time: '', duration: 1, location: '', supervision: '', resources: '', status: 'not-started'
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
 
   const weekStart = startOfWeek(currentDate, { weekStartsOn: 1 });
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
@@ -41,6 +43,7 @@ export default function WardProjectDashboard() {
   
     if (projectsForSlot.length > 0) {
       setSelectedProject(projectsForSlot[0]);
+      setIsEditing(false);
       setIsDialogOpen(true);
     } else {
       const dateTime = new Date(date);
@@ -48,6 +51,7 @@ export default function WardProjectDashboard() {
       setSelectedDateTime(dateTime);
       setNewProject(prev => ({ ...prev, date: dateTime, time }));
       setSelectedProject(null);
+      setIsEditing(false);
       setIsDialogOpen(true);
     }
   };
@@ -75,10 +79,16 @@ export default function WardProjectDashboard() {
       const projectWithId = { ...newProject, id: Math.random().toString(36).substr(2, 9) };
       setProjects([...projects, projectWithId]);
       setNewProject({
-        name: '', wardNumber: '', date: new Date(), time: '', duration: 1, location: '', supervision: '', resources: ''
+        name: '', wardNumber: '', date: new Date(), time: '', duration: 1, location: '', supervision: '', resources: '', status: 'not-started'
       });
       setIsDialogOpen(false);
     }
+  };
+
+  const handleUpdateProject = () => {
+    setProjects(projects.map(p => p.id === selectedProject.id ? selectedProject : p));
+    setIsEditing(false);
+    setIsDialogOpen(false);
   };
 
   const handleDeleteProject = (id) => {
@@ -88,6 +98,7 @@ export default function WardProjectDashboard() {
   const handleCloseDialog = () => {
     setIsDialogOpen(false);
     setSelectedProject(null);
+    setIsEditing(false);
   };
 
   const filteredProjects = searchTerm ? projects.filter(p => p.wardNumber.includes(searchTerm)) : projects;
@@ -98,6 +109,19 @@ export default function WardProjectDashboard() {
 
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
+  };
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case 'not-started':
+        return 'bg-red-500';
+      case 'working':
+        return 'bg-yellow-500';
+      case 'finished':
+        return 'bg-green-500';
+      default:
+        return 'bg-gray-500';
+    }
   };
 
   return (
@@ -156,11 +180,11 @@ export default function WardProjectDashboard() {
                       {projectsForSlot.map((project) => (
                         <div
                           key={project.id}
-                          className="bg-[#c494eb] p-1 sm:p-2 text-xs overflow-hidden rounded-lg relative"
+                          className={`${getStatusColor(project.status)} p-1 sm:p-2 text-xs overflow-hidden rounded-lg relative`}
                           style={{ height: `${(project.duration - 1) * 101.25 + 100}%`, minHeight: '100%' }}
                         >
-                          <div className="text-sm sm:text-xl text-black font-medium p-1 text-wrap leading-tight pr-6">{project.name}</div>
-                          <div className="text-xs sm:text-lg text-black font-medium text-wrap p-1 leading-tight">
+                          <div className="text-sm sm:text-xl text-white font-medium p-1 text-wrap leading-tight pr-6">{project.name}</div>
+                          <div className="text-xs sm:text-lg text-white font-medium text-wrap p-1 leading-tight">
                             Ward {project.wardNumber}
                           </div>
                           <button
@@ -168,7 +192,7 @@ export default function WardProjectDashboard() {
                               e.stopPropagation();
                               handleDeleteProject(project.id);
                             }}
-                            className="absolute right-1 top-1 sm:right-2 sm:top-2 text-red-600 hover:text-red-800 transition-colors duration-200"
+                            className="absolute right-1 top-1 sm:right-2 sm:top-2 text-white hover:text-red-200 transition-colors duration-200"
                             aria-label="Delete project"
                           >
                             <IoMdTrash size={16} className="sm:w-5 sm:h-5" />
@@ -188,7 +212,7 @@ export default function WardProjectDashboard() {
         <DialogContent className="bg-background text-foreground sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle className="text-xl sm:text-2xl font-bold">
-              {selectedProject ? selectedProject.name : 'Add New Project'}
+              {selectedProject ? (isEditing ? 'Edit Project' : selectedProject.name) : 'Add New Project'}
             </DialogTitle>
             {!selectedProject && selectedDateTime && (
               <p className="text-sm text-muted-foreground">
@@ -196,15 +220,15 @@ export default function WardProjectDashboard() {
               </p>
             )}
           </DialogHeader>
-          {!selectedProject ? (
+          {!selectedProject || isEditing ? (
             <>
               <div className="grid gap-4 py-4">
                 <div className="grid grid-cols-4 items-center gap-4">
                   <Label htmlFor="projectName" className="text-right">Project Name</Label>
                   <Input
                     id="projectName"
-                    value={newProject.name}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, name: e.target.value }))}
+                    value={selectedProject ? selectedProject.name : newProject.name}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, name: e.target.value}) : setNewProject((prev) => ({ ...prev, name: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -212,8 +236,8 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="wardNumber" className="text-right">Ward Number</Label>
                   <Input
                     id="wardNumber"
-                    value={newProject.wardNumber}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, wardNumber: e.target.value }))}
+                    value={selectedProject ? selectedProject.wardNumber : newProject.wardNumber}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, wardNumber: e.target.value}) : setNewProject((prev) => ({ ...prev, wardNumber: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -222,8 +246,8 @@ export default function WardProjectDashboard() {
                   <Input
                     id="duration"
                     type="number"
-                    value={newProject.duration}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, duration: parseInt(e.target.value) }))}
+                    value={selectedProject ? selectedProject.duration : newProject.duration}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, duration: parseInt(e.target.value)}) : setNewProject((prev) => ({ ...prev, duration: parseInt(e.target.value) }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -231,8 +255,8 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="location" className="text-right">Location</Label>
                   <Input
                     id="location"
-                    value={newProject.location}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, location: e.target.value }))}
+                    value={selectedProject ? selectedProject.location : newProject.location}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, location: e.target.value}) : setNewProject((prev) => ({ ...prev, location: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -240,8 +264,8 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="supervision" className="text-right">Supervision</Label>
                   <Input
                     id="supervision"
-                    value={newProject.supervision}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, supervision: e.target.value }))}
+                    value={selectedProject ? selectedProject.supervision : newProject.supervision}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, supervision: e.target.value}) : setNewProject((prev) => ({ ...prev, supervision: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -249,14 +273,30 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="resources" className="text-right">Resources</Label>
                   <Input
                     id="resources"
-                    value={newProject.resources}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, resources: e.target.value }))}
+                    value={selectedProject ? selectedProject.resources : newProject.resources}
+                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, resources: e.target.value}) : setNewProject((prev) => ({ ...prev, resources: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="status" className="text-right">Status</Label>
+                  <Select
+                    value={selectedProject ? selectedProject.status : newProject.status}
+                    onValueChange={(value) => selectedProject ? setSelectedProject({...selectedProject, status: value}) : setNewProject((prev) => ({ ...prev, status: value }))}
+                  >
+                    <SelectTrigger className="col-span-3">
+                      <SelectValue placeholder="Select status" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="not-started">Not Started</SelectItem>
+                      <SelectItem value="working">Working</SelectItem>
+                      <SelectItem value="finished">Finished</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleAddProject}>
-                <Plus className="mr-2 h-4 w-4" /> Add Project
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={selectedProject ? handleUpdateProject : handleAddProject}>
+                {selectedProject ? 'Update Project' : 'Add Project'}
               </Button>
             </>
           ) : (
@@ -269,10 +309,16 @@ export default function WardProjectDashboard() {
                 <p><strong>Location:</strong> {selectedProject.location}</p>
                 <p><strong>Supervision:</strong> {selectedProject.supervision}</p>
                 <p><strong>Resources:</strong> {selectedProject.resources}</p>
+                <p><strong>Status:</strong> <span className={`px-2 py-1 rounded ${getStatusColor(selectedProject.status)} text-white`}>{selectedProject.status}</span></p>
               </div>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleCloseDialog}>
-                Close
-              </Button>
+              <div className="flex space-x-4">
+                <Button className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => setIsEditing(true)}>
+                  <Edit className="mr-2 h-4 w-4" /> Edit
+                </Button>
+                <Button className="flex-1 bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={handleCloseDialog}>
+                  Close
+                </Button>
+              </div>
             </>
           )}
         </DialogContent>
