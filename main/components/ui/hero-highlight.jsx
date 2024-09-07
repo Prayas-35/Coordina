@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
@@ -22,44 +23,56 @@ export const HeroHighlight = ({
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
+
   return (
-    (<div
+    <div
       className={cn(
         "relative min-h-screen flex items-center bg-background justify-center group",
         containerClassName
       )}
-      onMouseMove={handleMouseMove}>
+      onMouseMove={handleMouseMove}
+    >
       <div
-        className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+        className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800 pointer-events-none"
+      />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-400   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-400 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
               200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
+              hsl(var(--chart-1)) 0%,
+              hsl(var(--chart-2)) 40%,
+              hsl(var(--chart-3)) 70%,
               transparent 100%
             )
           `,
           maskImage: useMotionTemplate`
             radial-gradient(
               200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
+              hsl(var(--chart-1)) 0%,
+              hsl(var(--chart-2)) 40%,
+              hsl(var(--chart-3)) 70%,
               transparent 100%
             )
           `,
-        }} />
-      <div className={cn("relative z-20 w-full flex items-center justify-center", className)}>{children}</div>
-    </div>)
+        }}
+      />
+      <div
+        className={cn(
+          "relative z-20 w-full flex items-center justify-center",
+          className
+        )}
+      >
+        {children}
+      </div>
+    </div>
   );
 };
 
-export const Highlight = ({
-  children,
-  className
-}) => {
+export const Highlight = ({ children, className }) => {
   return (
-    (<motion.span
+    <motion.span
       initial={{
         backgroundSize: "0% 100%",
       }}
@@ -77,10 +90,11 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block pb-1 px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
         className
-      )}>
+      )}
+    >
       {children}
-    </motion.span>)
+    </motion.span>
   );
 };
