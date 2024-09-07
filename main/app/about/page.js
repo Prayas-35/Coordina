@@ -18,9 +18,9 @@ function Landing() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-foreground rounded-lg shadow-lg p-6 flex flex-col items-center">
-            <img 
-              src={member.imgSrc} 
-              alt={member.name} 
+            <img
+              src={member.imgSrc}
+              alt={member.name}
               className="w-32 h-32 object-cover rounded-full mb-4"
             />
             <h2 className="text-xl font-semibold text-background">{member.name}</h2>
