@@ -72,7 +72,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <nav className="hidden lg:block mr-4">
                             <div className="flex gap-6">
-                                <NavLink href="/dashboard" icon={<HomeIcon className="h-4 w-4" />} text="Dashboard" />
+                                <NavLink href="/dashboard" icon={<HomeIcon className="h-5 w-5" />} text="Dashboard" />
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                             </div>
