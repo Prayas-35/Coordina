@@ -10,9 +10,9 @@ import { useTheme } from "next-themes";
 import Footer from "@/components/functions/Footer";
 
 function Landing() {
-  const { theme, resolvedTheme } = useTheme();
-
+  const { resolvedTheme } = useTheme();
   const words = ["Growth", "Innovation", "Technology"];
+  
   return (
     <div className="flex flex-col min-h-screen">
       <header className="fixed text-primary-foreground py-4 lg:px-6 shadow-md backdrop-blur-md bg-opacity-30 top-0 left-0 right-0 z-50">
