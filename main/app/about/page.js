@@ -4,7 +4,7 @@ import React from 'react';
 
 function Landing() {
   const teamMembers = [
-    { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'placeholder.jpg' },
+    { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'Prayas.jpg' },
     { name: 'Swikriti Mukherjee', role: 'UI/UX Designer', imgSrc: 'Swikriti.jpg' },
     { name: 'Kaniska Mitra', role: 'Data Scientist', imgSrc: 'Kaniska.jpg' },
     { name: 'Sudarshan Chaudhuri', role: 'Backend Developer', imgSrc: 'Sudarshan.jpeg' },
