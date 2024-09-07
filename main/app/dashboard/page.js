@@ -10,6 +10,8 @@ import { Label } from "@/components/ui/label";
 import { IoMdTrash } from "react-icons/io";
 import Link from 'next/link';
 import NavBar from '@/components/functions/NavBar';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export default function WardProjectDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -21,6 +23,7 @@ export default function WardProjectDashboard() {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedProject, setSelectedProject] = useState(null);
   const [newProject, setNewProject] = useState({
     name: '', wardNumber: '', date: new Date(), time: '', duration: 1, location: '', supervision: '', resources: ''
   });
@@ -34,11 +37,19 @@ export default function WardProjectDashboard() {
   const handleNextWeek = () => setCurrentDate(addWeeks(currentDate, 1));
 
   const handleDateTimeClick = (date, time) => {
-    const dateTime = new Date(date);
-    dateTime.setHours(parseInt(time.split(':')[0]), 0, 0, 0);
-    setSelectedDateTime(dateTime);
-    setNewProject(prev => ({ ...prev, date: dateTime, time }));
-    setIsDialogOpen(true);
+    const projectsForSlot = getProjectsForDateTime(date, time);
+  
+    if (projectsForSlot.length > 0) {
+      setSelectedProject(projectsForSlot[0]);
+      setIsDialogOpen(true);
+    } else {
+      const dateTime = new Date(date);
+      dateTime.setHours(parseInt(time.split(':')[0]), 0, 0, 0);
+      setSelectedDateTime(dateTime);
+      setNewProject(prev => ({ ...prev, date: dateTime, time }));
+      setSelectedProject(null);
+      setIsDialogOpen(true);
+    }
   };
 
   const handleAddProject = () => {
@@ -74,6 +85,11 @@ export default function WardProjectDashboard() {
     setProjects(projects.filter((project) => project.id !== id));
   };
 
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+    setSelectedProject(null);
+  };
+
   const filteredProjects = searchTerm ? projects.filter(p => p.wardNumber.includes(searchTerm)) : projects;
 
   const getProjectsForDateTime = (date, time) => {
@@ -101,14 +117,20 @@ export default function WardProjectDashboard() {
               />
             </div>
             <div className="flex items-center space-x-2 sm:space-x-4 order-1 pb-5 md:pb-0 sm:order-2 w-full sm:w-auto justify-center">
-              <Button variant="outline" onClick={handlePrevWeek}><ChevronLeft className="mr-1 sm:mr-2" /> Prev</Button>
-              <h2 className="text-lg sm:text-2xl font-semibold whitespace-nowrap">{format(currentDate, 'MMM yyyy')}</h2>
-              <Button variant="outline" onClick={handleNextWeek}>Next <ChevronRight className="ml-1 sm:ml-2" /></Button>
+              <Button variant="outline" onClick={handlePrevWeek}>
+                <ChevronLeft className="mr-1 sm:mr-2" /> Prev
+              </Button>
+              <h2 className="text-lg sm:text-2xl font-semibold whitespace-nowrap">
+                {format(currentDate, 'MMM yyyy')}
+              </h2>
+              <Button variant="outline" onClick={handleNextWeek}>
+                Next <ChevronRight className="ml-1 sm:ml-2" />
+              </Button>
             </div>
           </div>
         </div>
       </header>
-
+  
       <main className="flex-1 overflow-auto p-2 sm:p-4 md:p-6">
         <div className="container mx-auto">
           <div className="grid grid-cols-[auto_repeat(7,1fr)] grid-rows-[auto_repeat(24,1fr)] gap-px bg-border border-2 rounded-lg overflow-hidden">
@@ -119,14 +141,18 @@ export default function WardProjectDashboard() {
                 <div className="text-sm sm:text-2xl font-bold">{format(day, 'dd')}</div>
               </div>
             ))}
-
+  
             {timeSlots.map((time, timeIndex) => (
               <React.Fragment key={time}>
                 <div className="p-1 sm:p-3 text-right text-sm sm:text-xl text-foreground bg-card">{time}</div>
                 {weekDays.map((day, dayIndex) => {
                   const projectsForSlot = getProjectsForDateTime(day, time);
                   return (
-                    <div key={`${dayIndex}-${timeIndex}`} className="border-[#7c4da3a3] border relative transition-colors duration-200" onClick={() => handleDateTimeClick(day, time)}>
+                    <div
+                      key={`${dayIndex}-${timeIndex}`}
+                      className="border-[#7c4da3a3] border relative transition-colors duration-200"
+                      onClick={() => handleDateTimeClick(day, time)}
+                    >
                       {projectsForSlot.map((project) => (
                         <div
                           key={project.id}
@@ -134,7 +160,9 @@ export default function WardProjectDashboard() {
                           style={{ height: `${(project.duration - 1) * 101.25 + 100}%`, minHeight: '100%' }}
                         >
                           <div className="text-sm sm:text-xl text-black font-medium p-1 text-wrap leading-tight pr-6">{project.name}</div>
-                          <div className="text-xs sm:text-lg text-black font-medium text-wrap p-1 leading-tight">Ward {project.wardNumber}</div>
+                          <div className="text-xs sm:text-lg text-black font-medium text-wrap p-1 leading-tight">
+                            Ward {project.wardNumber}
+                          </div>
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
@@ -155,73 +183,98 @@ export default function WardProjectDashboard() {
           </div>
         </div>
       </main>
-
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+  
+      <Dialog open={isDialogOpen} onOpenChange={handleCloseDialog}>
         <DialogContent className="bg-background text-foreground sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle className="text-xl sm:text-2xl font-bold">Add New Project</DialogTitle>
-            <p className="text-sm text-muted-foreground">{selectedDateTime && format(selectedDateTime, 'MMMM d, yyyy HH:mm')}</p>
+            <DialogTitle className="text-xl sm:text-2xl font-bold">
+              {selectedProject ? selectedProject.name : 'Add New Project'}
+            </DialogTitle>
+            {!selectedProject && selectedDateTime && (
+              <p className="text-sm text-muted-foreground">
+                {format(selectedDateTime, 'MMMM d, yyyy HH:mm')}
+              </p>
+            )}
           </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="projectName" className="text-right">Project Name</Label>
-              <Input
-                id="projectName"
-                value={newProject.name}
-                onChange={(e) => setNewProject(prev => ({ ...prev, name: e.target.value }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="wardNumber" className="text-right">Ward Number</Label>
-              <Input
-                id="wardNumber"
-                value={newProject.wardNumber}
-                onChange={(e) => setNewProject(prev => ({ ...prev, wardNumber: e.target.value }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="duration" className="text-right">Duration (hours)</Label>
-              <Input
-                id="duration"
-                type="number"
-                value={newProject.duration}
-                onChange={(e) => setNewProject(prev => ({ ...prev, duration: parseInt(e.target.value) }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="location" className="text-right">Location</Label>
-              <Input
-                id="location"
-                value={newProject.location}
-                onChange={(e) => setNewProject(prev => ({ ...prev, location: e.target.value }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="supervision" className="text-right">Supervision</Label>
-              <Input
-                id="supervision"
-                value={newProject.supervision}
-                onChange={(e) => setNewProject(prev => ({ ...prev, supervision: e.target.value }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="resources" className="text-right">Resources</Label>
-              <Input
-                id="resources"
-                value={newProject.resources}
-                onChange={(e) => setNewProject(prev => ({ ...prev, resources: e.target.value }))}
-                className="col-span-3 bg-input border-input"
-              />
-            </div>
-          </div>
-          <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleAddProject}>
-            <Plus className="mr-2 h-4 w-4" /> Add Project
-          </Button>
+          {!selectedProject ? (
+            <>
+              <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="projectName" className="text-right">Project Name</Label>
+                  <Input
+                    id="projectName"
+                    value={newProject.name}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, name: e.target.value }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="wardNumber" className="text-right">Ward Number</Label>
+                  <Input
+                    id="wardNumber"
+                    value={newProject.wardNumber}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, wardNumber: e.target.value }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="duration" className="text-right">Duration (hours)</Label>
+                  <Input
+                    id="duration"
+                    type="number"
+                    value={newProject.duration}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, duration: parseInt(e.target.value) }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="location" className="text-right">Location</Label>
+                  <Input
+                    id="location"
+                    value={newProject.location}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, location: e.target.value }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="supervision" className="text-right">Supervision</Label>
+                  <Input
+                    id="supervision"
+                    value={newProject.supervision}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, supervision: e.target.value }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="resources" className="text-right">Resources</Label>
+                  <Input
+                    id="resources"
+                    value={newProject.resources}
+                    onChange={(e) => setNewProject((prev) => ({ ...prev, resources: e.target.value }))}
+                    className="col-span-3 bg-input border-input"
+                  />
+                </div>
+              </div>
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleAddProject}>
+                <Plus className="mr-2 h-4 w-4" /> Add Project
+              </Button>
+            </>
+          ) : (
+            <>
+              <div className="grid gap-4 py-4">
+                <p><strong>Ward Number:</strong> {selectedProject.wardNumber}</p>
+                <p><strong>Date:</strong> {format(selectedProject.date, 'MMMM d, yyyy')}</p>
+                <p><strong>Time:</strong> {selectedProject.time}</p>
+                <p><strong>Duration:</strong> {selectedProject.duration} hour(s)</p>
+                <p><strong>Location:</strong> {selectedProject.location}</p>
+                <p><strong>Supervision:</strong> {selectedProject.supervision}</p>
+                <p><strong>Resources:</strong> {selectedProject.resources}</p>
+              </div>
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleCloseDialog}>
+                Close
+              </Button>
+            </>
+          )}
         </DialogContent>
       </Dialog>
     </div>
