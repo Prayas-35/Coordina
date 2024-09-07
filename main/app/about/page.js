@@ -5,11 +5,11 @@ import React from 'react';
 function Landing() {
   const teamMembers = [
     { name: 'Prayas Pal', role: 'Team Lead', imgSrc: 'Prayas.jpg' },
-    { name: 'Swikriti Mukherjee', role: 'UI/UX Designer', imgSrc: 'Swikriti.jpg' },
-    { name: 'Kaniska Mitra', role: 'Data Scientist', imgSrc: 'Kaniska.jpg' },
-    { name: 'Sudarshan Chaudhuri', role: 'Backend Developer', imgSrc: 'Sudarshan.jpeg' },
-    { name: 'Swajan Khasnobis', role: 'DevOps Engineer', imgSrc: 'Swajan.jpg' },
-    { name: 'Sabittwa Banerjee', role: 'Frontend Developer', imgSrc: 'Sabittwa.jpg' },
+    { name: 'Swikriti Mukherjee', imgSrc: 'Swikriti.jpg' },
+    { name: 'Kaniska Mitra', imgSrc: 'Kaniska.jpg' },
+    { name: 'Sudarshan Chaudhuri', imgSrc: 'Sudarshan.jpeg' },
+    { name: 'Swajan Khasnobis',  imgSrc: 'Swajan.jpg' },
+    { name: 'Sabittwa Banerjee',  imgSrc: 'Sabittwa.jpg' },
   ];
 
   return (
