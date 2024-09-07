@@ -8,7 +8,7 @@ function Landing() {
     { name: 'Swikriti Mukherjee', role: 'UI/UX Designer', imgSrc: 'Swikriti.jpg' },
     { name: 'Kaniska Mitra', role: 'Data Scientist', imgSrc: 'Kaniska.jpg' },
     { name: 'Sudarshan Chaudhuri', role: 'Backend Developer', imgSrc: 'Sudarshan.jpeg' },
-    { name: 'Swajan Khasnobis', role: 'DevOps Engineer', imgSrc: 'placeholder.jpg' },
+    { name: 'Swajan Khasnobis', role: 'DevOps Engineer', imgSrc: 'Swajan.jpg' },
     { name: 'Sabittwa Banerjee', role: 'Frontend Developer', imgSrc: 'Sabittwa.jpg' },
   ];
 
