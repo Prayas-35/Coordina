@@ -8,9 +8,10 @@ import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
 import { useTheme } from "next-themes";
 import Footer from "@/components/functions/Footer";
-import { Button } from "@/components/ui/button";
 import Auth from "@/components/functions/signup-form-demo";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Button } from "@/components/ui/button";
 
 function Landing() {
   const { resolvedTheme } = useTheme();
@@ -37,7 +38,32 @@ function Landing() {
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             <ModeToggle />
-            <Button onClick={toggleSignup}>Get Started</Button>
+
+            {/* Popover for Get Started Button */}
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button className="font-semibold">Get Started</Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-48 p-2">
+                <ul>
+                  <li>
+                    <button
+                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      onClick={toggleSignup}
+                    >
+                      Department
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      3rd Party Vendors
+                    </button>
+                  </li>
+                </ul>
+              </PopoverContent>
+            </Popover>
           </div>
         </div>
       </header>
@@ -54,7 +80,6 @@ function Landing() {
         </motion.h1>
       </HeroHighlight>
       
-      {/* Signup Modal using shadcn Dialog component */}
       <Dialog open={isSignupOpen} onOpenChange={setIsSignupOpen}>
         <DialogContent className="w-96">
           <Auth /> {/* Render the signup form */}
