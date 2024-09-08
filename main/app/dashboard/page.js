@@ -162,6 +162,7 @@ export default function WardProjectDashboard() {
                 className="pl-10 w-full bg-input text-foreground border-input focus:ring-primary"
               />
             </div>
+            
             <div className="flex items-center space-x-2 sm:space-x-4 order-1 pb-5 md:pb-0 sm:order-2 w-full sm:w-auto justify-center">
               <Button variant="outline" onClick={handlePrevWeek}>
                 <ChevronLeft className="mr-1 sm:mr-2" /> Prev
