@@ -18,9 +18,23 @@ import 'react-datepicker/dist/react-datepicker.css';
 export default function WardProjectDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [projects, setProjects] = useState([
-    { id: '1', name: 'Road Repair', wardNumber: '12', date: new Date(2024, 8, 2, 0, 0), time: '00:00', duration: 1, location: 'Main Street', supervision: 'Mr. A', resources: 'Equipment', status: 'not-started' },
+    { id: '1', name: 'Road Repairing', wardNumber: '12', date: new Date(2024, 8, 2, 0, 0), time: '00:00', duration: 1, location: 'Main Street', supervision: 'Mr. A', resources: 'Equipment', status: 'not-started' },
     { id: '2', name: 'Park Cleanup', wardNumber: '5', date: new Date(2024, 8, 3, 2, 0), time: '02:00', duration: 2, location: 'Central Park', supervision: 'Mr. B', resources: 'Volunteers', status: 'working' },
     { id: '3', name: 'Bridge Maintenance', wardNumber: '7', date: new Date(2024, 8, 4, 3, 0), time: '03:00', duration: 1, location: 'River Road', supervision: 'Mr. C', resources: 'Tools', status: 'finished' },
+    { id: '4', name: 'Street Light Installation', wardNumber: '3', date: new Date(2024, 8, 5, 4, 0), time: '04:00', duration: 1, location: 'Elm Street', supervision: 'Mr. D', resources: 'Bulbs', status: 'not-started' },
+    { id: '5', name: 'Garbage Collection', wardNumber: '8', date: new Date(2024, 8, 6, 5, 0), time: '05:00', duration: 1, location: 'City Center', supervision: 'Mr. E', resources: 'Trucks', status: 'working' },
+    { id: '6', name: 'Tree Plantation', wardNumber: '1', date: new Date(2024, 8, 7, 6, 0), time: '06:00', duration: 1, location: 'Green Park', supervision: 'Mr. F', resources: 'Saplings', status: 'finished' },
+    { id: '7', name: 'Sewage Repair', wardNumber: '9', date: new Date(2024, 8, 8, 7, 0), time: '07:00', duration: 1, location: 'Oak Street', supervision: 'Mr. G', resources: 'Pipes', status: 'not-started' },
+    { id: '8', name: 'Street Signage', wardNumber: '4', date: new Date(2024, 8, 9, 8, 0), time: '08:00', duration: 1, location: 'Pine Street', supervision: 'Mr. H', resources: 'Signs', status: 'working' },
+    { id: '9', name: 'Pothole Filling', wardNumber: '9', date: new Date(2024, 8, 10, 9, 0), time: '00:00', duration: 1, location: 'Maple Street', supervision: 'Mr. I', resources: 'Asphalt', status: 'finished' },
+    { id: '10', name: 'Water Pipeline Repair', wardNumber: '6', date: new Date(2024, 8, 11, 10, 0), time: '10:00', duration: 1, location: 'Willow Street', supervision: 'Mr. J', resources: 'Pipes', status: 'not-started' },
+    { id: '11', name: 'Street Sweeping', wardNumber: '2', date: new Date(2024, 8, 12, 11, 0), time: '01:00', duration: 1, location: 'Birch Street', supervision: 'Mr. K', resources: 'Sweepers', status: 'working' },
+    { id: '12', name: 'Park Maintenance', wardNumber: '10', date: new Date(2024, 8, 13, 12, 0), time: '12:00', duration: 1, location: 'Rose Park', supervision: 'Mr. L', resources: 'Tools', status: 'finished' },
+    { id: '13', name: 'Street Painting', wardNumber: '13', date: new Date(2024, 8, 18, 0, 0), time: '13:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
+    { id: '13', name: 'Road Cleaning', wardNumber: '59', date: new Date(2024, 8, 18, 0, 0), time: '00:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
+    { id: '13', name: 'Pipeline Installation', wardNumber: '9', date: new Date(2024, 8, 18, 0, 0), time: '02:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'working' },
+    { id: '13', name: 'Street Light Installation', wardNumber: '5', date: new Date(2024, 8, 21, 0, 0), time: '01:00', duration: 2, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
+    { id: '13', name: 'Street Signage', wardNumber: '15', date: new Date(2024, 8, 16, 0, 0), time: '00:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'finished' },
   ]);
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
