@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useState } from 'react';
-import { format, addDays, startOfWeek, addWeeks, subWeeks, isSameDay } from 'date-fns';
-import { ChevronLeft, ChevronRight, Search, Plus, Menu, Edit } from 'lucide-react';
+import { format, addDays, startOfWeek, addWeeks, subWeeks, isSameDay, parse, getWeek } from 'date-fns';
+import { ChevronLeft, ChevronRight, Search, Plus, Menu, Edit, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { IoMdTrash } from "react-icons/io";
 import Link from 'next/link';
 import NavBar from '@/components/functions/NavBar';
@@ -30,6 +31,7 @@ export default function WardProjectDashboard() {
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
+  const [isWeekPickerOpen, setIsWeekPickerOpen] = useState(false);
 
   const weekStart = startOfWeek(currentDate, { weekStartsOn: 1 });
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
@@ -124,6 +126,26 @@ export default function WardProjectDashboard() {
     }
   };
 
+  const handleWeekChange = (date) => {
+    setCurrentDate(date);
+    setIsWeekPickerOpen(false);
+  };
+
+  const generateWeekOptions = () => {
+    const options = [];
+    const startDate = new Date(currentDate.getFullYear(), 0, 1);
+    for (let week = 1; week <= 52; week++) {
+      const weekStart = addWeeks(startDate, week - 1);
+      const weekEnd = addDays(weekStart, 6);
+      options.push(
+        <SelectItem key={week} value={week.toString()}>
+          Week {week}: {format(weekStart, 'MMM d')} - {format(weekEnd, 'MMM d')}
+        </SelectItem>
+      );
+    }
+    return options;
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <NavBar isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
@@ -144,9 +166,27 @@ export default function WardProjectDashboard() {
               <Button variant="outline" onClick={handlePrevWeek}>
                 <ChevronLeft className="mr-1 sm:mr-2" /> Prev
               </Button>
-              <h2 className="text-lg sm:text-2xl font-semibold whitespace-nowrap">
-                {format(currentDate, 'MMM yyyy')}
-              </h2>
+              <Popover open={isWeekPickerOpen} onOpenChange={setIsWeekPickerOpen}>
+                <PopoverTrigger asChild>
+                  <Button variant="outline" className="min-w-[150px]">
+                    <Calendar className="mr-2 h-4 w-4" />
+                    Week {getWeek(currentDate)}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-0" align="start">
+                  <Select
+                    value={getWeek(currentDate).toString()}
+                    onValueChange={(value) => handleWeekChange(addWeeks(new Date(currentDate.getFullYear(), 0, 1), parseInt(value) - 1))}
+                  >
+                    <SelectTrigger className="w-[200px]">
+                      <SelectValue placeholder="Select week" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {generateWeekOptions()}
+                    </SelectContent>
+                  </Select>
+                </PopoverContent>
+              </Popover>
               <Button variant="outline" onClick={handleNextWeek}>
                 Next <ChevronRight className="ml-1 sm:ml-2" />
               </Button>
