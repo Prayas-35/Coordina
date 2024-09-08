@@ -42,7 +42,7 @@ export default function WardProjectDashboard() {
 
   const handleDateTimeClick = (date, time) => {
     const projectsForSlot = getProjectsForDateTime(date, time);
-  
+
     if (projectsForSlot.length > 0) {
       setSelectedProject(projectsForSlot[0]);
       setIsEditing(false);
@@ -162,7 +162,14 @@ export default function WardProjectDashboard() {
                 className="pl-10 w-full bg-input text-foreground border-input focus:ring-primary"
               />
             </div>
-            
+
+            <div className="flex items-center space-x-2 sm:space-x-4 order-1 pb-5 md:pb-0 sm:order-2 w-full sm:w-auto justify-center">
+              {/* current month */}
+              <span className="text-lg sm:text-xl font-bold">
+                {format(currentDate, 'MMMM yyyy')}
+              </span>
+            </div>
+
             <div className="flex items-center space-x-2 sm:space-x-4 order-1 pb-5 md:pb-0 sm:order-2 w-full sm:w-auto justify-center">
               <Button variant="outline" onClick={handlePrevWeek}>
                 <ChevronLeft className="mr-1 sm:mr-2" /> Prev
@@ -195,7 +202,7 @@ export default function WardProjectDashboard() {
           </div>
         </div>
       </header>
-  
+
       <main className="flex-1 overflow-auto p-2 sm:p-4 md:p-6">
         <div className="container mx-auto">
           <div className="grid grid-cols-[auto_repeat(7,1fr)] grid-rows-[auto_repeat(24,1fr)] gap-px bg-border border-2 rounded-lg overflow-hidden">
@@ -206,7 +213,7 @@ export default function WardProjectDashboard() {
                 <div className="text-sm sm:text-2xl font-bold">{format(day, 'dd')}</div>
               </div>
             ))}
-  
+
             {timeSlots.map((time, timeIndex) => (
               <React.Fragment key={time}>
                 <div className="p-1 sm:p-3 text-right text-sm sm:text-xl text-foreground bg-card">{time}</div>
@@ -248,7 +255,7 @@ export default function WardProjectDashboard() {
           </div>
         </div>
       </main>
-  
+
       <Dialog open={isDialogOpen} onOpenChange={handleCloseDialog}>
         <DialogContent className="bg-background text-foreground sm:max-w-[425px]">
           <DialogHeader>
@@ -269,16 +276,17 @@ export default function WardProjectDashboard() {
                   <Input
                     id="projectName"
                     value={selectedProject ? selectedProject.name : newProject.name}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, name: e.target.value}) : setNewProject((prev) => ({ ...prev, name: e.target.value }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, name: e.target.value }) : setNewProject((prev) => ({ ...prev, name: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
                 <div className="grid grid-cols-4 items-center gap-4">
                   <Label htmlFor="wardNumber" className="text-right">Ward Number</Label>
                   <Input
+                    type="number" min="1"
                     id="wardNumber"
                     value={selectedProject ? selectedProject.wardNumber : newProject.wardNumber}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, wardNumber: e.target.value}) : setNewProject((prev) => ({ ...prev, wardNumber: e.target.value }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, wardNumber: e.target.value }) : setNewProject((prev) => ({ ...prev, wardNumber: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -286,9 +294,9 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="duration" className="text-right">Duration (hours)</Label>
                   <Input
                     id="duration"
-                    type="number"
+                    type="number" min="1"
                     value={selectedProject ? selectedProject.duration : newProject.duration}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, duration: parseInt(e.target.value)}) : setNewProject((prev) => ({ ...prev, duration: parseInt(e.target.value) }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, duration: parseInt(e.target.value) }) : setNewProject((prev) => ({ ...prev, duration: parseInt(e.target.value) }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -297,7 +305,7 @@ export default function WardProjectDashboard() {
                   <Input
                     id="location"
                     value={selectedProject ? selectedProject.location : newProject.location}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, location: e.target.value}) : setNewProject((prev) => ({ ...prev, location: e.target.value }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, location: e.target.value }) : setNewProject((prev) => ({ ...prev, location: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -306,7 +314,7 @@ export default function WardProjectDashboard() {
                   <Input
                     id="supervision"
                     value={selectedProject ? selectedProject.supervision : newProject.supervision}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, supervision: e.target.value}) : setNewProject((prev) => ({ ...prev, supervision: e.target.value }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, supervision: e.target.value }) : setNewProject((prev) => ({ ...prev, supervision: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -315,7 +323,7 @@ export default function WardProjectDashboard() {
                   <Input
                     id="resources"
                     value={selectedProject ? selectedProject.resources : newProject.resources}
-                    onChange={(e) => selectedProject ? setSelectedProject({...selectedProject, resources: e.target.value}) : setNewProject((prev) => ({ ...prev, resources: e.target.value }))}
+                    onChange={(e) => selectedProject ? setSelectedProject({ ...selectedProject, resources: e.target.value }) : setNewProject((prev) => ({ ...prev, resources: e.target.value }))}
                     className="col-span-3 bg-input border-input"
                   />
                 </div>
@@ -323,7 +331,7 @@ export default function WardProjectDashboard() {
                   <Label htmlFor="status" className="text-right">Status</Label>
                   <Select
                     value={selectedProject ? selectedProject.status : newProject.status}
-                    onValueChange={(value) => selectedProject ? setSelectedProject({...selectedProject, status: value}) : setNewProject((prev) => ({ ...prev, status: value }))}
+                    onValueChange={(value) => selectedProject ? setSelectedProject({ ...selectedProject, status: value }) : setNewProject((prev) => ({ ...prev, status: value }))}
                   >
                     <SelectTrigger className="col-span-3">
                       <SelectValue placeholder="Select status" />
