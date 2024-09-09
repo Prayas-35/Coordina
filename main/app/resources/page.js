@@ -1,9 +1,14 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { IconBrandTabler, IconUserBolt, IconChevronLeft } from "@tabler/icons-react"
+import { IconBrandTabler, IconUserBolt, IconChevronLeft, IconPlus, IconEdit, IconTrash } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 const allResourcesData = [
   { id: 1, name: "Cement", description: "Needed for construction purposes", priority: "High", category: "Transport", src: "https://www.jkcement.com/wp-content/uploads/2023/07/cement-powder-with-trowel-put-brick-construction-work-768x512-jpg.webp" },
@@ -12,7 +17,6 @@ const allResourcesData = [
   { id: 4, name: "Cranes", description: "Needed at construction sites", priority: "High", category: "Transport, Water Supply", src: "https://heavyequipmenttraining.com/wp-content/uploads/2018/12/7-Types-of-Construction-Cranes.jpg" },
   { id: 5, name: "Bulbs", description: "Needed for streetlamps installation project", priority: "Medium", category: "Electricity", src: "https://d2qu5xmcgmzxnb.cloudfront.net/ewogICAgICAgICAgICAgICAgICAgICAgICAiYnVja2V0IjogImZpbGVzLmxici5jbG91ZCIsCiAgICAgICAgICAgICAgICAgICAgICAgICJrZXkiOiAicHVibGljLzIwMjEtMTEvc2h1dHRlcnN0b2NrXzg1MDg2ODQ0LmpwZyIsCiAgICAgICAgICAgICAgICAgICAgICAgICJlZGl0cyI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAicmVzaXplIjogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgIndpZHRoIjogOTQ1LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgImhlaWdodCI6IDUyNiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICJmaXQiOiAiY292ZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQ==" },
   { id: 6, name: "Street Signs", description: "Needed for street signage project", priority: "Medium", category: "Transport", src: "https://www.safetysign.com/blog/wp-content/uploads/2017/02/missing-stop-sign.jpg" },
-
 ]
 
 const myResourcesData = [
@@ -20,8 +24,8 @@ const myResourcesData = [
   { id: 2, name: "Bulbs", description: "Needed for streetlamps installation project", priority: "Medium", category: "Electricity", src: "https://d2qu5xmcgmzxnb.cloudfront.net/ewogICAgICAgICAgICAgICAgICAgICAgICAiYnVja2V0IjogImZpbGVzLmxici5jbG91ZCIsCiAgICAgICAgICAgICAgICAgICAgICAgICJrZXkiOiAicHVibGljLzIwMjEtMTEvc2h1dHRlcnN0b2NrXzg1MDg2ODQ0LmpwZyIsCiAgICAgICAgICAgICAgICAgICAgICAgICJlZGl0cyI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAicmVzaXplIjogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgIndpZHRoIjogOTQ1LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgImhlaWdodCI6IDUyNiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICJmaXQiOiAiY292ZXIiCiAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQ==" },
 ]
 
-const FocusCards = ({ cards }) => {
-  const [focusedIndex, setFocusedIndex] = React.useState(null)
+const FocusCards = ({ cards, onEdit, onDelete, showActions }) => {
+  const [focusedIndex, setFocusedIndex] = useState(null)
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -60,6 +64,30 @@ const FocusCards = ({ cards }) => {
                 {card.priority} Priority
               </span>
             </div>
+            {showActions && (
+              <div className="absolute top-2 right-2 flex space-x-2">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onEdit(card)
+                  }}
+                >
+                  <IconEdit className="h-4 w-4" />
+                </Button>
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onDelete(card.id)
+                  }}
+                >
+                  <IconTrash className="h-4 w-4" />
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       ))}
@@ -67,23 +95,243 @@ const FocusCards = ({ cards }) => {
   )
 }
 
+const AddResourceDialog = ({ isOpen, onClose, onAdd }) => {
+  const [newResource, setNewResource] = useState({
+    name: "",
+    description: "",
+    priority: "Medium",
+    category: "Transport",
+    src: "https://via.placeholder.com/300x200"
+  })
+
+  const handleAdd = () => {
+    onAdd(newResource)
+    onClose()
+    setNewResource({
+      name: "",
+      description: "",
+      priority: "Medium",
+      category: "Transport",
+      src: "https://via.placeholder.com/300x200"
+    })
+  }
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Add New Resource</DialogTitle>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Name
+            </Label>
+            <Input
+              id="name"
+              value={newResource.name}
+              onChange={(e) => setNewResource({ ...newResource, name: e.target.value })}
+              className="col-span-3"
+            />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="description" className="text-right">
+              Description
+            </Label>
+            <Input
+              id="description"
+              value={newResource.description}
+              onChange={(e) => setNewResource({ ...newResource, description: e.target.value })}
+              className="col-span-3"
+            />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="priority" className="text-right">
+              Priority
+            </Label>
+            <Select
+              onValueChange={(value) => setNewResource({ ...newResource, priority: value })}
+              defaultValue={newResource.priority}
+            >
+              <SelectTrigger className="col-span-3">
+                <SelectValue placeholder="Select priority" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Low">Low</SelectItem>
+                <SelectItem value="Medium">Medium</SelectItem>
+                <SelectItem value="High">High</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="category" className="text-right">
+              Category
+            </Label>
+            <Select
+              onValueChange={(value) => setNewResource({ ...newResource, category: value })}
+              defaultValue={newResource.category}
+            >
+              <SelectTrigger className="col-span-3">
+                <SelectValue placeholder="Select category" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Transport">Transport</SelectItem>
+                <SelectItem value="Electricity">Electricity</SelectItem>
+                <SelectItem value="Water Supply">Water Supply</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+        <Button onClick={handleAdd}>Add Resource</Button>
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+const EditResourceDialog = ({ isOpen, onClose, onEdit, resource }) => {
+  const [editedResource, setEditedResource] = useState(resource || {
+    name: "",
+    description: "",
+    priority: "Medium",
+    category: "Transport",
+    src: "https://via.placeholder.com/300x200"
+  })
+
+  useEffect(() => {
+    if (resource) {
+      setEditedResource(resource)
+    }
+  }, [resource])
+
+  const handleEdit = () => {
+    if (resource && resource.id) {
+      onEdit(editedResource)
+      onClose()
+    }
+  }
+
+  if (!resource) {
+    return null
+  }
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Edit Resource</DialogTitle>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Name
+            </Label>
+            <Input
+              id="name"
+              value={editedResource.name || ""}
+              onChange={(e) => setEditedResource({ ...editedResource, name: e.target.value })}
+              className="col-span-3"
+            />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="description" className="text-right">
+              Description
+            </Label>
+            <Input
+              id="description"
+              value={editedResource.description || ""}
+              onChange={(e) => setEditedResource({ ...editedResource, description: e.target.value })}
+              className="col-span-3"
+            />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="priority" className="text-right">
+              Priority
+            </Label>
+            <Select
+              onValueChange={(value) => setEditedResource({ ...editedResource, priority: value })}
+              defaultValue={editedResource.priority || "Medium"}
+            >
+              <SelectTrigger className="col-span-3">
+                <SelectValue placeholder="Select priority" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Low">Low</SelectItem>
+                <SelectItem value="Medium">Medium</SelectItem>
+                <SelectItem value="High">High</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="category" className="text-right">
+              Category
+            </Label>
+            <Select
+              onValueChange={(value) => setEditedResource({ ...editedResource, category: value })}
+              defaultValue={editedResource.category || "Transport"}
+            >
+              <SelectTrigger className="col-span-3">
+                <SelectValue placeholder="Select category" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Transport">Transport</SelectItem>
+                <SelectItem value="Electricity">Electricity</SelectItem>
+                <SelectItem value="Water Supply">Water Supply</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+        <Button onClick={handleEdit}>Save Changes</Button>
+      </DialogContent>
+    </Dialog>
+  )
+}
+
 export default function ResourcesPage() {
   const [open, setOpen] = useState(false)
   const [activeTab, setActiveTab] = useState("all")
-  const [resources, setResources] = useState(allResourcesData)
+  const [allResources, setAllResources] = useState(allResourcesData)
+  const [myResources, setMyResources] = useState(myResourcesData)
+  const [displayedResources, setDisplayedResources] = useState(allResourcesData)
   const [heading, setHeading] = useState("All Requested Resources")
+  const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
+  const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
+  const [editingResource, setEditingResource] = useState(null)
 
   useEffect(() => {
     if (activeTab === "all") {
       setHeading("All Requested Resources")
-      setResources(allResourcesData)
+      setDisplayedResources(allResources)
     } else if (activeTab === "my") {
       setHeading("My Requested Resources")
-      setResources(myResourcesData)
+      setDisplayedResources(myResources)
     }
-  }, [activeTab])
+  }, [activeTab, allResources, myResources])
 
-  const cards = resources.map((resource) => ({
+  const handleAddResource = (newResource) => {
+    const id = Math.max(...allResources.map(r => r.id), 0) + 1
+    const newResourceWithId = { ...newResource, id }
+    setMyResources(prevMyResources => [...prevMyResources, newResourceWithId])
+    setAllResources(prevAllResources => [...prevAllResources, newResourceWithId])
+  }
+
+  const handleEditResource = (editedResource) => {
+    if (editedResource && editedResource.id) {
+      setMyResources(prevMyResources =>
+        prevMyResources.map(r => r.id === editedResource.id ? editedResource : r)
+      )
+      setAllResources(prevAllResources =>
+        prevAllResources.map(r => r.id === editedResource.id ? editedResource : r)
+      )
+    }
+  }
+
+  const handleDeleteResource = (id) => {
+    setMyResources(prevMyResources => prevMyResources.filter(r => r.id !== id))
+    setAllResources(prevAllResources => prevAllResources.filter(r => r.id !== id))
+  }
+
+  const cards = displayedResources.map((resource) => ({
+    id: resource.id,
     title: resource.name,
     src: resource.src,
     description: resource.description,
@@ -129,10 +377,38 @@ export default function ResourcesPage() {
           </motion.div>
           <div className="flex-1 ml-4">
             <h1 className="text-4xl font-bold mb-8">{heading}</h1>
-            <FocusCards cards={cards} />
+            <FocusCards
+              cards={cards}
+              onEdit={(resource) => {
+                setEditingResource(resource)
+                setIsEditDialogOpen(true)
+              }}
+              onDelete={handleDeleteResource}
+              showActions={activeTab === "my"}
+            />
+            {activeTab === "my" && (
+              <Button
+                className="fixed bottom-8 right-8 rounded-full w-16 h-16"
+                size="icon"
+                onClick={() => setIsAddDialogOpen(true)}
+              >
+                <IconPlus className="h-6 w-6" />
+              </Button>
+            )}
           </div>
         </div>
       </div>
+      <AddResourceDialog
+        isOpen={isAddDialogOpen}
+        onClose={() => setIsAddDialogOpen(false)}
+        onAdd={handleAddResource}
+      />
+      <EditResourceDialog
+        isOpen={isEditDialogOpen}
+        onClose={() => setIsEditDialogOpen(false)}
+        onEdit={handleEditResource}
+        resource={editingResource}
+      />
     </div>
   )
 }
