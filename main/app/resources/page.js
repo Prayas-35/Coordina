@@ -52,9 +52,9 @@ export default function ResourcesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 bg-background">
         <div className="flex">
           <motion.div
             ref={sidebarRef}
@@ -91,7 +91,7 @@ export default function ResourcesPage() {
           </motion.div>
           <div className="flex-1 ml-4">
             <h1 className="text-4xl font-bold mb-8">{heading}</h1>
-            <div className="relative h-[600px] bg-gray-700 rounded-2xl overflow-hidden">
+            <div className="relative h-[600px] bg-gray-700 rounded-2xl overflow-hidden text-white">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
