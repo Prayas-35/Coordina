@@ -9,6 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import Navbar from '@/components/functions/NavBar';
 
 const allResourcesData = [
   { id: 1, name: "Cement", description: "Needed for construction purposes", priority: "High", category: "Transport", src: "https://www.jkcement.com/wp-content/uploads/2023/07/cement-powder-with-trowel-put-brick-construction-work-768x512-jpg.webp" },
@@ -340,6 +341,8 @@ export default function ResourcesPage() {
   }))
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 bg-background">
         <div className="flex">
@@ -347,16 +350,10 @@ export default function ResourcesPage() {
             initial={{ width: 0 }}
             animate={{ width: open ? "250px" : "60px" }}
             className="bg-gray-800 rounded-l-2xl overflow-hidden"
+            onHoverStart={() => setOpen(!open)}
+            onHoverEnd={() => setOpen(!open)}
           >
             <div className="p-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setOpen(!open)}
-                className="text-white p-2 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors"
-              >
-                <IconChevronLeft />
-              </motion.button>
             </div>
             <div className="mt-8 flex flex-col gap-4">
               <SidebarButton
@@ -375,7 +372,7 @@ export default function ResourcesPage() {
               />
             </div>
           </motion.div>
-          <div className="flex-1 ml-4">
+          <div className="flex-1 ml-4 rounded-tl-2xl">
             <h1 className="text-4xl font-bold mb-8">{heading}</h1>
             <FocusCards
               cards={cards}
@@ -410,6 +407,7 @@ export default function ResourcesPage() {
         resource={editingResource}
       />
     </div>
+    </>
   )
 }
 
@@ -420,7 +418,7 @@ const SidebarButton = ({ icon, text, isActive, onClick, open }) => (
     onClick={onClick}
     className={cn(
       "flex items-center gap-4 px-4 py-2 rounded-lg transition-colors",
-      isActive ? "bg-blue-600 text-white" : "text-gray-300 hover:bg-gray-700"
+      isActive ? "text-[#7b8dea] hover:bg-gray-700" : "text-gray-300 hover:bg-gray-700"
     )}
   >
     {icon}
