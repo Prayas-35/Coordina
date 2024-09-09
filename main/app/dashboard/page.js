@@ -10,9 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { IoMdTrash } from "react-icons/io";
-import Link from 'next/link';
 import NavBar from '@/components/functions/NavBar';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 export default function WardProjectDashboard() {
