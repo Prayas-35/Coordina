@@ -1,31 +1,34 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
-import { IconBrandTabler, IconUserBolt } from "@tabler/icons-react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { IconBrandTabler, IconUserBolt, IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/functions/NavBar";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
-// Sample JSON data for the two tabs
 const allResourcesData = [
-  { id: 1, name: "Resource 1", description: "Description of resource 1" },
-  { id: 2, name: "Resource 2", description: "Description of resource 2" },
-  { id: 3, name: "Resource 3", description: "Description of resource 3" },
+  { id: 1, name: "AI Development Kit", description: "Cutting-edge tools for AI integration", priority: "High", category: "Development", src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop" },
+  { id: 2, name: "UX Design Masterclass", description: "Comprehensive course on modern UX principles", priority: "Medium", category: "Design", src: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2064&auto=format&fit=crop" },
+  { id: 3, name: "Growth Hacking Strategies", description: "Innovative marketing techniques for rapid growth", priority: "Low", category: "Marketing", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" },
+  { id: 4, name: "Quantum Computing Basics", description: "Introduction to quantum computing principles", priority: "High", category: "Research", src: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop" },
+  { id: 5, name: "Sustainable Tech Practices", description: "Implementing eco-friendly tech solutions", priority: "Medium", category: "Sustainability", src: "https://images.unsplash.com/photo-1473893604213-3df9c15611c0?q=80&w=2071&auto=format&fit=crop" },
 ];
 
 const myResourcesData = [
-  { id: 1, name: "My Resource 1", description: "Description of my resource 1" },
-  { id: 2, name: "My Resource 2", description: "Description of my resource 2" },
+  { id: 1, name: "Personal AI Assistant", description: "Customized AI for personal productivity", priority: "High", category: "Personal", src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" },
+  { id: 2, name: "Team Collaboration Tool", description: "Enhanced platform for remote team synergy", priority: "Medium", category: "Work", src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop" },
+  { id: 3, name: "Blockchain Project Manager", description: "Specialized tool for managing blockchain projects", priority: "High", category: "Development", src: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2032&auto=format&fit=crop" },
 ];
 
-export default function SidebarDemo() {
+export default function ResourcesPage() {
   const [open, setOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("all"); // State to track the active tab
-  const [resources, setResources] = useState(allResourcesData); // Default to all resources
-  const [heading, setHeading] = useState("All Requested Resources"); // State for the heading
+  const [activeTab, setActiveTab] = useState("all");
+  const [resources, setResources] = useState(allResourcesData);
+  const [heading, setHeading] = useState("All Requested Resources");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sidebarRef = useRef(null);
 
   useEffect(() => {
-    // Update the content based on the selected tab
     if (activeTab === "all") {
       setHeading("All Requested Resources");
       setResources(allResourcesData);
@@ -33,99 +36,145 @@ export default function SidebarDemo() {
       setHeading("My Requested Resources");
       setResources(myResourcesData);
     }
+    setCurrentIndex(0);
   }, [activeTab]);
 
-  return (
-    <>
-      <Navbar />
-      <div
-        className={cn(
-          "h-full rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-          "h-[100vh]"
-        )}
-      >
-        <Sidebar open={open} setOpen={setOpen}>
-          <SidebarBody className="justify-between gap-10">
-            <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-              <div className="mt-8 flex flex-col gap-2">
-                {/* Tab for All Requested Resources */}
-                <button
-                  onClick={() => setActiveTab("all")}
-                  className={cn(
-                    "flex items-center gap-2 transition-all duration-200",
-                    activeTab === "all"
-                      ? "text-blue-500 scale-105"
-                      : "text-neutral-700 dark:text-neutral-200",
-                    open ? "ms-4" : ""
-                  )}
-                >
-                  <IconBrandTabler className="h-5 w-5 flex-shrink-0" />
-                  <motion.span
-                    animate={{
-                      display: open ? "inline-block" : "none",
-                      opacity: open ? 1 : 0,
-                    }}
-                    className="text-sm transition duration-150"
-                  >
-                    All Requested Resources
-                  </motion.span>
-                </button>
+  useOutsideClick(sidebarRef, () => {
+    if (open) setOpen(false);
+  });
 
-                {/* Tab for My Requested Resources */}
-                <button
-                  onClick={() => setActiveTab("my")}
-                  className={cn(
-                    "flex items-center gap-2 transition-all duration-200",
-                    activeTab === "my"
-                      ? "text-blue-500 scale-105"
-                      : "text-neutral-700 dark:text-neutral-200",
-                    open ? "ms-4" : ""
-                  )}
+  const nextResource = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % resources.length);
+  };
+
+  const prevResource = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + resources.length) % resources.length);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <Navbar />
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex">
+          <motion.div
+            ref={sidebarRef}
+            initial={{ width: 0 }}
+            animate={{ width: open ? "250px" : "60px" }}
+            className="bg-gray-800 rounded-l-2xl overflow-hidden"
+          >
+            <div className="p-4">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setOpen(!open)}
+                className="text-white p-2 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors"
+              >
+                {open ? <IconChevronLeft /> : <IconChevronRight />}
+              </motion.button>
+            </div>
+            <div className="mt-8 flex flex-col gap-4">
+              <SidebarButton
+                icon={<IconBrandTabler />}
+                text="All Resources"
+                isActive={activeTab === "all"}
+                onClick={() => setActiveTab("all")}
+                open={open}
+              />
+              <SidebarButton
+                icon={<IconUserBolt />}
+                text="My Resources"
+                isActive={activeTab === "my"}
+                onClick={() => setActiveTab("my")}
+                open={open}
+              />
+            </div>
+          </motion.div>
+          <div className="flex-1 ml-4">
+            <h1 className="text-4xl font-bold mb-8">{heading}</h1>
+            <div className="relative h-[600px] bg-gray-700 rounded-2xl overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, x: 300 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -300 }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                  className="absolute inset-0"
                 >
-                  <IconUserBolt className="h-5 w-5 flex-shrink-0" />
-                  <motion.span
-                    animate={{
-                      display: open ? "inline-block" : "none",
-                      opacity: open ? 1 : 0,
-                    }}
-                    className="text-sm transition duration-150"
-                  >
-                    My Requested Resources
-                  </motion.span>
-                </button>
+                  <ResourceCard resource={resources[currentIndex]} />
+                </motion.div>
+              </AnimatePresence>
+              <div className="absolute bottom-4 right-4 flex gap-2">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={prevResource}
+                  className="p-2 bg-white text-gray-800 rounded-full"
+                >
+                  <IconChevronLeft />
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={nextResource}
+                  className="p-2 bg-white text-gray-800 rounded-full"
+                >
+                  <IconChevronRight />
+                </motion.button>
               </div>
             </div>
-          </SidebarBody>
-        </Sidebar>
-        <Dashboard resources={resources} heading={heading} />
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
-// Dashboard component to display the resources based on the active tab
-const Dashboard = ({ resources, heading }) => {
+const SidebarButton = ({ icon, text, isActive, onClick, open }) => (
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    onClick={onClick}
+    className={cn(
+      "flex items-center gap-4 px-4 py-2 rounded-lg transition-colors",
+      isActive ? "bg-blue-600 text-white" : "text-gray-300 hover:bg-gray-700"
+    )}
+  >
+    {icon}
+    <AnimatePresence>
+      {open && (
+        <motion.span
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: "auto" }}
+          exit={{ opacity: 0, width: 0 }}
+          className="text-sm whitespace-nowrap overflow-hidden"
+        >
+          {text}
+        </motion.span>
+      )}
+    </AnimatePresence>
+  </motion.button>
+);
+
+const ResourceCard = ({ resource }) => {
   return (
-    <div className="flex flex-1 p-4 bg-background rounded-tl-3xl">
-      <div className="w-full">
-        <h1 className="text-2xl font-bold text-black dark:text-white">
-          {resources.length > 0 ? heading : "No resources found"}
-        </h1>
-        <ul className="mt-4">
-          {resources.map((resource) => (
-            <li
-              key={resource.id}
-              className="border-b border-gray-300 dark:border-gray-600 py-2"
-            >
-              <h2 className="text-xl text-black dark:text-white">
-                {resource.name}
-              </h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                {resource.description}
-              </p>
-            </li>
-          ))}
-        </ul>
+    <div className="h-full w-full p-8 flex flex-col justify-end bg-cover bg-center" style={{ backgroundImage: `url(${resource.src})` }}>
+      <div className="bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-2">{resource.name}</h2>
+        <p className="text-lg mb-4">{resource.description}</p>
+        <div className="flex justify-between items-center">
+          <span className="text-sm font-medium bg-gray-800 px-3 py-1 rounded-full">
+            {resource.category}
+          </span>
+          <span className={cn(
+            "text-sm font-medium px-3 py-1 rounded-full",
+            resource.priority === "High" ? "bg-red-500" :
+            resource.priority === "Medium" ? "bg-yellow-500" :
+            "bg-green-500"
+          )}>
+            {resource.priority} Priority
+          </span>
+        </div>
       </div>
     </div>
   );
