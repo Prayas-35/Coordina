@@ -193,7 +193,7 @@ const EditResourceDialog = ({ isOpen, onClose, onEdit, resource }) => {
     name: "",
     description: "",
     priority: "Medium",
-    category: "Transport",
+    category: "Electricity",
     src: "https://via.placeholder.com/300x200"
   })
 
