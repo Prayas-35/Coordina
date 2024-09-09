@@ -1,6 +1,6 @@
 "use client";
 
-import SignupFormDemo from '@/components/functions/signup-form-demo';
+import SignupFormDemo from '@/components/functions/AuthForm';
 import React from 'react'
 
 function Landing() {

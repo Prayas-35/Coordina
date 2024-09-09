@@ -8,7 +8,7 @@ import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
 import { useTheme } from "next-themes";
 import Footer from "@/components/functions/Footer";
-import Auth from "@/components/functions/signup-form-demo";
+import Auth from "@/components/functions/AuthForm";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
