@@ -10,9 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { IoMdTrash } from "react-icons/io";
-import Link from 'next/link';
 import NavBar from '@/components/functions/NavBar';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 export default function WardProjectDashboard() {
@@ -31,11 +29,30 @@ export default function WardProjectDashboard() {
     { id: '11', name: 'Street Sweeping', wardNumber: '2', date: new Date(2024, 8, 12, 11, 0), time: '01:00', duration: 1, location: 'Birch Street', supervision: 'Mr. K', resources: 'Sweepers', status: 'working' },
     { id: '12', name: 'Park Maintenance', wardNumber: '10', date: new Date(2024, 8, 13, 12, 0), time: '12:00', duration: 1, location: 'Rose Park', supervision: 'Mr. L', resources: 'Tools', status: 'finished' },
     { id: '13', name: 'Street Painting', wardNumber: '13', date: new Date(2024, 8, 18, 0, 0), time: '13:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
-    { id: '13', name: 'Road Cleaning', wardNumber: '59', date: new Date(2024, 8, 18, 0, 0), time: '00:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
-    { id: '13', name: 'Pipeline Installation', wardNumber: '9', date: new Date(2024, 8, 18, 0, 0), time: '02:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'working' },
-    { id: '13', name: 'Street Light Installation', wardNumber: '5', date: new Date(2024, 8, 21, 0, 0), time: '01:00', duration: 2, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'not-started' },
-    { id: '13', name: 'Street Signage', wardNumber: '15', date: new Date(2024, 8, 16, 0, 0), time: '00:00', duration: 1, location: 'Sunset Street', supervision: 'Mr. M', resources: 'Paint', status: 'finished' },
-  ]);
+    { id: '14', name: 'Road Cleaning', wardNumber: '59', date: new Date(2024, 8, 19, 0, 0), time: '08:00', duration: 1, location: 'Hill Street', supervision: 'Mr. N', resources: 'Water Trucks', status: 'working' },
+    { id: '15', name: 'Pipeline Installation', wardNumber: '9', date: new Date(2024, 8, 20, 1, 0), time: '02:00', duration: 1, location: 'Cedar Road', supervision: 'Mr. O', resources: 'Pipes', status: 'not-started' },
+    { id: '16', name: 'Street Light Installation', wardNumber: '5', date: new Date(2024, 8, 21, 4, 0), time: '01:00', duration: 2, location: 'Maple Avenue', supervision: 'Mr. P', resources: 'Bulbs', status: 'working' },
+    { id: '17', name: 'Street Signage', wardNumber: '15', date: new Date(2024, 8, 22, 0, 0), time: '03:00', duration: 1, location: 'Park Avenue', supervision: 'Mr. Q', resources: 'Signs', status: 'finished' },
+    { id: '18', name: 'School Zone Painting', wardNumber: '18', date: new Date(2024, 8, 23, 0, 0), time: '09:00', duration: 2, location: 'School Street', supervision: 'Ms. R', resources: 'Paint', status: 'not-started' },
+    { id: '19', name: 'Tree Trimming', wardNumber: '22', date: new Date(2024, 8, 24, 7, 0), time: '10:00', duration: 1, location: 'Evergreen Lane', supervision: 'Mr. S', resources: 'Trimmers', status: 'working' },
+    { id: '20', name: 'Playground Maintenance', wardNumber: '24', date: new Date(2024, 8, 25, 6, 0), time: '06:00', duration: 1, location: 'Elm Park', supervision: 'Ms. T', resources: 'Volunteers', status: 'finished' },
+    { id: '21', name: 'Road Resurfacing', wardNumber: '30', date: new Date(2024, 8, 26, 0, 0), time: '07:00', duration: 3, location: 'Broadway', supervision: 'Mr. U', resources: 'Asphalt', status: 'working' },
+    { id: '22', name: 'Drainage Repair', wardNumber: '17', date: new Date(2024, 8, 27, 4, 0), time: '08:00', duration: 2, location: 'Water Street', supervision: 'Mr. V', resources: 'Pipes', status: 'not-started' },
+    { id: '23', name: 'Street Cleaning', wardNumber: '40', date: new Date(2024, 8, 28, 2, 0), time: '06:00', duration: 1, location: 'Harrison Blvd', supervision: 'Mr. W', resources: 'Brooms', status: 'finished' },
+    { id: '24', name: 'Tree Planting Initiative', wardNumber: '36', date: new Date(2024, 8, 29, 9, 0), time: '09:00', duration: 2, location: 'Sunshine Park', supervision: 'Ms. X', resources: 'Saplings', status: 'not-started' },
+    { id: '25', name: 'Community Garden Setup', wardNumber: '29', date: new Date(2024, 8, 30, 8, 0), time: '10:00', duration: 3, location: 'Flower Street', supervision: 'Ms. Y', resources: 'Soil and Seeds', status: 'working' },
+    { id: '26', name: 'Public Bathroom Renovation', wardNumber: '42', date: new Date(2024, 9, 1, 3, 0), time: '11:00', duration: 4, location: 'Main Plaza', supervision: 'Mr. Z', resources: 'Tiles and Cement', status: 'finished' },
+    { id: '27', name: 'Street Furniture Installation', wardNumber: '45', date: new Date(2024, 9, 2, 6, 0), time: '00:00', duration: 1, location: 'Willow Lane', supervision: 'Ms. AA', resources: 'Benches', status: 'not-started' },
+    { id: '28', name: 'Public Signage Upgrade', wardNumber: '51', date: new Date(2024, 9, 3, 5, 0), time: '03:00', duration: 1, location: 'Market Street', supervision: 'Mr. BB', resources: 'Signs', status: 'working' },
+    { id: '29', name: 'Community Park Landscaping', wardNumber: '54', date: new Date(2024, 9, 4, 2, 0), time: '10:00', duration: 2, location: 'Rose Garden', supervision: 'Ms. CC', resources: 'Grass and Soil', status: 'finished' },
+    { id: '30', name: 'Civic Center Painting', wardNumber: '33', date: new Date(2024, 9, 5, 9, 0), time: '11:00', duration: 1, location: 'Downtown Civic Center', supervision: 'Mr. DD', resources: 'Paint', status: 'not-started' },
+    { id: '31', name: 'Sports Facility Cleanup', wardNumber: '55', date: new Date(2024, 9, 6, 8, 0), time: '09:00', duration: 2, location: 'Athletic Field', supervision: 'Ms. EE', resources: 'Volunteers', status: 'working' },
+    { id: '32', name: 'School Playground Fixes', wardNumber: '48', date: new Date(2024, 9, 7, 0, 0), time: '02:00', duration: 1, location: 'River Elementary', supervision: 'Mr. FF', resources: 'Tools', status: 'finished' },
+    { id: '33', name: 'Bus Stop Maintenance', wardNumber: '31', date: new Date(2024, 9, 8, 7, 0), time: '10:00', duration: 1, location: 'Hilltop Bus Stop', supervision: 'Ms. GG', resources: 'Paint', status: 'working' },
+    { id: '34', name: 'Graffiti Removal', wardNumber: '26', date: new Date(2024, 9, 9, 5, 0), time: '04:00', duration: 1, location: 'Downtown Alley', supervision: 'Mr. HH', resources: 'Solvent', status: 'not-started' }
+    // Repeat similarly with different ward numbers, dates, locations, etc.
+]);
+
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
