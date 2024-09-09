@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { GrResources } from "react-icons/gr";
 import { FaCompressArrowsAlt } from "react-icons/fa";
 import { useTheme } from "next-themes"
+import { GoDiscussionClosed } from "react-icons/go";
 
 export default function Navbar() {
     //   const router = useRouter()
@@ -75,6 +76,7 @@ export default function Navbar() {
                                 <NavLink href="/dashboard" icon={<HomeIcon className="h-5 w-5" />} text="Dashboard" />
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
+                                <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
                             </div>
                         </nav>
                         <ModeToggle />
