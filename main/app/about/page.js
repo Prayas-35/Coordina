@@ -14,7 +14,7 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
         <nav className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <Link href="/" passHref>
-            <img src={isDarkMode ? "Logo6.png" : "Logo6 dark.png"} className="h-5 w-5 sm:h-10 sm:w-10 mr-2" />
+              <img src={isDarkMode ? "Logo6.png" : "Logo6 dark.png"} className="h-5 w-5 sm:h-10 sm:w-10 mr-2" />
             </Link>
             <Link href="/" className={`text-lg sm:text-xl font-bold relative ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
               CitySync
@@ -72,7 +72,7 @@ export default function HomePage() {
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">Transforming India's Cities For A Smarter Tomorrow!</p>
             <div className="flex justify-center space-x-4">
-              <Button size="lg" className="font-semibold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white">Get Started</Button>
+              <Button size="lg" className="font-semibold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white text-lg py-4 px-8">Get Started</Button>
               {/* <Button size="lg" variant="outline" className="font-semibold text-white border-white hover:bg-white hover:text-gray-900">Go to Dashboard</Button> */}
             </div>
           </div>
