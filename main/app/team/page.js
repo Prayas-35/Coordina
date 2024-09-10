@@ -16,6 +16,9 @@ function Landing() {
   return (
     <>
       <Header />
+
+      {/* NEEDS TO BE FIXED!!! */}
+
       <div className="bg-background mt-[72.8px] flex flex-col items-center">
         <div className="text-4xl font-bold mb-1 pt-4 relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
           <span className="">Our Team</span>

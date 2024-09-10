@@ -9,7 +9,7 @@ import Link from 'next/link'
 // Define the Header component
 const Header = ({ isDarkMode, toggleDarkMode }) => {
   return (
-    <header className={`fixed w-full z-50 ${isDarkMode ? 'bg-gray-900/80' : 'bg-white/80'} backdrop-blur-md shadow-md transition-colors duration-300`}>
+    <header className={`fixed w-full z-50 ${isDarkMode ? 'bg-black/30' : 'bg-white/60'} backdrop-blur-md shadow-md transition-colors duration-300`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
@@ -24,11 +24,6 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
             <Link href="/" passHref>
               <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
                 Home
-              </Button>
-            </Link>
-            <Link href="/team" passHref>
-              <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-                Our Team
               </Button>
             </Link>
             <Link href="/contact" passHref>
