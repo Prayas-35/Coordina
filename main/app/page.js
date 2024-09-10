@@ -41,6 +41,11 @@ function Landing() {
 
             {/* Popover for Get Started Button */}
             <Popover>
+              <Link href="/about">
+                <Button variant="ghost"  className='text-black dark:text-white font-semibold text-[16px]'>
+                  About Us
+                </Button>
+              </Link>
               <PopoverTrigger asChild>
                 <Button className="font-semibold">Get Started</Button>
               </PopoverTrigger>
@@ -79,7 +84,7 @@ function Landing() {
           <br /> For a smarter tomorrow.
         </motion.h1>
       </HeroHighlight>
-      
+
       <Dialog open={isSignupOpen} onOpenChange={setIsSignupOpen}>
         <DialogContent className="w-96">
           <Auth /> {/* Render the signup form */}
