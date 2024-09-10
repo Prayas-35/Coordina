@@ -1,47 +1,10 @@
-"use client";
+'use client'
 
 import { useState, useEffect } from 'react'
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MoonIcon, SunIcon, ChevronDownIcon } from "lucide-react"
 import Link from 'next/link'
-
-// const Header = ({ isDarkMode, toggleDarkMode }) => {
-//   return (
-//     <header className={`fixed w-full z-50 ${isDarkMode ? 'bg-gray-900/80' : 'bg-white/80'} backdrop-blur-md shadow-sm transition-colors duration-300`}>
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-//         <nav className="flex justify-between items-center">
-//           <div className="flex items-center space-x-4">
-//             <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-//             <Link href="/" className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-//               CitySync
-//             </Link>
-//           </div>
-//           <div className="flex items-center space-x-4">
-//             <Link href="/" passHref>
-//               <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-//                 Home
-//               </Button>
-//             </Link>
-//             <Link href="/about" passHref>
-//               <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-//                 About
-//               </Button>
-//             </Link>
-//             <Link href="/contact" passHref>
-//               <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-//                 Contact
-//               </Button>
-//             </Link>
-//             <Button variant="ghost" onClick={toggleDarkMode} className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-//               {isDarkMode ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
-//             </Button>
-//           </div>
-//         </nav>
-//       </div>
-//     </header>
-//   )
-// }
 
 const Header = ({ isDarkMode, toggleDarkMode }) => {
     return (
@@ -78,30 +41,38 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
 }
 
 const FAQItem = ({ question, answer, isDarkMode }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isHovered, setIsHovered] = useState(false)
 
     return (
-        <div className="mb-4">
-            <button
-                className={`flex justify-between items-center w-full text-left p-4 rounded-lg ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'
-                    } hover:bg-opacity-80 transition-colors duration-200`}
-                onClick={() => setIsOpen(!isOpen)}
+        <div
+            className="mb-4"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <div
+                className={`w-full text-left p-4 rounded-lg transition-all duration-200 ${isDarkMode
+                    ? 'bg-gray-800 text-white hover:bg-opacity-80'
+                    : 'bg-white text-gray-900 hover:bg-gray-50 shadow-md'
+                    }`}
             >
-                <span className="font-semibold">{question}</span>
-                <ChevronDownIcon
-                    className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
-                />
-            </button>
-            {isOpen && (
-                <div className={`mt-2 p-4 rounded-lg ${isDarkMode ? 'bg-gray-700 text-gray-200' : 'bg-gray-100 text-gray-700'}`}>
-                    {answer}
+                <div className="flex justify-between items-center">
+                    <span className="font-semibold">{question}</span>
+                    <ChevronDownIcon
+                        className={`w-5 h-5 transition-transform duration-200 ${isHovered ? 'transform rotate-180' : ''}`}
+                    />
                 </div>
-            )}
+                {isHovered && (
+                    <div className={`mt-2 p-2 rounded-lg ${isDarkMode ? 'bg-gray-700 text-gray-200' : 'bg-gray-100 text-gray-700'
+                        }`}>
+                        {answer}
+                    </div>
+                )}
+            </div>
         </div>
     )
 }
 
-export default function FAQPage() {
+export default function Component() {
     const [isDarkMode, setIsDarkMode] = useState(false)
 
     useEffect(() => {
