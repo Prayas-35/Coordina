@@ -5,61 +5,19 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MoonIcon, SunIcon } from "lucide-react"
 import Link from 'next/link'
-
-// Define the Header component
-const Header = ({ isDarkMode, toggleDarkMode }) => {
-  return (
-    <header className={`fixed w-full z-50 ${isDarkMode ? 'bg-black/30' : 'bg-white/60'} backdrop-blur-md shadow-md transition-colors duration-300`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav className="flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <Link href="/" passHref>
-              <img src={isDarkMode ? "Logo6.png" : "Logo6 dark.png"} className="h-5 w-5 sm:h-10 sm:w-10 mr-2" />
-            </Link>
-            <Link href="/" className={`text-lg sm:text-xl font-bold relative ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-              CitySync
-            </Link>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/" passHref>
-              <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-                Home
-              </Button>
-            </Link>
-            <Link href="/contact" passHref>
-              <Button variant="ghost" className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-                Contact
-              </Button>
-            </Link>
-            <Button variant="ghost" onClick={toggleDarkMode} className={isDarkMode ? 'text-white' : 'text-gray-700'}>
-              {isDarkMode ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
-            </Button>
-          </div>
-        </nav>
-      </div>
-    </header>
-  )
-}
+import Header from '@/components/functions/Header';
+import AuthForm from '@/components/functions/AuthForm';
 
 export default function HomePage() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-  useEffect(() => {
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    setIsDarkMode(isDark)
-  }, [])
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-  }
+  const { resolvedTheme } = useTheme();
 
   return (
     <>
-      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-[hsl(0,0%,100%)] text-gray-900'} transition-colors duration-300`}>
+      <Header />
+      {/* <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-[hsl(0,0%,100%)] text-gray-900'} transition-colors duration-300`}> */}
         {/* Welcome Section */}
         <section className="relative h-screen flex flex-col items-center justify-center text-center px-4">
-          <div className="absolute inset-0 bg-cover bg-[url('../public/city.jpg')] bg-center"></div>
+          <div className="absolute inset-0 bg-cover dark:bg-[url('../public/city.jpg')] bg-center"></div>
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
@@ -74,9 +32,9 @@ export default function HomePage() {
         </section>
 
         {/* What we offer Section */}
-        <section className={`py-18 px-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+        <section className="py-18 px-4 dark:bg-gray-800 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className={`text-4xl font-bold text-center mb-12 pt-10 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>What we offer?</h2>
+            <h2 className='text-4xl font-bold text-center mb-12 pt-10 dar:text-white text-gray-900'>What we offer?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-12">
               {[
                 {
@@ -140,9 +98,9 @@ export default function HomePage() {
         </section>
 
         {/* User Reviews Section */}
-        <section className={`py-18 px-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+        <section className="py-18 px-4 dark:bg-gray-800 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className={`text-4xl font-bold text-center mb-12 pt-10 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>What our users say?</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 pt-10 dark:text-white text-gray-900">What our users say?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
               {[
                 { name: "John Doe", role: "City Planner", review: "CitySync has revolutionized our urban planning process! The integrated approach to project management has significantly reduced conflicts and improved our overall efficiency." },
@@ -154,7 +112,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      </div>
     </>
   )
 }
@@ -191,4 +148,3 @@ function ReviewCard({ name, role, review, isDarkMode }) {
     </Card>
   )
 }
-

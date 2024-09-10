@@ -343,13 +343,13 @@ export default function ResourcesPage() {
   return (
     <>
     <Navbar />
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8 bg-background">
-        <div className="flex">
+    <div className="min-h-screen">
+      <div className="container dark:bg-neutral-800 bg-neutral-100">
+        <div className="flex min-h-screen" style={{ width: 'calc(100vw - 15px)' }}>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: open ? "250px" : "60px" }}
-            className="bg-gray-800 rounded-l-2xl overflow-hidden"
+            className="dark:bg-neutral-800 bg-neutral-100 rounded-tl-md overflow-hidden"
             onHoverStart={() => setOpen(!open)}
             onHoverEnd={() => setOpen(!open)}
           >
@@ -372,7 +372,7 @@ export default function ResourcesPage() {
               />
             </div>
           </motion.div>
-          <div className="flex-1 ml-4 rounded-tl-2xl">
+          <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1">
             <h1 className="text-4xl font-bold mb-8">{heading}</h1>
             <FocusCards
               cards={cards}
@@ -418,7 +418,7 @@ const SidebarButton = ({ icon, text, isActive, onClick, open }) => (
     onClick={onClick}
     className={cn(
       "flex items-center gap-4 px-4 py-2 rounded-lg transition-colors",
-      isActive ? "text-[#7b8dea] hover:bg-gray-700" : "text-gray-300 hover:bg-gray-700"
+      isActive ? "text-[#7b8dea] dark:hover:bg-gray-700 hover:bg-gray-200" : "dark:text-gray-300 text-gray-700 dark:hover:bg-gray-700 hover:bg-gray-200"
     )}
   >
     {icon}
