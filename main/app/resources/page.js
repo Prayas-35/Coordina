@@ -58,8 +58,8 @@ const FocusCards = ({ cards, onEdit, onDelete, showActions }) => {
                 className={cn(
                   "text-xs font-medium px-2 py-1 rounded-full",
                   card.priority === "High" ? "bg-red-500" :
-                  card.priority === "Medium" ? "bg-yellow-500" :
-                  "bg-green-500"
+                    card.priority === "Medium" ? "bg-yellow-500" :
+                      "bg-green-500"
                 )}
               >
                 {card.priority} Priority
@@ -342,71 +342,71 @@ export default function ResourcesPage() {
 
   return (
     <>
-    <Navbar />
-    <div className="min-h-screen">
-      <div className="container dark:bg-neutral-800 bg-neutral-100">
-        <div className="flex min-h-screen" style={{ width: 'calc(100vw - 15px)' }}>
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: open ? "250px" : "60px" }}
-            className="dark:bg-neutral-800 bg-neutral-100 rounded-tl-md overflow-hidden"
-            onHoverStart={() => setOpen(!open)}
-            onHoverEnd={() => setOpen(!open)}
-          >
-            <div className="p-4">
-            </div>
-            <div className="mt-8 flex flex-col gap-4">
-              <SidebarButton
-                icon={<IconBrandTabler />}
-                text="All Resources"
-                isActive={activeTab === "all"}
-                onClick={() => setActiveTab("all")}
-                open={open}
+      <Navbar />
+      <div className="min-h-screen">
+        <div className="container dark:bg-neutral-800 bg-neutral-100">
+          <div className="flex min-h-screen" style={{ width: 'calc(100vw - 15px)' }}>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: open ? "250px" : "60px" }}
+              className="dark:bg-neutral-800 bg-neutral-100 rounded-tl-md overflow-hidden"
+              onMouseEnter={() => setOpen(true)}
+              onMouseLeave={() => setOpen(false)}
+            >
+              <div className="p-4">
+              </div>
+              <div className="mt-8 flex flex-col gap-4">
+                <SidebarButton
+                  icon={<IconBrandTabler />}
+                  text="All Resources"
+                  isActive={activeTab === "all"}
+                  onClick={() => setActiveTab("all")}
+                  open={open}
+                />
+                <SidebarButton
+                  icon={<IconUserBolt />}
+                  text="My Resources"
+                  isActive={activeTab === "my"}
+                  onClick={() => setActiveTab("my")}
+                  open={open}
+                />
+              </div>
+            </motion.div>
+            <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1">
+              <h1 className="text-4xl font-bold mb-8">{heading}</h1>
+              <FocusCards
+                cards={cards}
+                onEdit={(resource) => {
+                  setEditingResource(resource)
+                  setIsEditDialogOpen(true)
+                }}
+                onDelete={handleDeleteResource}
+                showActions={activeTab === "my"}
               />
-              <SidebarButton
-                icon={<IconUserBolt />}
-                text="My Resources"
-                isActive={activeTab === "my"}
-                onClick={() => setActiveTab("my")}
-                open={open}
-              />
+              {activeTab === "my" && (
+                <Button
+                  className="fixed bottom-8 right-8 rounded-full w-16 h-16"
+                  size="icon"
+                  onClick={() => setIsAddDialogOpen(true)}
+                >
+                  <IconPlus className="h-6 w-6" />
+                </Button>
+              )}
             </div>
-          </motion.div>
-          <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1">
-            <h1 className="text-4xl font-bold mb-8">{heading}</h1>
-            <FocusCards
-              cards={cards}
-              onEdit={(resource) => {
-                setEditingResource(resource)
-                setIsEditDialogOpen(true)
-              }}
-              onDelete={handleDeleteResource}
-              showActions={activeTab === "my"}
-            />
-            {activeTab === "my" && (
-              <Button
-                className="fixed bottom-8 right-8 rounded-full w-16 h-16"
-                size="icon"
-                onClick={() => setIsAddDialogOpen(true)}
-              >
-                <IconPlus className="h-6 w-6" />
-              </Button>
-            )}
           </div>
         </div>
+        <AddResourceDialog
+          isOpen={isAddDialogOpen}
+          onClose={() => setIsAddDialogOpen(false)}
+          onAdd={handleAddResource}
+        />
+        <EditResourceDialog
+          isOpen={isEditDialogOpen}
+          onClose={() => setIsEditDialogOpen(false)}
+          onEdit={handleEditResource}
+          resource={editingResource}
+        />
       </div>
-      <AddResourceDialog
-        isOpen={isAddDialogOpen}
-        onClose={() => setIsAddDialogOpen(false)}
-        onAdd={handleAddResource}
-      />
-      <EditResourceDialog
-        isOpen={isEditDialogOpen}
-        onClose={() => setIsEditDialogOpen(false)}
-        onEdit={handleEditResource}
-        resource={editingResource}
-      />
-    </div>
     </>
   )
 }
