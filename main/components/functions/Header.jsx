@@ -1,15 +1,22 @@
 "use client";
 
-import React from "react"; 
+import React, {useState} from "react"; 
 import Link from "next/link";
 import { ModeToggle } from "@/components/theme/ThemeSwitcher";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import AuthForm from "./AuthForm";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export default function Header() {
     const { resolvedTheme } = useTheme();
+    const [isSignupOpen, setIsSignupOpen] = useState(false);
+
+    const toggleSignup = () => {
+      setIsSignupOpen(!isSignupOpen);
+    };
+
     return (
         <header className="fixed text-primary-foreground py-4 lg:px-6 shadow-md backdrop-blur-md bg-opacity-30 top-0 left-0 right-0 z-50">
         <div className="container mx-auto flex items-center justify-between">
@@ -36,7 +43,7 @@ export default function Header() {
                   <li>
                     <button
                       className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
-                      onClick={AuthForm}
+                      onClick={toggleSignup}
                     >
                       Department
                     </button>
@@ -45,7 +52,7 @@ export default function Header() {
                     <button
                       className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
                     >
-                      3rd Party Vendors
+                      Agencies
                     </button>
                   </li>
                 </ul>
@@ -53,6 +60,11 @@ export default function Header() {
             </Popover>
           </div>
         </div>
+        <Dialog open={isSignupOpen} onOpenChange={setIsSignupOpen}>
+        <DialogContent className="w-11/12 max-w-md sm:w-96">
+          <AuthForm />
+        </DialogContent>
+      </Dialog>
       </header>
     )
 }
