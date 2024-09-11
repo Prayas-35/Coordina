@@ -1,12 +1,14 @@
+"use client";
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 
-export default function Contact() {
+export function Contact() {
   return (
-    <div className="container mx-auto px-4 py-8 md:py-16">
+    <div className="px-4 py-8 md:py-16 bg-white dark:bg-gray-800">
       <Card className="max-w-lg mx-auto">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-transparent bg-clip-text">

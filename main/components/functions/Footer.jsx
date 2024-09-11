@@ -17,14 +17,14 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link href="/team" className="text-sm hover:underline">Our Team</Link></li>
-              <li><Link href="/contact" className="text-sm hover:underline">Contact Us</Link></li>
+              <li><Link href="/about#contact" className="text-sm hover:underline">Contact Us</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-sm hover:underline">About Us</Link></li>
-              <li><Link href="/FAQs" className="text-sm hover:underline">FAQs</Link></li>
+              <li><Link href="/about#faq" className="text-sm hover:underline">FAQs</Link></li>
             </ul>
           </div>
           <div>

@@ -2,9 +2,9 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useTheme } from 'next-themes';
 import Header from '@/components/functions/Header';
 import { Faq } from "@/components/functions/Faq";
+import { Contact } from "@/components/functions/Contact";
 
 export default function HomePage() {
 
@@ -124,8 +124,11 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="faq">
           <Faq />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </div>
     </>
