@@ -2,16 +2,10 @@
 
 import React, { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { CalendarIcon, MessageCircleIcon, AlertTriangleIcon, LinkIcon } from 'lucide-react'
+import { MessageCircleIcon, LinkIcon } from 'lucide-react'
 import { format } from 'date-fns'
 import Navbar from '@/components/functions/NavBar'
 
@@ -40,9 +34,6 @@ export default function ConflictsPage() {
   const [conflicts, setConflicts] = useState(mockConflicts)
   const [projects, setProjects] = useState([])
   const [discussions, setDiscussions] = useState([])
-  const [isNewConflictDialogOpen, setIsNewConflictDialogOpen] = useState(false)
-  const [newConflict, setNewConflict] = useState({ title: "", description: "", status: "Active", relatedProjects: [], discussions: [] })
-
   // Fetch projects and discussions data
   useEffect(() => {
     // In a real application, these would be API calls
@@ -58,13 +49,6 @@ export default function ConflictsPage() {
     ])
   }, [])
 
-  const handleCreateConflict = (event) => {
-    event.preventDefault()
-    const newConflictWithId = { ...newConflict, id: conflicts.length + 1 }
-    setConflicts([...conflicts, newConflictWithId])
-    setIsNewConflictDialogOpen(false)
-    setNewConflict({ title: "", description: "", status: "Active", relatedProjects: [], discussions: [] })
-  }
 
   return (
     <div className="min-h-screen bg-background">
