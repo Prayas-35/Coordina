@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { MessageCircleIcon, LinkIcon } from 'lucide-react'
 import { format } from 'date-fns'
-import Navbar from '@/components/functions/NavBar'
+import NavBar from '@/components/functions/NavBar';
 
 // Mock data for conflicts
 const mockConflicts = [
@@ -34,7 +34,7 @@ export default function ConflictsPage() {
   const [conflicts, setConflicts] = useState(mockConflicts)
   const [projects, setProjects] = useState([])
   const [discussions, setDiscussions] = useState([])
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // Fetch projects and discussions data
   useEffect(() => {
     // In a real application, these would be API calls
@@ -50,13 +50,19 @@ export default function ConflictsPage() {
     ])
   }, [])
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "Active":
+        return "bg-red-500 hover:bg-red-600"
+      case "Pending Resolution":
+        return "bg-yellow-500 hover:bg-yellow-600"
+      default:
+        return "bg-green-500 hover:bg-green-600"
+    }
+  }
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
       
       <main className="container mx-auto p-4">
         <div className="flex justify-between items-center mb-6">
@@ -65,13 +71,14 @@ export default function ConflictsPage() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {conflicts.map((conflict) => (
-            <Card key={conflict.id}>
+            <Card 
+              key={conflict.id} 
+              className="transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:border-purple-500 dark:hover:bg-gray-800 hover:bg-gray-100"
+            >
               <CardHeader>
-                <CardTitle className="flex justify-between items-center ">
+                <CardTitle className="flex justify-between items-center">
                   <span>{conflict.title}</span>
-                  <Badge variant={conflict.status === "Active" ? "destructive" : 
-                                  conflict.status === "Pending Resolution" ? "warning" : 
-                                  "success"}>
+                  <Badge className={`${getStatusColor(conflict.status)} text-white`}>
                     {conflict.status}
                   </Badge>
                 </CardTitle>
