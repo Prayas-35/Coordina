@@ -61,7 +61,7 @@ export default function Navbar() {
                         </Button>
                         <Link href="/">
                             <span className="flex items-center gap-2 text-primary-foreground">
-                                <img src={`${resolvedTheme === 'dark' ? "Logo6.png" : "Logo6 dark.png"}`}
+                                <img src={`${resolvedTheme === 'light' ? "Logo6 dark.png" : "Logo6.png"}`}
                                     className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
                                 />
                                 <span className="text-lg sm:text-xl text-black dark:text-white font-bold relative">
@@ -106,6 +106,7 @@ export default function Navbar() {
                                 <NavLink href="/dashboard" icon={<HomeIcon className="h-4 w-4" />} text="Dashboard" />
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
+                                <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
                             </div>
                         </motion.nav>
                     </>

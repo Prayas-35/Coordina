@@ -37,7 +37,7 @@ const FocusCards = ({ cards, onEdit, onDelete, showActions }) => {
             "relative h-60 bg-gray-800 rounded-xl overflow-hidden cursor-pointer",
             focusedIndex === i ? "md:col-span-3" : ""
           )}
-          onClick={() => setFocusedIndex(focusedIndex === i ? null : i)}
+          // onClick={() => setFocusedIndex(focusedIndex === i ? null : i)}
         >
           <motion.div
             className="absolute inset-0 bg-cover bg-center"
@@ -297,6 +297,7 @@ export default function ResourcesPage() {
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
   const [editingResource, setEditingResource] = useState(null)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (activeTab === "all") {
@@ -340,16 +341,20 @@ export default function ResourcesPage() {
     category: resource.category,
   }))
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
       <div className="min-h-screen">
-        <div className="container dark:bg-neutral-800 bg-neutral-100">
+        <div className="container dark:bg-neutral-900 bg-neutral-100">
           <div className="flex min-h-screen" style={{ width: 'calc(100vw - 15px)' }}>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: open ? "250px" : "60px" }}
-              className="dark:bg-neutral-800 bg-neutral-100 rounded-tl-md overflow-hidden"
+              className="dark:bg-neutral-900 bg-neutral-100 rounded-tl-md overflow-hidden"
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => setOpen(false)}
             >
@@ -372,8 +377,10 @@ export default function ResourcesPage() {
                 />
               </div>
             </motion.div>
-            <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1">
-              <h1 className="text-4xl font-bold mb-8">{heading}</h1>
+            <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-300 dark:border-neutral-800 bg-background flex flex-col gap-2 flex-1">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">
+                {heading}
+              </h1>
               <FocusCards
                 cards={cards}
                 onEdit={(resource) => {
