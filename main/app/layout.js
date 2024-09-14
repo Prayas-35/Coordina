@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { AuthProvider } from "./_contexts/authcontext";
 import "./globals.css";
 
 export const metadata = {
@@ -10,14 +11,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

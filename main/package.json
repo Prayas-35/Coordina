@@ -26,6 +26,8 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.5.4",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.438.0",
     "mini-svg-data-uri": "^1.4.4",
     "mongoose": "^8.6.2",
