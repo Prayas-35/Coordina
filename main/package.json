@@ -28,6 +28,7 @@
     "framer-motion": "^11.5.4",
     "lucide-react": "^0.438.0",
     "mini-svg-data-uri": "^1.4.4",
+    "mongoose": "^8.6.2",
     "next": "14.2.8",
     "next-themes": "^0.3.0",
     "react": "^18",
