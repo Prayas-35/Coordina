@@ -63,7 +63,7 @@ export default function ConflictsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      
+      <NavBar />
       <main className="container mx-auto p-4">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl text-center justify-center font-bold relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">Conflicts Mediation</h1>
