@@ -1,17 +1,27 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+import { v4 as uuidv4 } from 'uuid'; // Import the uuid function
 
-const exampleSchema = new mongoose.Schema({
-    name: {
+const departmentSchema = new mongoose.Schema({
+    uid: {
+        type: String,
+        required: true,
+        unique: true,
+        default: uuidv4
+    },
+    username: {
         type: String,
         required: true
     },
-    age: {
-        type: Number,
+    department: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
         required: true
     }
 });
 
-
 export {
-    exampleSchema
+    departmentSchema
 }
