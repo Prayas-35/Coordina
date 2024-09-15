@@ -6,19 +6,17 @@ import connectToDatabase from "@/app/_middleware/mongodb";
 import { departmentSchema } from "@/app/_models/schema";
 import { verifyToken } from "@/app/_middleware/verify";
 
-const secretKey = process.env.SECRET_KEY;
-
 async function getthandler(req) {
     await connectToDatabase();
 
     const Department = mongoose.models.Department || mongoose.model("Department", departmentSchema);
     
     const token = req.headers.get("Authorization");
-    console.log(token);
+    // console.log(token);
 
     try {
         const uId = await verifyToken(token);
-        console.log(uId);
+        // console.log(uId);
         const dept = await Department.findOne({ uid: uId });
         const name = dept.username;
         const uid = dept.uid;

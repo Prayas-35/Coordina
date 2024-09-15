@@ -349,7 +349,7 @@ export default function ResourcesPage() {
     <>
       <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
       <div className="min-h-screen">
-        <div className="container dark:bg-neutral-900 bg-neutral-100">
+        <div className="dark:bg-neutral-900 bg-neutral-100">
           <div className="flex min-h-screen" style={{ width: 'calc(100vw - 15px)' }}>
             <motion.div
               initial={{ width: 0 }}
