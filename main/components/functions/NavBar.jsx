@@ -192,7 +192,7 @@ function UserMenu({ name, handleLogout, handleShowUid }) {
                     className="overflow-hidden rounded-full transition-all duration-200"
                 >
                     <img
-                        src="/pp.png"
+                        src="/avatar.jpg"
                         width={32}
                         height={32}
                         alt="Avatar"
