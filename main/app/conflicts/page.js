@@ -73,7 +73,7 @@ export default function ConflictsPage() {
           {conflicts.map((conflict) => (
             <Card 
               key={conflict.id} 
-              className="transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:border-purple-500 dark:hover:bg-gray-800 hover:bg-gray-100"
+              className="transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:border-purple-500 hover:scale-105"
             >
               <CardHeader>
                 <CardTitle className="flex justify-between items-center">
