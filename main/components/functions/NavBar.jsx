@@ -5,41 +5,45 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { ModeToggle } from "../theme/ThemeSwitcher"
-// import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { GrResources } from "react-icons/gr";
 import { FaCompressArrowsAlt } from "react-icons/fa";
 import { useTheme } from "next-themes"
 import { GoDiscussionClosed } from "react-icons/go";
+import { useAuth } from "@/app/_contexts/authcontext";
 
 export default function Navbar() {
-    //   const router = useRouter()
-    //   const { token, logout } = useAuth()
-    //   const [name, setName] = useState('')
+    const router = useRouter()
+    const { token, logout } = useAuth()
+    const [name, setName] = useState('')
+    const [uid, setUid] = useState('')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const { resolvedTheme } = useTheme()
+      const getName = async () => {
+        const res = await fetch("/api/getName", {
+          method: "GET",
+          headers: {
+            Authorization: token
+          }
+        })
+        const data = await res.json()
+        console.log(data)
+        setUid(data.uid)
+        setName(data.name)
+        console.log(name)
+      }
 
-    //   const getName = async () => {
-    //     const res = await fetch("/api/getName", {
-    //       method: "GET",
-    //       headers: {
-    //         Authorization: token
-    //       }
-    //     })
-    //     const data = await res.json()
-    //     setName(data.name)
-    //   }
+      useEffect(() => {
+        if (token) {
+          getName()
+        }
+      }, [token])
 
-    //   useEffect(() => {
-    //     if (token) {
-    //       getName()
-    //     }
-    //   }, [token])
-
-    //   const handleLogout = () => {
-    //     logout()
-    //     router.push("/")
-    //   }
+    const handleLogout = () => {
+        logout()
+        router.push("/")
+    }
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -80,7 +84,7 @@ export default function Navbar() {
                             </div>
                         </nav>
                         <ModeToggle />
-                        {/* <UserMenu name={name} handleLogout={handleLogout} /> */}
+                        <UserMenu name={name} handleLogout={handleLogout} />
                     </div>
                 </div>
             </header>
@@ -156,14 +160,6 @@ function UserMenu({ name, handleLogout }) {
                         <span>Profile</span>
                     </DropdownMenuItem>
                 </Link>
-                <DropdownMenuItem>
-                    <SettingsIcon className="mr-2 h-4 w-4" />
-                    <span>Settings</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                    <HelpCircleIcon className="mr-2 h-4 w-4" />
-                    <span>Support</span>
-                </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={handleLogout}>
                     <LogOutIcon className="mr-2 h-4 w-4" />

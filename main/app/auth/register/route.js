@@ -30,7 +30,7 @@ async function posthandler(req) {
     const newDepartment = new Department({ username, department, password: hashedPassword });
     await newDepartment.save();
 
-    const token = jwt.sign({ userId: username._id }, secretKey, { expiresIn: "30d" });
+    const token = jwt.sign({ uId: username.uid }, secretKey, { expiresIn: "30d" });
 
     return NextResponse.json({ token }, { status: 200 });
 }

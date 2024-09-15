@@ -10,7 +10,7 @@ export const verifyToken = async (token) => {
 
   try {
     const decoded = jwt.verify(token, secretKey);
-    const userId = decoded.userId;
+    const userId = decoded.uId;
     
     return userId;
   } catch (error) {

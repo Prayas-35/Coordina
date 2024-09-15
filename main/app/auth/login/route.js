@@ -31,7 +31,7 @@ async function posthandler(req) {
         return NextResponse.json({ message: 'Invalid password' }, { status: 400 });
     }
 
-    const token = jwt.sign({ userId: existingDepartment._id }, secretKey, { expiresIn: "30d" });
+    const token = jwt.sign({ uId: existingDepartment.uid }, secretKey, { expiresIn: "30d" });
 
     return NextResponse.json({ token }, { status: 200 });
 }
