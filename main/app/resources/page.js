@@ -378,7 +378,7 @@ export default function ResourcesPage() {
               </div>
             </motion.div>
             <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-300 dark:border-neutral-800 bg-background flex flex-col gap-2 flex-1">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8  bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8  bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-pink-600 to-pink-500">
                 {heading}
               </h1>
               <FocusCards

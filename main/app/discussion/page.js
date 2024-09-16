@@ -100,7 +100,7 @@ export default function Component() {
         <>
             <Navbar />
             <div className="container mx-auto p-4">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Department Discussions</h1>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-pink-600 to-pink-500 py-4">Department Discussions</h1>
 
                 <div className="flex flex-col md:flex-row justify-between mb-4">
                     <Select onValueChange={setFilter} defaultValue="All">
