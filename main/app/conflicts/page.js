@@ -8,6 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { MessageCircleIcon, LinkIcon } from 'lucide-react'
 import { format } from 'date-fns'
 import NavBar from '@/components/functions/NavBar';
+import Link from "next/link"
 
 // Mock data for conflicts
 const mockConflicts = [
@@ -71,8 +72,8 @@ export default function ConflictsPage() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {conflicts.map((conflict) => (
-            <Card 
-              key={conflict.id} 
+            <Card
+              key={conflict.id}
               className="transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:border-purple-500 hover:scale-105"
             >
               <CardHeader>
@@ -116,9 +117,11 @@ export default function ConflictsPage() {
                       </div>
                     ) : null
                   })}
-                  <Button variant="outline" className="w-full mt-2 relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-                    View Discussions
-                  </Button>
+                  <Link href="/discussion">
+                    <Button variant="outline" className="w-full mt-2 relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
+                      View Discussions
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
