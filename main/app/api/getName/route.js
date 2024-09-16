@@ -18,6 +18,7 @@ async function getthandler(req) {
         const uId = await verifyToken(token);
         // console.log(uId);
         const dept = await Department.findOne({ uid: uId });
+        // console.log(dept);
         const name = dept.username;
         const uid = dept.uid;
         return NextResponse.json({ name, uid }, { status: 200 });
