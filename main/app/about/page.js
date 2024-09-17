@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
-              Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">CitySync</span>.
+              Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">Coordina</span>.
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">Transforming India&apos;s Cities For A Smarter Tomorrow!</p>
             <div className="flex justify-center space-x-4">
@@ -63,7 +63,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Why choose CitySync Section */}
+        {/* Why choose Coordina Section */}
         <section className="py-18 px-4 bg-gray-100 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12 pt-10 text-gray-900 dark:text-white">Why choose us?</h2>
@@ -109,9 +109,9 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-center mb-12 pt-10 text-gray-900 dark:text-white">What our users say?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
               {[
-                { name: "John Doe", role: "City Planner", review: "CitySync has revolutionized our urban planning process! The integrated approach to project management has significantly reduced conflicts and improved our overall efficiency." },
+                { name: "John Doe", role: "City Planner", review: "Coordina has revolutionized our urban planning process! The integrated approach to project management has significantly reduced conflicts and improved our overall efficiency." },
                 { name: "Jane Smith", role: "Project Manager", review: "The conflict resolution feature saved us from major setbacks. It's like having an extra team member always on the lookout for potential issues." },
-                { name: "Raj Patel", role: "Department Head", review: "Interdepartmental collaboration has never been easier. CitySync has broken down silos and fostered a culture of cooperation that's transforming our city." }
+                { name: "Raj Patel", role: "Department Head", review: "Interdepartmental collaboration has never been easier. Coordina has broken down silos and fostered a culture of cooperation that's transforming our city." }
               ].map((review, index) => (
                 <Card key={index} className="p-6 h-full flex flex-col bg-white dark:bg-gray-800">
                   <p className="flex-grow mb-4 text-gray-600 dark:text-gray-300">&quot;{review.review}&quot;</p>
