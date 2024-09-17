@@ -114,7 +114,7 @@ export default function HomePage() {
                 { name: "Raj Patel", role: "Department Head", review: "Interdepartmental collaboration has never been easier. CitySync has broken down silos and fostered a culture of cooperation that's transforming our city." }
               ].map((review, index) => (
                 <Card key={index} className="p-6 h-full flex flex-col bg-white dark:bg-gray-800">
-                  <p className="flex-grow mb-4 text-gray-600 dark:text-gray-300">"{review.review}"</p>
+                  <p className="flex-grow mb-4 text-gray-600 dark:text-gray-300">&quot;{review.review}&quot;</p>
                   <div>
                     <p className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">{review.name}</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{review.role}</p>
