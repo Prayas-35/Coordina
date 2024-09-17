@@ -12,24 +12,24 @@ export function Faq() {
 
     const faqData = [
         {
-            question: "What is CitySync?",
-            answer: "CitySync is a comprehensive urban management platform designed to transform India's cities for a smarter tomorrow. It offers tools for project management, resource allocation, conflict resolution, and interdepartmental collaboration."
+            question: "What is Coordina?",
+            answer: "Coordina is a comprehensive urban management platform designed to transform India's cities for a smarter tomorrow. It offers tools for project management, resource allocation, conflict resolution, and interdepartmental collaboration."
         },
         {
-            question: "How does CitySync help in urban planning?",
-            answer: "CitySync provides a centralized dashboard for all city projects, real-time updates, and analytics. It helps in efficient resource management, conflict detection, and facilitates seamless communication between different departments involved in urban planning."
+            question: "How does Coordina help in urban planning?",
+            answer: "Coordina provides a centralized dashboard for all city projects, real-time updates, and analytics. It helps in efficient resource management, conflict detection, and facilitates seamless communication between different departments involved in urban planning."
         },
         {
-            question: "Is CitySync suitable for all city sizes?",
-            answer: "Yes, CitySync is designed to be scalable and can be adapted for cities of all sizes. Whether you're managing a small town or a large metropolis, CitySync's features can be tailored to meet your specific urban management needs."
+            question: "Is Coordina suitable for all city sizes?",
+            answer: "Yes, Coordina is designed to be scalable and can be adapted for cities of all sizes. Whether you're managing a small town or a large metropolis, Coordina's features can be tailored to meet your specific urban management needs."
         },
         {
-            question: "How does CitySync ensure data security?",
-            answer: "CitySync employs state-of-the-art security measures, including end-to-end encryption, regular security audits, and compliance with data protection regulations. We also integrate blockchain technology for enhanced transparency and security in certain operations."
+            question: "How does Coordina ensure data security?",
+            answer: "Coordina employs state-of-the-art security measures, including end-to-end encryption, regular security audits, and compliance with data protection regulations. We also integrate blockchain technology for enhanced transparency and security in certain operations."
         },
         {
-            question: "Can CitySync integrate with existing city management systems?",
-            answer: "Yes, CitySync is designed with interoperability in mind. It can integrate with a wide range of existing systems and databases, ensuring a smooth transition and allowing cities to leverage their current infrastructure investments."
+            question: "Can Coordina integrate with existing city management systems?",
+            answer: "Yes, Coordina is designed with interoperability in mind. It can integrate with a wide range of existing systems and databases, ensuring a smooth transition and allowing cities to leverage their current infrastructure investments."
         }
     ]
 
