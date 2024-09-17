@@ -21,7 +21,7 @@ export default function HomePage() {
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
               Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">CitySync</span>.
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200">Transforming India's Cities For A Smarter Tomorrow!</p>
+            <p className="text-xl md:text-2xl mb-8 text-gray-200">Transforming India&apos;s Cities For A Smarter Tomorrow!</p>
             <div className="flex justify-center space-x-4">
               <Button size="lg" className="font-semibold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white text-lg py-4 px-8">Get Started</Button>
             </div>

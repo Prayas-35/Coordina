@@ -54,7 +54,7 @@ export function Contact() {
             Contact Us
           </CardTitle>
           <CardDescription>
-            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </CardDescription>
         </CardHeader>
         <CardContent>

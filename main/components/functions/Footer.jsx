@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">CitySync</h3>
-            <p className="text-sm text-muted-foreground">Transforming India's cities for a smarter tomorrow.</p>
+            <p className="text-sm text-muted-foreground">Transforming India&pos;s cities for a smarter tomorrow.</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
