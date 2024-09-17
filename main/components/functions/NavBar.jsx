@@ -85,7 +85,7 @@ export default function Navbar() {
                                     className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
                                 />
                                 <span className="text-lg sm:text-xl text-black dark:text-white font-bold relative">
-                                    CitySync
+                                    Coordina
                                 </span>
                             </span>
                         </Link>
