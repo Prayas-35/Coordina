@@ -132,7 +132,7 @@ export default function Navbar() {
                     </>
                 )}
             </AnimatePresence>
-            
+
             <Dialog open={showUidDialog} onOpenChange={setShowUidDialog}>
                 <AnimatePresence>
                     {showUidDialog && (
