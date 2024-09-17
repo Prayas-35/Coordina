@@ -56,13 +56,39 @@ export default function WardProjectDashboard() {
   };
 
   const fetchProjects = async () => {
-    const response = await fetch('/api/getProject');
-    const data = await response.json();
-    setProjects(data);
+    try {
+      const response = await fetch('/api/getProject', {
+        method: 'POST',
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Fetched projects:', data);
+        setProjects(prevProjects => {
+          const newProjects = JSON.stringify(data) !== JSON.stringify(prevProjects) ? data : prevProjects;
+          return newProjects;
+        });
+      } else {
+        console.error('Failed to fetch projects:', response.status);
+      }
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+    }
   };
 
   useEffect(() => {
     fetchProjects();
+  }, []);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      fetchProjects();
+    }, 60000); // Refetch every minute
+  
+    return () => clearInterval(intervalId);
   }, []);
 
   const handleAddProject = async () => {
@@ -142,13 +168,14 @@ export default function WardProjectDashboard() {
         },
         body: JSON.stringify({ status: selectedProject, id: selectedProject._id }),
       });
-  
+
       if (response.ok) {
         const updatedProject = await response.json();
         setProjects(projects.map(p => p.id === updatedProject._id ? updatedProject : p));
         setIsEditing(false);
         setIsDialogOpen(false);
         fetchProjects();
+        console.log('Project updated successfully');
       } else {
         alert('Failed to update the project');
       }

@@ -16,6 +16,8 @@ async function postHandler(req) {
     try {
         const project = await Project
             .findOneAndUpdate({ _id: id }, status, { new: true });
+
+            // console.log("Project updated", project);
         return NextResponse.json(project, { status: 200 });
     }
     catch (error) {

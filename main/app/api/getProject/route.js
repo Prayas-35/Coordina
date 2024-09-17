@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import { departmentSchema, projectSchema } from "@/app/_models/schema";
 import connectToDatabase from "@/app/_middleware/mongodb";
 
-async function getHandler(req) {
+async function postHandler(req) {
     await connectToDatabase();
 
     const Project = mongoose.models.Project || mongoose.model("Project", projectSchema);
@@ -23,7 +23,7 @@ async function getHandler(req) {
                 };
             })
         );
-
+        // console.log("Projects", updatedProjects);
         return NextResponse.json(updatedProjects, { status: 200 });
     } catch (error) {
         console.error("Error getting projects", error);
@@ -32,5 +32,5 @@ async function getHandler(req) {
 }
 
 export {
-    getHandler as GET
+    postHandler as POST
 };
