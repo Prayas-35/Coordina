@@ -17,7 +17,7 @@ async function postHandler(req) {
     // console.log(id);
 
     try {
-        const uId = await verifyToken(token);
+        // const uId = await verifyToken(token);
         // const pro = await Project.findOne({ _id: id });
         // console.log(pro);
         const project = await Project.findOneAndDelete({ _id: id });
