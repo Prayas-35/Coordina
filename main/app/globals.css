@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Object%20Sans:700|Open%20Sans:400');
+@import url('https://fonts.googleapis.com/css2?family=Object+Sans:wght@400;700&family=Open+Sans:wght@400&display=swap');
 
 body {
-  font-family: 'Object Sans';
+  font-family: 'Object Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -14,7 +14,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Object Sans';
+  font-family: 'Object Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -22,36 +22,29 @@ html {
   font-size: 100%;
 }
 
-/* 16px */
-
+/* Font sizes for headings */
 h1 {
   font-size: 4.210rem;
-  /* 67.36px */
 }
 
 h2 {
   font-size: 3.158rem;
-  /* 50.56px */
 }
 
 h3 {
   font-size: 2.369rem;
-  /* 37.92px */
 }
 
 h4 {
   font-size: 1.777rem;
-  /* 28.48px */
 }
 
 h5 {
   font-size: 1.333rem;
-  /* 21.28px */
 }
 
 small {
   font-size: 0.750rem;
-  /* 12px */
 }
 
 @layer base {
@@ -117,5 +110,11 @@ small {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  .dark body {
+    font-family: 'Open Sans', sans-serif;
   }
 }
