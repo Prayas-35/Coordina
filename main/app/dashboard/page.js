@@ -87,7 +87,7 @@ export default function WardProjectDashboard() {
     const intervalId = setInterval(() => {
       fetchProjects();
     }, 60000); // Refetch every minute
-  
+
     return () => clearInterval(intervalId);
   }, []);
 
@@ -185,8 +185,29 @@ export default function WardProjectDashboard() {
     }
   };
 
-  const handleDeleteProject = (id) => {
-    setProjects(projects.filter((project) => project.id !== id));
+  const handleDeleteProject = async (id) => {
+    console.log('Deleting project:', id);
+    try {
+      const response = await fetch('/api/deleteProject', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: token,
+        },
+        body: JSON.stringify({ id }),
+      });
+
+      if (response.ok) {
+        setProjects(projects.filter((project) => project._id !== id));
+        setIsDialogOpen(false);
+        fetchProjects();
+      } else {
+        alert('Failed to delete the project');
+      }
+    } catch (error) {
+      console.error('Error deleting project', error);
+      alert('An error occurred while deleting the project.');
+    }
   };
 
   const handleCloseDialog = () => {
@@ -330,7 +351,7 @@ export default function WardProjectDashboard() {
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
-                              handleDeleteProject(project.id);
+                              handleDeleteProject(project._id);
                             }}
                             className="absolute right-1 top-1 sm:right-2 sm:top-2 text-white hover:text-red-200 transition-colors duration-200"
                             aria-label="Delete project"
