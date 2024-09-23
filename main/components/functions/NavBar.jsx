@@ -84,9 +84,9 @@ export default function Navbar() {
                                 <img src={`${resolvedTheme === 'light' ? "Logo6 dark.png" : "Logo6.png"}`}
                                     className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
                                 />
-                                <span className="text-lg sm:text-xl text-black dark:text-white font-bold relative">
+                                <h5 className="text-lg sm:text-xl text-black dark:text-white font-black relative">
                                     Coordina
-                                </span>
+                                </h5>
                             </span>
                         </Link>
                     </div>

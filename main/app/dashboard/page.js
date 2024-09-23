@@ -323,7 +323,7 @@ export default function WardProjectDashboard() {
             {weekDays.map((day, index) => (
               <div key={index} className={`p-1 sm:p-3 text-center bg-card ${format(day, 'eeee') === 'Sunday' ? 'text-primary' : ''}`}>
                 <div className="text-xs sm:text-sm font-medium">{format(day, 'EEE')}</div>
-                <div className="text-sm sm:text-2xl font-bold">{format(day, 'dd')}</div>
+                <h5 className="text-sm sm:text-2xl font-bold">{format(day, 'dd')}</h5>
               </div>
             ))}
 
