@@ -19,7 +19,7 @@ function Landing() {
 
       <div className="bg-background mt-[72.8px] flex flex-col items-center">
         <div className="text-4xl font-bold mb-1 pt-4 relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-          <span className="">Our Team</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl">Our Team</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {teamMembers.map((member, index) => (
