@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Collapsible,
@@ -9,14 +9,20 @@ import {
 } from "@/components/ui/collapsible";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
+import dynamic from "next/dynamic"; // Import dynamic from next/dynamic
 import Navbar from "@/components/functions/NavBar";
+
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 // Register Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-// Leaflet components
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+// Dynamically import Leaflet components only on client-side
+const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: false });
+const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false });
 
 export default function OngoingProjects() {
   const [projects] = useState([
@@ -53,17 +59,10 @@ export default function OngoingProjects() {
 
   const mapCenter = [22.5744, 88.3629]; // Example coordinates
   const projectLocations = [
-    { id: 1, position: [51.505, -0.09], name: "Project A" },
+    { id: 1, position: [22.5744, 88.3629], name: "Project A" },
     { id: 2, position: [51.51, -0.1], name: "Project B" },
     { id: 3, position: [51.49, -0.08], name: "Project C" },
   ];
-
-  const [isClient, setIsClient] = useState(false);
-
-  // Set `isClient` to true when the component has mounted on the client side
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   return (
     <>
@@ -100,20 +99,18 @@ export default function OngoingProjects() {
               </CardHeader>
               <CardContent>
                 <div style={{ height: "300px" }}>
-                  {isClient && (
-                    <MapContainer
-                      center={mapCenter}
-                      zoom={13}
-                      style={{ height: "100%", width: "100%" }}
-                    >
-                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                      {projectLocations.map((loc) => (
-                        <Marker key={loc.id} position={loc.position}>
-                          <Popup>{loc.name}</Popup>
-                        </Marker>
-                      ))}
-                    </MapContainer>
-                  )}
+                  <MapContainer
+                    center={mapCenter}
+                    zoom={13}
+                    style={{ height: "100%", width: "100%" }}
+                  >
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    {projectLocations.map((loc) => (
+                      <Marker key={loc.id} position={loc.position}>
+                        <Popup>{loc.name}</Popup>
+                      </Marker>
+                    ))}
+                  </MapContainer>
                 </div>
               </CardContent>
             </Card>
@@ -135,20 +132,18 @@ export default function OngoingProjects() {
               </CardHeader>
               <CardContent>
                 <div style={{ height: "300px" }}>
-                  {isClient && (
-                    <MapContainer
-                      center={mapCenter}
-                      zoom={13}
-                      style={{ height: "100%", width: "100%" }}
-                    >
-                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                      {projectLocations.map((loc) => (
-                        <Marker key={loc.id} position={loc.position}>
-                          <Popup>{loc.name}</Popup>
-                        </Marker>
-                      ))}
-                    </MapContainer>
-                  )}
+                  <MapContainer
+                    center={mapCenter}
+                    zoom={13}
+                    style={{ height: "100%", width: "100%" }}
+                  >
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    {projectLocations.map((loc) => (
+                      <Marker key={loc.id} position={loc.position}>
+                        <Popup>{loc.name}</Popup>
+                      </Marker>
+                    ))}
+                  </MapContainer>
                 </div>
               </CardContent>
             </Card>
