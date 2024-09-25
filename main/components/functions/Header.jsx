@@ -3,7 +3,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ModeToggle } from "@/components/theme/ThemeSwitcher";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import AuthForm from "./AuthForm";
@@ -22,7 +26,8 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
           <span className="flex items-center gap-2 text-primary-foreground">
-            <img src={resolvedTheme == "light" ? "/Logo6 dark.png" : "/Logo6.png"}
+            <img
+              src={resolvedTheme == "light" ? "/Logo6 dark.png" : "/Logo6.png"}
               className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
             />
             <h5 className="text-lg sm:text-xl text-black dark:text-white font-bold relative">
@@ -32,7 +37,11 @@ export default function Header() {
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <ModeToggle />
-
+          <Link href="/about">
+            <Button variant="outline" className="font-semibold text-primary bg-transparent">
+              About Us
+            </Button>
+          </Link>
           {/* Popover for Get Started Button */}
           <Popover>
             <PopoverTrigger asChild>
@@ -49,9 +58,7 @@ export default function Header() {
                   </button>
                 </li>
                 <li>
-                  <button
-                    className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
+                  <button className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
                     Agencies
                   </button>
                 </li>
@@ -66,5 +73,5 @@ export default function Header() {
         </DialogContent>
       </Dialog>
     </header>
-  )
+  );
 }

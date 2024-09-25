@@ -11,6 +11,7 @@ import { GrResources } from "react-icons/gr";
 import { FaCompressArrowsAlt } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import { GoDiscussionClosed } from "react-icons/go";
+import { RiDashboardFill } from "react-icons/ri";
 import { useAuth } from "@/app/_contexts/authcontext";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { House } from "lucide-react";
@@ -93,7 +94,8 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <nav className="hidden lg:block mr-4">
                             <div className="flex gap-6">
-                                <NavLink href="/dashboard" icon={<House className="h-5 w-5" />} text="Dashboard" />
+                                <NavLink href="/home" icon={<House className="h-5 w-5" />} text="Home" />
+                                <NavLink href="/dashboard" icon={<RiDashboardFill className="h-5 w-5" />} text="Dashboard" />
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
@@ -123,7 +125,8 @@ export default function Navbar() {
                             className="fixed top-14 left-0 right-0 z-50 bg-background/70 backdrop-blur-md px-4 py-6 lg:hidden"
                         >
                             <div className="grid gap-4">
-                                <NavLink href="/dashboard" icon={<House className="h-4 w-4" />} text="Dashboard" />
+                                <NavLink href="/home" icon={<House className="h-5 w-5" />} text="Home" />
+                                <NavLink href="/dashboard" icon={<RiDashboardFill className="h-5 w-5" />} text="Dashboard" />
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Collapsible,
@@ -11,6 +11,10 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import dynamic from "next/dynamic"; // Import dynamic from next/dynamic
 import Navbar from "@/components/functions/NavBar";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -19,10 +23,21 @@ import "leaflet/dist/leaflet.css";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 // Dynamically import Leaflet components only on client-side
-const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: false });
-const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: false });
-const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: false });
-const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false });
+const MapContainer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.MapContainer),
+  { ssr: false }
+);
+const TileLayer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.TileLayer),
+  { ssr: false }
+);
+const Marker = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Marker),
+  { ssr: false }
+);
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
+  ssr: false,
+});
 
 export default function OngoingProjects() {
   const [projects] = useState([
@@ -33,6 +48,19 @@ export default function OngoingProjects() {
     { id: 5, name: "Project E", status: "Upcoming", timeline: "Q1 2025" },
     { id: 6, name: "Project F", status: "Upcoming", timeline: "Q1 2025" },
     { id: 7, name: "Project G", status: "Upcoming", timeline: "Q1 2025" },
+  ]);
+
+  const [resources] = useState([
+    { name: "Resource A", amount: 100, unit: "Units" },
+    { name: "Resource B", amount: 200, unit: "Units" },
+    { name: "Resource C", amount: 150, unit: "Units" },
+    { name: "Resource D", amount: 80, unit: "Units" },
+    { name: "Resource E", amount: 120, unit: "Units" },
+    { name: "Resource F", amount: 300, unit: "Units" },
+    { name: "Resource G", amount: 90, unit: "Units" },
+    { name: "Resource H", amount: 60, unit: "Units" },
+    { name: "Resource I", amount: 75, unit: "Units" },
+    { name: "Resource J", amount: 200, unit: "Units" },
   ]);
 
   const chartData = {
@@ -64,12 +92,65 @@ export default function OngoingProjects() {
     { id: 3, position: [51.49, -0.08], name: "Project C" },
   ];
 
+  const [isClient, setIsClient] = useState(false);
+  const [reportData, setReportData] = useState({
+    projectName: "",
+    location: "",
+    timeTaken: "",
+    resourcesUsed: "",
+    cost: "",
+    otherDetails: "",
+  });
+  const [generatedReport, setGeneratedReport] = useState("");
+
+  // Set `isClient` to true when the component has mounted on the client side
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setReportData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const generateReport = () => {
+    // This is a mock function. In a real application, you'd call an AI service here.
+    const report = `
+Project Report
+
+Project Name: ${reportData.projectName}
+Location: ${reportData.location}
+Time Taken: ${reportData.timeTaken}
+Resources Used: ${reportData.resourcesUsed}
+Cost: ${reportData.cost}
+
+Other Details:
+${reportData.otherDetails}
+
+This report was generated automatically based on the provided information.
+    `;
+    setGeneratedReport(report);
+  };
+
+  const downloadReport = () => {
+    const element = document.createElement("a");
+    const file = new Blob([generatedReport], { type: "text/plain" });
+    element.href = URL.createObjectURL(file);
+    element.download = "project_report.txt";
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  };
+
   return (
     <>
       <Navbar />
       <div className="container mx-auto p-4">
         <h1 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
-          Ongoing Projects
+          Departmental Insights
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-full">
           <div className="md:col-span-2 flex flex-col">
@@ -99,7 +180,9 @@ export default function OngoingProjects() {
               </CardHeader>
               <CardContent>
                 <div style={{ height: "300px" }}>
+                  {isClient && (
                   <MapContainer
+                    className="z-20"
                     center={mapCenter}
                     zoom={13}
                     style={{ height: "100%", width: "100%" }}
@@ -111,6 +194,7 @@ export default function OngoingProjects() {
                       </Marker>
                     ))}
                   </MapContainer>
+                  ) }
                 </div>
               </CardContent>
             </Card>
@@ -128,27 +212,107 @@ export default function OngoingProjects() {
             </Card>
             <Card className="flex-1">
               <CardHeader>
-                <CardTitle>Project Locations</CardTitle>
+                <CardTitle>Available Resources</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="overflow-y-auto">
                 <div style={{ height: "300px" }}>
-                  <MapContainer
-                    center={mapCenter}
-                    zoom={13}
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    {projectLocations.map((loc) => (
-                      <Marker key={loc.id} position={loc.position}>
-                        <Popup>{loc.name}</Popup>
-                      </Marker>
+                  <ul>
+                    {resources.map((resource, index) => (
+                      <Collapsible key={index} className="mb-2">
+                        <CollapsibleTrigger className="w-full text-left p-2 bg-secondary rounded-md hover:bg-secondary/80">
+                          {resource.name}
+                        </CollapsibleTrigger>
+                        <CollapsibleContent className="p-2 bg-secondary/20 rounded-md mt-1">
+                          <p>
+                            Amount: {resource.amount} {resource.unit}
+                          </p>
+                        </CollapsibleContent>
+                      </Collapsible>
                     ))}
-                  </MapContainer>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
+        <Card className="mt-8">
+          <CardHeader>
+            <CardTitle>Report Generator</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <Label htmlFor="projectName">Project Name</Label>
+                <Input
+                  id="projectName"
+                  name="projectName"
+                  value={reportData.projectName}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Label htmlFor="location">Location</Label>
+                <Input
+                  id="location"
+                  name="location"
+                  value={reportData.location}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Label htmlFor="timeTaken">Time Taken</Label>
+                <Input
+                  id="timeTaken"
+                  name="timeTaken"
+                  value={reportData.timeTaken}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Label htmlFor="resourcesUsed">Resources Used</Label>
+                <Input
+                  id="resourcesUsed"
+                  name="resourcesUsed"
+                  value={reportData.resourcesUsed}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Label htmlFor="cost">Cost</Label>
+                <Input
+                  id="cost"
+                  name="cost"
+                  value={reportData.cost}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Label htmlFor="otherDetails">Other Details</Label>
+                <Textarea
+                  id="otherDetails"
+                  name="otherDetails"
+                  value={reportData.otherDetails}
+                  onChange={handleInputChange}
+                  className="mb-2"
+                />
+                <Button onClick={generateReport} className="w-full">
+                  Generate Report
+                </Button>
+              </div>
+              <div>
+                <Label htmlFor="generatedReport">Generated Report</Label>
+                <Textarea
+                  id="generatedReport"
+                  value={generatedReport}
+                  readOnly
+                  className="h-64 mb-2"
+                />
+                <Button
+                  onClick={downloadReport}
+                  className="w-full"
+                  disabled={!generatedReport}
+                >
+                  Download Report
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </>
   );

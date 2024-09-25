@@ -51,7 +51,7 @@ export default function AuthForm() {
       if (response.ok) {
         const { token } = data;
         login(token);
-        router.push("/dashboard");
+        router.push("/home");
         console.log(data.token);
         // alert(`${isSignUp ? "Sign up" : "Login"} successful`);
       } else {
