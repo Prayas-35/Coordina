@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useAuth } from "../_contexts/authcontext";
 
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -40,15 +41,41 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
 });
 
 export default function OngoingProjects() {
-  const [projects] = useState([
-    { id: 1, name: "Project A", status: "In Progress", timeline: "Q3 2024" },
-    { id: 2, name: "Project B", status: "Planning", timeline: "Q4 2024" },
-    { id: 3, name: "Project C", status: "In Progress", timeline: "Q2 2024" },
-    { id: 4, name: "Project D", status: "Completed", timeline: "Q1 2024" },
-    { id: 5, name: "Project E", status: "Upcoming", timeline: "Q1 2025" },
-    { id: 6, name: "Project F", status: "Upcoming", timeline: "Q1 2025" },
-    { id: 7, name: "Project G", status: "Upcoming", timeline: "Q1 2025" },
-  ]);
+  const { token } = useAuth();
+  const [projects, setProjects] = useState([]);
+  // const [projects] = useState([
+  //   { id: 1, name: "Project A", status: "In Progress", timeline: "Q3 2024" },
+  //   { id: 2, name: "Project B", status: "Planning", timeline: "Q4 2024" },
+  //   { id: 3, name: "Project C", status: "In Progress", timeline: "Q2 2024" },
+  //   { id: 4, name: "Project D", status: "Completed", timeline: "Q1 2024" },
+  //   { id: 5, name: "Project E", status: "Upcoming", timeline: "Q1 2025" },
+  //   { id: 6, name: "Project F", status: "Upcoming", timeline: "Q1 2025" },
+  //   { id: 7, name: "Project G", status: "Upcoming", timeline: "Q1 2025" },
+  // ]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch("/api/myProject", {
+          method: "POST",
+          headers: {
+            Authorization: token,
+          },
+        });
+        if (response.ok) {
+          const data = await response.json();
+          setProjects(data);
+        } else {
+          console.error("Failed to fetch projects");
+        }
+      } catch (error) {
+        console.error("Failed to fetch projects", error);
+      }
+    };
+    if (token) {
+      fetchProjects();
+    }
+  }, [token]);
 
   const [resources] = useState([
     { name: "Resource A", amount: 100, unit: "Units" },
@@ -119,19 +146,19 @@ export default function OngoingProjects() {
   const generateReport = () => {
     // This is a mock function. In a real application, you'd call an AI service here.
     const report = `
-Project Report
+        Project Report
 
-Project Name: ${reportData.projectName}
-Location: ${reportData.location}
-Time Taken: ${reportData.timeTaken}
-Resources Used: ${reportData.resourcesUsed}
-Cost: ${reportData.cost}
+        Project Name: ${reportData.projectName}
+        Location: ${reportData.location}
+        Time Taken: ${reportData.timeTaken}
+        Resources Used: ${reportData.resourcesUsed}
+        Cost: ${reportData.cost}
 
-Other Details:
-${reportData.otherDetails}
+        Other Details:
+        ${reportData.otherDetails}
 
-This report was generated automatically based on the provided information.
-    `;
+        This report was generated automatically based on the provided information.
+      `;
     setGeneratedReport(report);
   };
 
@@ -181,20 +208,20 @@ This report was generated automatically based on the provided information.
               <CardContent>
                 <div style={{ height: "300px" }}>
                   {isClient && (
-                  <MapContainer
-                    className="z-20"
-                    center={mapCenter}
-                    zoom={13}
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    {projectLocations.map((loc) => (
-                      <Marker key={loc.id} position={loc.position}>
-                        <Popup>{loc.name}</Popup>
-                      </Marker>
-                    ))}
-                  </MapContainer>
-                  ) }
+                    <MapContainer
+                      className="z-20"
+                      center={mapCenter}
+                      zoom={13}
+                      style={{ height: "100%", width: "100%" }}
+                    >
+                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                      {projectLocations.map((loc) => (
+                        <Marker key={loc.id} position={loc.position}>
+                          <Popup>{loc.name}</Popup>
+                        </Marker>
+                      ))}
+                    </MapContainer>
+                  )}
                 </div>
               </CardContent>
             </Card>
