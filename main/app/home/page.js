@@ -16,9 +16,11 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "../_contexts/authcontext";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import Link from "next/link";
 
 // Register Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -187,17 +189,21 @@ export default function OngoingProjects() {
               </CardHeader>
               <CardContent className="overflow-y-auto">
                 <div style={{ height: "200px" }}>
-                  {projects.map((project) => (
-                    <Collapsible key={project.id} className="mb-2">
-                      <CollapsibleTrigger className="w-full text-left p-2 bg-secondary rounded-md hover:bg-secondary/80">
-                        {project.name}
-                      </CollapsibleTrigger>
-                      <CollapsibleContent className="p-2 bg-secondary/20 rounded-md mt-1">
-                        <p>Status: {project.status}</p>
-                        <p>Timeline: {project.timeline}</p>
-                      </CollapsibleContent>
-                    </Collapsible>
-                  ))}
+                  {projects.length > 0 ? (
+                    projects.map((project) => (
+                      <Collapsible key={project.id} className="mb-2">
+                        <CollapsibleTrigger className="w-full text-left p-2 bg-secondary rounded-md hover:bg-secondary/80">
+                          {project.name}
+                        </CollapsibleTrigger>
+                        <CollapsibleContent className="p-2 bg-secondary/20 rounded-md mt-1">
+                          <p>Status: {project.status}</p>
+                          <p>Timeline: {project.timeline}</p>
+                        </CollapsibleContent>
+                      </Collapsible>
+                    ))
+                  ) : (
+                    <p className="text-center text-gray-500 text-2xl">No Projects found, head {" "}<LinkPreview url="/dashboard" imageSrc="" className="text-blue-600">here</LinkPreview>{" "} to schedule your first project!</p>
+                  )}
                 </div>
               </CardContent>
             </Card>
