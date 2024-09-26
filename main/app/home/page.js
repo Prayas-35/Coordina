@@ -17,6 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "../_contexts/authcontext";
 import { LinkPreview } from "@/components/ui/link-preview";
+// import "../../public/"
 
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -188,7 +189,7 @@ export default function OngoingProjects() {
                 <CardTitle>Projects List</CardTitle>
               </CardHeader>
               <CardContent className="overflow-y-auto">
-                <div style={{ height: "200px" }}>
+                <div style={{ height: "200px" }} className={projects.length === 0 ? "flex items-center" : ""}>
                   {projects.length > 0 ? (
                     projects.map((project) => (
                       <Collapsible key={project.id} className="mb-2">
@@ -202,7 +203,7 @@ export default function OngoingProjects() {
                       </Collapsible>
                     ))
                   ) : (
-                    <p className="text-center text-gray-500 text-2xl">No Projects found, head {" "}<LinkPreview url="/dashboard" imageSrc="" className="text-blue-600">here</LinkPreview>{" "} to schedule your first project!</p>
+                    <p className="text-center text-gray-500 text-2xl">No Projects found, head {" "}<LinkPreview url="/dashboard" isStatic imageSrc="/dashboard.jpeg" className="dark:text-blue-600 text-blue-600">here</LinkPreview>{" "} to schedule your first project!</p>
                   )}
                 </div>
               </CardContent>
