@@ -15,6 +15,7 @@ import { RiDashboardFill } from "react-icons/ri";
 import { useAuth } from "@/app/_contexts/authcontext";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { House } from "lucide-react";
+import { GrWorkshop } from "react-icons/gr";
 
 export default function Navbar() {
     const router = useRouter();
@@ -81,9 +82,9 @@ export default function Navbar() {
                             <span className="sr-only">Toggle navigation menu</span>
                         </Button>
                         <Link href="/">
-                            <span className="flex items-center gap-2 text-primary-foreground">
+                            <span className="flex items-center gap-1 text-primary-foreground">
                                 <img src={`${resolvedTheme === 'light' ? "Logo6 dark.png" : "Logo6.png"}`}
-                                    className="h-5 w-5 sm:h-10 sm:w-10 mr-4"
+                                    className="h-5 w-5 sm:h-10 sm:w-10 mr-3"
                                 />
                                 <h5 className="text-lg sm:text-xl text-black dark:text-white font-black relative">
                                     Coordina
@@ -99,6 +100,7 @@ export default function Navbar() {
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
+                                <NavLink href="/sample" icon={<GrWorkshop className="h-5 w-5" />} text="Training" />
                             </div>
                         </nav>
                         <ModeToggle />
@@ -130,6 +132,7 @@ export default function Navbar() {
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
+                                <NavLink href="/sample" icon={<GrWorkshop className="h-5 w-5" />} text="Training" />
                             </div>
                         </motion.nav>
                     </>
