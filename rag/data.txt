@@ -1,0 +1,1413 @@
+How to Start Coding: The Ultimate Guide for Beginner Programmers
+Download Now: Free HTML & CSS Coding Templates
+Jamie Juviler
+Jamie Juviler
+Published: July 09, 2024
+
+As a HubSpot Technical Blog Writer with a background in coding, I've personally discovered that coding is one of the most valuable skills you can build. 
+
+how to start Coding for beginners; students coding on a computer.
+Download Now: 50 Code Templates [Free Snippets]
+If you’re searching for “how to learn coding,” it might be because you want to advance your career or develop other skills in the computer programming world. And believe me, if I can dive into this world, so can you.
+
+As a matter of fact, anyone can learn to code with time, dedication, and internet access. If you’re reading this, that includes you.  My journey into coding, though challenging, has been one of the most rewarding experiences of my professional life, and I'm thrilled to share these insights with you.
+
+Table of Contents
+What is coding?
+Why learn to code?
+How to Start Coding
+Coding vs. Programming
+Programming Languages
+Tips for Coding for Beginners
+Our Favorite Coding Resources
+What is coding?
+Coding is the process of using programming languages to give instructions to a computer. These instructions power the websites, software, and applications people use every day.
+
+Why learn to code?
+Before diving into your first lesson, I suggest that you think about why you want to code in the first place.
+
+In my opinion, this will help you determine which programming language you learn first, what sorts of projects you want to complete, and ultimately, what you want to make of your skills.
+
+
+50 Free Coding Templates
+Free code snippet templates for HTML, CSS, and JavaScript -- Plus access to GitHub.
+
+Navigation Menus & Breadcrumbs Templates
+Button Transition Templates
+CSS Effects Templates
+And more!
+Get Your Free Templates
+Learn more
+Coding helps build professional skills.
+In my journey, I've seen how coding opens doors to numerous opportunities, not just in tech but in various industries. It's a skill that empowers you to create, innovate, and solve problems in new ways.
+
+As technology continues to weave into our daily lives, coding skills will become more desired among candidates — according to job board Indeed.com, several of the most in-demand skills fall under computing.
+
+If you’re looking to make a career pivot into tech or to switch to a more technical role within your field, knowing at least one relevant programming language is a must.
+
+This doesn’t just apply to developers, though. Web designers should know HTML, CSS, and JavaScript. Project managers should know the inner workings of the tools they help craft.
+
+Even if you run a simple WordPress website, familiarizing yourself with front-end languages and some PHP goes a long way.
+
+Even if you’re not pursuing a strictly technical role, coding experience is an asset. It shows technical know-how, the ability to grasp abstract concepts, and that you can solve complex problems.
+
+Finally, coding knowledge enables you to take up freelance work or a full-time career.
+
+Coding can help you earn more.
+The average entry-level salary in the U.S. is $40,153 in 2022. But the average starting salary for a programmer is more than twice as much, at $85,293.
+
+There's no denying the financial advantages of coding skills. The tech industry is known for its lucrative salary packages, and as someone who transitioned into this field, the financial uplift was a significant motivator.
+
+We mentioned earlier that there are differences between coders and programmers. As you continue to learn about coding, you may start to specialize. Many of the highest coding salaries come from the ability to offer your skills in a specific type of coding.
+
+For example, as you continue to code, you may become a developer. Besides writing code, developers also debug software and work with source code. Developers usually specialize in a specific programming language.
+
+Developers often earn higher salaries than programmers and have high projected job growth. According to the U.S. Bureau of Labor Statistics, jobs for developers should grow by 22% by 2030.
+
+Coding lets you create things.
+One of the coolest benefits of learning how to code is the ability to bring your ideas to life. Have a concept for a website, app, or computer game? Now, you can build it exactly how you want, then share it with the world.  I still remember the thrill of my first successful program—it was a simple task automation, but it felt like magic.
+
+Whether you want to monetize your project, post it on an open-source platform like GitHub, or just make things as a hobby, you’ll have the knowledge and the tools to do so.
+
+How to learn coding resource: GitHub
+
+Image Source
+
+It’s gratifying to know you can build programs that, until now, you’ve never fully understood. Plus, projects are essential to the learning and job-seeking process.
+
+Coding can help you better understand the world around you.
+Learning even just the basics of computer programming will help you understand the components of the growing technology landscape.
+
+You’ll gain an entirely new perspective on the technologies in your life and an appreciation for how it all comes together.
+
+Coding is fun.
+It’s cheesy but true — for me, learning to code is a rewarding and enjoyable experience. Once I had the basics down and started on my own projects, the process felt less like learning and more like leisure. After all, if you’re not enjoying it, why pursue it as a career?
+
+How to Start Coding
+Figure out why you want to learn to code.
+Choose which coding language you want to learn first.
+Take online courses.
+Watch video tutorials.
+Read books and ebooks.
+Use tools that make learning to code easier.
+Check out how other people code.
+Complete coding projects.
+Find a mentor and a community.
+Consider enrolling in a coding boot camp.
+How to start coding graphic
+
+Thanks to the internet, there’s never been a better time to learn to code. But the sheer volume of options can stall some new coders before they even begin.
+
+1. Figure out why you want to learn to code.
+It’s tempting to jump right in when you start coding. But if you don’t have an end goal, you may become frustrated and stop learning before you get to the fun.
+
+So, before you start studying, I want you to think about why you want to know how to code. Think about the projects you want to complete, why this skill excites you, and what resources you have available.
+
+For example, say you want to become a developer to earn more income for your family. Do you know where you want to work and what projects they need developers for? Are you ready to put in the time to learn to code, learn the right programming languages, and build projects that show you have what it takes?
+
+Setting a broad goal like that is important but can be overwhelming. Instead, I suggest that you start with smaller, more specific goals. For example, say you want to build a mobile app for your friend who is training for a half-marathon one year from now.
+
+This goal will:
+
+Help you build the skills you need.
+Give you a sense of which programming language to start with.
+Set a deadline so you can manage your time while learning.
+
+50 Free Coding Templates
+Free code snippet templates for HTML, CSS, and JavaScript -- Plus access to GitHub.
+
+Navigation Menus & Breadcrumbs Templates
+Button Transition Templates
+CSS Effects Templates
+And more!
+Get Your Free Templates
+Learn more
+2. Choose which coding language you want to learn first.
+If you’re trying to figure out which programming language to start with, I want you to think about your long-term goals. Are you coding for fun or to advance at work? Do you have a flexible timeline, or do you need to finish a project in a hurry?
+
+When I was in my beginning stages, I started with a language that doesn’t use data structures or algorithms. So, for me, HTML or CSS were great places to start. But languages like Java and Python are also great for beginners, and they have a wide range of applications.
+
+It can sometimes take months to learn a programming language, so take some time to make this decision to make sure that your time is well spent.
+
+3. Take online courses.
+Learning to code no longer requires a classroom setting. Today, there are thousands of online programming courses that cover everything from basic HTML to data structures to complex algorithms.
+
+Your first course should introduce the basics of a language and contain interactive modules and assignments to guide your learning.
+
+For me, courses create a structure for learning, which is essential as concepts in computer science build on each other. An organized course keeps everything digestible and ensures you’re learning things in the correct order.
+
+How to learn coding resource: freeCodeCamp
+
+Image Source
+
+Popular free course providers include:
+
+freeCodeCamp
+W3Schools
+Scaler Topics
+Harvard’s acclaimed Introduction to Computer Science course on edX and the CS50 YouTube channel
+These options are great for determining early on whether you’re ready to invest the time to learn a particular language. Plenty of paid courses are available for a fraction of what in-person classes will cost you.
+
+How to learn coding resource: Code Academy
+
+Image Source
+
+These choices cover a wide range of beginner, intermediate, and advanced CS topics:
+
+Codecademy
+Springboard
+MIT’s Introduction to Computer Science and Programming Using Python
+Some paid services offer free courses or trials if you want to get a feel for their teaching before you commit.
+
+4. Watch video tutorials.
+You’ve probably watched a YouTube tutorial or two — why not do the same for coding?
+
+While online courses are your best bet for hands-on experience, online videos can supplement your learning and occupy your curiosity. My personal favorites include:
+
+Crash Course Computer Science
+Tom Scott’s The Basics
+Both cover broader topics in computing.
+
+5. Read books and ebooks.
+Prefer an old-school approach? Pick up a book on your beginner language of choice. Books will introduce you to fundamental concepts and inform your coding.
+
+Programming for beginners, HubSpot’s ebook entitled “The Beginner’s Guide to HTML & CSS for Marketers”
+
+Learn HTML & CSS with this Free Ebook
+
+Here are some established texts that I recommend for each beginner language.
+
+HTML/CSS: The Beginner's Guide to HTML and CSS for Marketers
+JavaScript: Eloquent JavaScript: A Modern Introduction to Programming
+Python: Python Crash Course
+C: C Programming Absolute Beginner's Guide
+C++: C++ Primer
+C#: C# 8.0 and .NET Core 3.0 – Modern cross-platform development: Build applications with C#
+Java: Effective Java
+PHP: Head First PHP & MySQL
+Ruby: The Well-Grounded Rubyist
+SQL: SQL in 10 minutes, Sams Teach Yourself
+Swift: Swift Programming: The Big Nerd Ranch Guide
+6. Use tools that make learning to code easier.
+While it’s great to know that you don’t need any special tools to write code, there are tools that can help.
+
+Code Editor
+Text editors include features to make coding easier like color coding, auto-complete, find-and-replace, and dark mode.
+
+In my experience, most professionals use a code editor. This tool can help you write clean code faster. Code editors are like text editors, but they have extra features that help you manage and edit your code like:
+
+Syntax highlighting
+Code lookup
+Built-in terminal environment
+Notepad++, Sublime Text, and Emacs are popular editors for beginners. VS Code is also a great option.
+
+Console
+You’ll also want to get to know your computer a little better. When you start coding you should learn how to navigate the console (also called a terminal). This is the text-based interface for your operating system.
+
+The console lets you find files and execute commands on them more quickly than the standard graphical user interface (GUI). Familiarize yourself with how to use it, including the basic UNIX commands, since you’ll be doing things that aren’t possible in the GUI.
+
+Project Management
+Many projects start simple but get more complicated as the project goes on. Using a project management tool, you can share files, update timelines, and break out separate parts of coding projects. This makes it easier to keep track of side projects and extra files while sticking to your timeline.
+
+Troubleshooting
+As you work on your coding projects, you may run into bugs, roadblocks, and other challenges. This can be super frustrating. Rubber Duck Debugging may sound silly, but it can help you simplify your problem and find useful solutions.
+
+7. Check out how other people code.
+It’s easier for some people to edit someone else’s work than to create from a blank page. If this is you, a great way to learn how to code is to go through someone else’s code.
+
+Checking out other programmers' code can inspire you and push your coding skills further. This approach will help you:
+
+Better understand your own code.
+Understand new code faster.
+Give you tangible examples of quality coding.
+How to learn coding resource: searchcode
+
+Image Source
+
+Start with a program or code file you like. If you’re unsure what code to start with, GitHub and searchcode are great starting points. Try to start with peer-reviewed code or open-source projects if you can.
+
+If you know what the code does, choose one small section and work backward. This will help you understand the function of every line of code. It’s also a good idea to read the documentation. You can then see the ideas behind the code you’re reviewing.
+
+
+50 Free Coding Templates
+Free code snippet templates for HTML, CSS, and JavaScript -- Plus access to GitHub.
+
+Navigation Menus & Breadcrumbs Templates
+Button Transition Templates
+CSS Effects Templates
+And more!
+Get Your Free Templates
+Learn more
+8. Complete coding projects.
+You learn programming by doing — there’s no way around it. You can read up on all the concepts and syntax necessary to write functional code, but the ideas won’t fully materialize in your mind unless you put what you learn into practice. That’s where projects come in.
+
+A project is any program (or website) built with your language of choice. When starting, keep projects short-term.
+
+If you’re taking a course, you may be assigned projects designed to solidify a concept. There are also loads of beginner programming projects you can try independently. Some classic projects include:
+
+A time converter, in which the user submits a number of seconds, and your program gives the equivalent in hours, minutes, days, etc.
+A random number generator, which produces a random number between two values specified by the user.
+A calculator, in which the user specifies their inputs and mathematical operation, and your program gives an output.
+An address book, in which users can submit contact names, then search for contacts stored in your program.
+An alphabetizer, in which the user offers a list of words, and your program sorts them in alphabetical order.
+A hangman game, in which the user tries to guess a hidden word by inputting letters, and your game gives feedback for correct or incorrect guesses. When the user guesses all the letters to your word, they win.
+A quick Google search will reveal even more mini-challenges that require applying your skills to real-world problems.
+
+Benefits of Coding Projects
+On top of practicing concepts, projects offer two more benefits to your learning.
+
+First, they’ll keep you motivated. Projects help solidify the “why” behind your coding and set clear, tangible benchmarks for your progress. Each completed project means one more skill under your belt. As I was learning, this was very encouraging.
+
+Second, coding projects, especially long-term ones, give you something to show for your work. It’s one thing to put “Python” on your resume — it’s another to show you built an entire website or application from scratch.
+
+Projects are a must for entry-level programming jobs, as they prove competency in a given language.
+
+How to Stay Motivated While You’re Coding
+When embarking on longer-term projects, consider things you’re willing to invest time in. Whether it’s a personal website, a mobile application, or a desktop tool, you’ll hit speed bumps along the way. Choosing a project you truly care about ensures you follow through.
+
+Another great way to stay engaged with coding projects is by freelancing. You don’t need to be an expert programmer to build a useful tool for someone. Reach out to a friend, family member, or local business in need of a tool or website — it’s a win-win.
+
+9. Find a mentor and a community.
+Having a friend or an online community to guide you can be invaluable to your learning.
+
+First, I recommend finding a mentor. As you progress, you’ll probably encounter issues that, no matter how hard you try, you just can’t crack. This is where mentors can help.
+
+A mentor doesn’t need to be an actual teacher — they can be anyone knowledgeable in your language. They should be able to explain difficult concepts and point you to solutions. An experienced mentor can help you follow coding practices not covered in tutorials and offer advice for navigating a career in tech.
+
+You may also want to join a community. Look for local groups, networking events and meetups in your area, and hackathons where you can make in-person connections with other programmers.
+
+Online developer communities are also a rich resource for beginners.
+
+How to learn coding resource: Stack Overflow
+
+Image Source
+
+Be sure to check out:
+
+Stack Overflow, a forum site for programming questions and discussion.
+GitHub, a code repository for open-source projects with an active developer community.
+Women Who Code, a nonprofit that organizes events, communities, and job postings for women pursuing careers in technology.
+r/learnprogramming, a subreddit (a microsite on Reddit.com) for beginner coders.
+10. Consider enrolling in a coding boot camp.
+A coding boot camp is a short-term training program that packs a comprehensive coding curriculum into several months. These programs are fast-paced, immersive, and a launchpad for a development career.
+
+Coding boot camps are intensive and expensive — not the kind of thing to dive into without any coding experience.
+
+These programs are primarily for beginners who are set on a career in development and are ready to commit time, energy, and money to get the necessary skills quickly.
+
+While grads tend to find employment in the tech industry, understand that this isn’t a guaranteed outcome. You’ll set aside a decent chunk of your year and savings for such a pursuit. Still, it’s difficult to top an in-person learning environment surrounded by peers and teachers as motivated as you are.
+
+Coding vs. Programming
+The terms coding and programming are often used interchangeably, but they don’t always mean the same thing. Both coding and programming mean writing instructions for a computer. But programming might also include algorithms and data structures. Generally, the term programming describes more advanced projects.
+
+While you can code with just a computer and some time, some programming might need specialized software tools. Programming projects are usually bigger and more complex. They may need project management and a more solid knowledge base.
+
+Programming Languages
+Programming languages graphic
+
+Coding requires knowledge of at least one coding language, a set of syntax and rules that computers can understand. There are hundreds of coding languages, each one unique in its purpose and what it can do.
+
+When I first stepped into the world of coding, the array of programming languages seemed overwhelming. I began with HTML and CSS, and it was a transformative experience. Diving into HTML opened my eyes to the fundamental structure of web pages, while CSS unlocked the secrets of styling and design. These languages were the perfect starting point for a newbie like me, offering a hands-on introduction to the world of web development.
+
+Programming languages give you a structure for the instructions you’re writing. This language looks like English, but not exactly. Programmers call the terms and grammar in a programming language syntax.
+
+
+50 Free Coding Templates
+Free code snippet templates for HTML, CSS, and JavaScript -- Plus access to GitHub.
+
+Navigation Menus & Breadcrumbs Templates
+Button Transition Templates
+CSS Effects Templates
+And more!
+Get Your Free Templates
+Learn more
+Low-level languages like Assembly or Machine are easier for machines to read than humans, so they can be tough to learn. That said, a middle-level language like C++ is useful to know if you want to write:
+
+Operating systems
+Database systems
+Image or video processing software
+High-level languages are usually easier for beginners. Some focus more on structure, while others are more interactive and can perform more complex functions.
+
+Below are some of the best languages for beginners. Try to get comfortable with just one language that aligns with your goals, then explore others if you’d like.
+
+Don’t worry about choosing the wrong one, though. These languages share underlying concepts, so you can start with one and switch to another.
+
+HTML
+Coding for beginners programming language example: HTML
+
+Image Source
+
+Hypertext Markup Language, or HTML, is the foundation of the internet — it’s used to set the content of web pages. When you load a web page, you see an HTML document rendered by your browser.
+
+If you’re unsure whether coding is your thing, HTML is the easiest language to sample.
+
+This is because HTML isn’t technically a programming language — it doesn’t execute scripts, and you can’t build functional programs with it. Still, HTML is everywhere online, so if you want to understand the internet, you’ll first need to understand HTML.
+
+Best for: Beginners eager to step into web development and understand the basics of web page creation.
+
+CSS
+How to learn coding programming language example: CSS
+
+Image Source
+
+You might be less familiar with HTML’s sibling language, CSS. HTML handles what content appears on a web page but doesn’t affect how that content looks.
+
+This is where Cascading Style Sheets, or CSS, comes in. The CSS language handles the styling of HTML — it sets features like colors, sizing, fonts, and even entire page layouts. CSS is also not a programming language. It’s a set of rules applied to HTML.
+
+HTML and CSS are almost always used together, so I recommended learning both. Otherwise, your web pages will look rather plain.
+
+If you’re starting from square one, dive into HTML and CSS.
+HTML and CSS are easy to learn largely because they don’t require you to think through the computational logic of programming languages.
+
+Learning HTML and CSS can also feel less abstract than other languages since you see the results of your code quickly — simply create a .html file and open it in your browser. Or, open an existing website and use your inspect tool to peek at the underlying code.
+
+New Call-to-action
+But, if you want your web pages to do things, you’ll need...
+
+JavaScript
+Coding for beginners programming language example: JavaScript
+
+Image Source
+
+JavaScript is a programming language that turns static web pages into dynamic ones. It enables page elements to move, react to user actions like clicks, and handle any operation beyond simply existing on the page.
+
+If you’re interested in web development and already have a feel for HTML and CSS, JavaScript is the next step.
+
+Together, these three languages make up most of your web content. Plus, JavaScript code can be easily tested in your browser.
+
+Pro Tip: Focus on mastering DOM manipulation and asynchronous programming in JavaScript to really bring your web pages to life.
+
+Python
+How to learn coding programming language example: Python
+
+Image Source
+
+Python is a popular programming language for beginners because of its user-friendly syntax and versatility.
+
+Much of Python code reads like English, which helps beginners learn basic concepts like functions.
+
+Python also has many code libraries. These are groups of pre-built functions that you can plug into your code instead of writing the functions out yourself. With Python, you can build many different types of programs. Many introductory courses also base their projects on this language.
+
+What I like: Its extensive libraries and community support make Python a great choice for both beginners and experienced programmers.
+
+python
+C/C++
+Coding for beginners programming language example: C++
+
+C is another popular choice for introductory courses. It’s wordier than Python and often requires beginners to write more code to achieve the same things. This is more work but useful for understanding abstract concepts. With C, you’ll learn skills that can be applied to other, more succinct languages.
+
+C++ is a successor to C. C++ syntax is similar to C with the addition of objects, a powerful variable type that makes programming sophisticated applications easier.
+
+I recommend beginning with C, though, since there are fewer concepts to learn, all of which can be mapped to C++. It will also teach you the basics of function-oriented programming.
+
+Best for: Those intrigued by system-level programming, game development, or applications where performance is critical.
+
+C#
+How to learn coding programming language example: C-sharp
+
+Image Source
+
+C#, also called C-sharp, is popular for developing video games, mobile and desktop apps, and enterprise software. C# shares a common source with C++, but while C++ and C have many overlaps, C# is more like Java.
+
+C# is easy to learn, and there are many ways to use it. If you plan to use both C++ and C#, you may want to learn C++ first. This will make it easier to understand C# and can help speed up the learning process.
+
+Java
+Coding for beginners programming language example: Java
+
+Image Source
+
+Java (not to be confused with JavaScript) is a general-purpose object-oriented programming language. Like Python, Java’s syntax is easy to read and understand by human programmers — often, complex tasks can be handled by one command.
+
+Java is popularly implemented in Android mobile applications. It’s another great base language with principles that can be intuitively applied to learning other languages.
+
+Pro Tip: Pay close attention to understanding object-oriented programming when tackling Java, as it forms the core of its functionality.
+
+HyperText Preprocessor (PHP)
+How to learn coding programming language example: PHP
+
+Image Source
+
+PHP is a server-side, open-source programming language for developing web applications. It makes it easy to add dynamic information, like updated news stories, to websites.
+
+You can also embed this language into HTML, which makes it easy to add functions to your website without needing external files. PHP is also great for database access, making it simple to access and store data.
+
+Best for: Beginners who want to delve into the server-side aspect of web development.
+
+Ruby
+Coding for beginners programming language example: Ruby
+
+Image Source
+
+Ruby is a simple language that’s useful for creating automation tools, desktop applications, and rapid prototypes. There is also a popular framework for Ruby, often called Ruby on Rails.
+
+Ruby is another open-source server-side programming language. Its framework also offers default structures for web pages, web services, and databases. This makes it a useful tool for developing web applications.
+
+While this language is easy to read and write, it may not be the best choice for your first programming language. This is because it’s also quite flexible, so it easily accepts changes.
+
+Flexibility is great when you’re first learning how to make a coding project go. But it can impact changes to your code as you maintain the project over time.
+
+What I like: Ruby is an excellent choice for rapid application development due to its 'convention over configuration' philosophy.
+
+SQL
+Coding for beginners programming language example: SQL
+
+Image Source
+
+SQL is another useful language for beginners. You can use this language to update, store, and retrieve data from a database. It’s also the standard language for database management systems, according to the American National Standards Institute.
+
+It’s different from the other programming languages since it’s technically a Query Language, so you won’t be building web pages with it.
+
+It can take some time to learn SQL if you don’t already have some understanding of programming. That said, this language is popular in tech and with data professionals, so it has a lot of relevance in the workplace.
+
+What I like: SQL is needed for projects that involves data storage and retrieval, making it a must-learn for web developers.
+
+Swift
+Coding for beginners programming language example: Swift
+
+Image Source
+
+If you’re learning to code to create projects for Apple devices, Swift is a good language to start with. Designers at Apple created this language with beginners in mind. And if your primary goal is to develop mobile apps for iOS devices, this should be your language of choice.
+
+While programmers have created most products since 2014 with Swift, you may also want to learn Objective-C.
+
+Developers created this language in the 1980s. It’s what their team built most iOS tools with. It uses some C syntax, so if you’ve learned C or C++ already, you may want to start with Objective-C as you start learning.
+
+Best for: Anyone aspiring to develop apps for Apple's platforms. Swift's modern features and safety make it a go-to for iOS app development.
+
+
+50 Free Coding Templates
+Free code snippet templates for HTML, CSS, and JavaScript -- Plus access to GitHub.
+
+Navigation Menus & Breadcrumbs Templates
+Button Transition Templates
+CSS Effects Templates
+And more!
+Get Your Free Templates
+Learn more
+Tips for Coding for Beginners
+As someone who ventured into the coding world not too long ago, I understand the mixed feelings of excitement and apprehension that come with learning to code. There are many ways to approach the practice of coding, and some methods and languages will work better for you than others.
+
+No matter what or how you learn, however, remember these beginner tips:
+
+1. Be patient.
+At the top of this post, I said anyone can learn to code. However, that doesn’t mean it’s easy.
+
+Coding requires you to approach problems in ways you haven’t before. Certain topics may seem nonsensical to you, yet central to the language you’re learning. Problems that might seem easy at first will become far more complex to implement than you expected. You might spend hours hacking away at an assignment without seeing results.
+
+And we can’t forget debugging. You’ll quickly learn that computers are nit-picky and will only do exactly what you tell them. Tiny typos like a missing semicolon or incorrect operator will break your entire program, and you must track down the culprit.
+
+Even coding for beginners isn’t easy.
+All of this can be uncomfortable and discouraging, and that’s okay. Do yourself a favor and progress slowly and steadily, giving yourself time to let everything soak in.
+
+The best programmers were once where you are, and everyone has to learn the same things to start. Go easy on yourself, stick to the goals you’ve set, take breaks, and you’ll be fine.
+
+2. Get comfortable with the fundamentals.
+The early days of learning a programming language are all about the essentials. You might start by learning binary, data types, and how to print to the console. From there, you’ll explore topics like:
+
+Variables.
+Functions.
+Conditional logic.
+Arrays.
+Objects.
+It’s essential that you fully grasp each of these concepts before advancing. This is because everything you learn in computer science builds on topics that come before.
+
+If something doesn’t make sense, keep reviewing it until it does. And don’t assume it will make sense later in the context of future lessons. If you’re learning from a tutorial, be sure you understand what each activity is meant to teach you.
+
+Complete all exercises to experience first-hand how each topic applies to coding. And stay patient — you can’t embark on an ambitious project until you grasp the fundamentals.
+
+3. Write clean code from the start.
+Here’s something an online course may not teach you: On top of learning how to write your code, you should also practice writing it well.
+
+What does this mean? For any given computation, there will be more than one way to program it. You should always strive to write it in the most concise and humanly readable way that you can.
+
+Developers usually work in teams, so others will be reading your code often. If it’s hard to decipher, fellow developers won’t look forward to working with you.
+
+Even if you decide to freelance, writing clean code ensures you’ll understand your own code. It’s better to build the habit of clean coding now, as it will save you hours trying to decipher your work after you haven’t looked at it in months.
+
+Why is clean code important?
+You might be wondering why you need to learn clean code at this point. You’re a beginner, so shouldn’t writing functional programs be the main goal?
+
+Well, yes. This is about establishing good habits early. If you put in the extra work now, you’ll save yourself (and others) some sanity down the road.
+
+A good way to achieve this is by keeping your lines and your functions short. I recommend limiting each line of code to 80 characters max and each function to no more than 15 lines.
+
+While limiting at first, these rules will train you to favor efficient code over the first idea that occurs to you.
+
+Also, make a habit of commenting. Comments are segments of code that aren’t processed by the computer, so you can write whatever you want inside them.
+
+Programmers use comments to clarify the purpose of their code. Learn how comments work in your language and, at the very least, leave comments at the top of your functions explaining the job of each one.
+
+4. Search is your friend.
+There’s no shame in using Google to find the solutions to your coding problems. In fact, professional developers do it all the time.
+
+If you’re struggling, someone’s probably been in the same situation and dropped a question to a forum. You’d be surprised at how many solutions you’ll find with super-specific queries.
+
+Plus, it’s quite satisfying to close 20 tabs of Stack Exchange after finally fixing a stubborn bug.
+
+Our Favorite Coding Resources
+Coursera
+Programming for beginners, Homepage of Coursera
+
+Coursera is an excellent resource in general. They have many programming and coding courses from Google, IBM, as well as various colleges and universities. You can get many paid courses through their monthly subscription, though they have free courses as well.
+
+Coursera also offers financial aid on a per-course basis. If approved, you can get free access to the paid content. It’s worth mentioning that the access granted is only for a limited time through this method. If you don’t touch a course for several months, you will likely lose access.
+
+Another nice thing about Coursera is that it’s treated like a classroom environment. This means you have an instructor for each course that you can ask for help, as well as other students that are currently taking the course. You can also get professional certifications that can help advance or change your career.
+
+MDN Web Docs
+Programming for beginners, homepage of MDN Web Docs
+
+If you’re doing web development, MDN Web Docs is the gold standard for documentation. Everything related to HTML, CSS, and JavaScript lives here. This site belongs to the Mozilla Foundation, which you may know for their popular web browser, Firefox.
+
+MDN Web Docs also has many tutorials ranging from complete beginners to the advanced level.
+
+Codecademy
+Programming for beginners, Homepage of Codeacademy
+
+Codecademy is great for diving right in and writing code almost immediately. It gives you small digestible tasks to work on, as well as a sandbox to work in. They have courses for just about every language you can imagine.
+
+Most of their content is free, though they have paid guided projects and career paths you can opt for, as well as career services and professional certifications.
+
+The Odin Project
+Programming for beginners, Homepage of The Odin Project
+
+The Odin Project is an open-source, full-stack curriculum for web development. They have two paths, one using Ruby on Rails and the other using JavaScript (with the React framework).
+
+The amount of information available is a bit daunting, but the best part about The Odin Project is that you will end up with many real projects to hone your skills and show off to potential employers by the end of it.
+
+W3Schools
+Programming for beginners, Homepage of W3schools
+
+W3schools has a ton of tutorials that range from typical programming languages, to frameworks and other languages like SQL and HTML. They also have plenty of example code you can play with and reference during your coding adventures.
+
+The best part is that everything is free. They do have some paid certifications, though all of the actual information about the languages is readily available.
+
+Stack Overflow
+Programming for beginners, Homepage of Stackoverflow
+
+Stack Overflow is an incredibly popular and useful site for developers. People ask questions about coding and get feedback. Then, the answers are voted on to determine the best solution. Even when you’re no longer a beginner, you will likely keep returning here to find answers to various questions or issues.
+
+The community is very active, and the public platform is free. You just need to create an account to interact with others.
+
+Coding is more than just the code.
+To finish up, I want to share one more valuable piece of advice from my first computer science class. From a beginner’s perspective, it may seem like learning to code means learning how to write code.
+
+This makes sense: When we imagine a computer programmer, we see someone writing out code on a computer — it’s called “coding” after all.
+
+Once you begin, though, you’ll learn that this isn’t the whole story. You’ll spend a lot more time thinking about what to write than actually writing it.
+
+Coding is problem-solving.
+This is because coding is more about solving problems than knowing the syntax. Learning to code is learning to think like computers do, deconstruct problems into their components, and address them with the tools you’re given.
+
+So, yes, you’ll learn to write some impressive code and eventually build amazing things. But first, you’ll develop the thinking skills that can get you there.
+
+In my years of coding, this approach to problem-solving has changed how I tackle technical challenges and how I approach problems in general. I hope you’ll experience the same. Keep going. You got this.
+
+Editor's note: This post was originally published in December 2020 and has been updated for comprehensiveness.
+
+
+
+Welcome
+This is CS50, Harvard University’s introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concentrators alike, with or without prior programming experience. (Two thirds of CS50 students have never taken CS before.) This course teaches you how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. Problem sets inspired by the arts, humanities, social sciences, and sciences. More than teach you how to program in one language, this course teaches you how to program fundamentally and how to teach yourself new languages ultimately. The course starts with a traditional but omnipresent language called C that underlies today’s newer languages, via which you’ll learn not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory and all. The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. Toward term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike. Course culminates in a final project.
+
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s eleven weeks of material. For each week, follow this workflow:
+
+recommended
+recommended
+Watch Lecture
+Watch Section
+Submit Problem Set
+Watch Shorts
+And then submit the course’s final project.
+
+To submit the course’s problem sets and final project for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org instead.
+If interested in a professional certificate from edX
+in web development, enroll at cs50.edx.org/programs/web instead.
+in artificial intelligence, enroll at cs50.edx.org/programs/ai instead.
+in Python programming, enroll at cs50.edx.org/programs/python instead.
+in game development, enroll at cs50.edx.org/programs/games instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/50 instead.
+If interested in transfer credit and accreditation from Harvard Summer School, register at web.dce.harvard.edu/summer/csci/s/50 instead.
+
+
+Welcome
+This course explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, machine learning, large language models, and other topics in artificial intelligence as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own.
+
+Prerequisites
+CS50x or at least one year of experience with Python.
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s seven weeks of material. For each week, follow this workflow:
+
+Watch Lecture
+Submit Project
+To submit the course’s projects for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/ai instead.
+If interested in a professional certificate from edX, enroll at cs50.edx.org/programs/ai instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/80 instead.
+If interested in transfer credit and accreditation from Harvard Summer School, register at web.dce.harvard.edu/summer/csci/s/80 instead.
+
+Welcome
+This course is a variant of CS50x designed especially for business professionals. Whereas CS50x takes a bottom-up approach, emphasizing mastery of low-level concepts and implementation details thereof, this course takes a top-down approach, emphasizing mastery of high-level concepts and design decisions related thereto. Ultimately this course empowers students to make technological decisions even if not technologists themselves. Topics include cloud computing, networking, privacy, scalability, security, and more, with an emphasis on web and mobile technologies. Students emerge from this course with first-hand appreciation of how it all works and all the more confident in the factors that should guide their decision-making. This course is designed for managers, product managers, founders, and decision-makers more generally.
+
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s six weeks of material. For each week, follow this workflow:
+
+Watch Lecture
+Submit Assignment
+To submit the course’s assignments for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/business instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/1b instead.
+If interested in transfer credit and accreditation from Harvard Summer School, register at web.dce.harvard.edu/summer/csci/s/1b instead.
+
+Welcome
+An introduction to cybersecurity for technical and non-technical audiences alike. Learn how to secure your accounts, data, systems, and software against today’s threats and how to recognize and evaluate tomorrow’s as well, both at home and at work. Learn how to preserve your own privacy. Learn to view cybersecurity not in absolute terms but relative, a function of risks and rewards (for an adversary) and costs and benefits (for you). Learn to recognize cybersecurity as a trade-off with usability itself. Course presents both high-level and low-level examples of threats, providing students with all they need know technically to understand both. Assignments inspired by real-world events.
+
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s five weeks of material. For each week, follow this workflow:
+
+Watch Lecture
+Submit Assignment
+And then submit the course’s final project.
+
+To submit the course’s assignments and final project for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/cybersecurity instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/159 instead.
+If interested in transfer credit and accreditation from Harvard Summer School, register at web.dce.harvard.edu/summer/csci/s/159 instead.
+
+Welcome
+An introduction to programming using a language called Python. Learn how to read and write code as well as how to test and “debug” it. Designed for students with or without prior programming experience who’d like to learn Python specifically. Learn about functions, arguments, and return values (oh my!); variables and types; conditionals and Boolean expressions; and loops. Learn how to handle exceptions, find and fix bugs, and write unit tests; use third-party libraries; validate and extract data with regular expressions; model real-world entities with classes, objects, methods, and properties; and read and write files. Hands-on opportunities for lots of practice. Exercises inspired by real-world programming problems. No software required except for a web browser, or you can write code on your own PC or Mac.
+
+Whereas CS50x itself focuses on computer science more generally as well as programming with C, Python, SQL, and JavaScript, this course, aka CS50P, is entirely focused on programming with Python. You can take CS50P before CS50x, during CS50x, or after CS50x. But for an introduction to computer science itself, you should still take CS50x!
+
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s ten weeks of material. For each week, follow this workflow:
+
+recommended
+Watch Lecture
+Watch Shorts
+Submit Problem Set
+And then submit the course’s final project.
+
+To submit the course’s problem sets and final project for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/python instead.
+If interested in a professional certificate from edX, enroll at cs50.edx.org/programs/python (for Python) or cs50.edx.org/programs/data (for Data Science) instead.
+
+Welcome
+This is CS50’s introduction to databases using a language called SQL. Learn how to create, read, update, and delete data with relational databases, which store data in rows and columns. Learn how to model real-world entities and relationships among them using tables with appropriate types, triggers, and constraints. Learn how to normalize data to eliminate redundancies and reduce potential for errors. Learn how to join tables together using primary and foreign keys. Learn how to automate searches with views and expedite searches with indexes. Learn how to connect SQL with other languages like Python and Java. Course begins with SQLite for portability’s sake and ends with introductions to PostgreSQL and MySQL for scalability’s sake as well. Assignments inspired by real-world datasets.
+
+Whereas CS50x itself focuses on computer science more generally as well as programming with C, Python, SQL, and JavaScript, this course, aka CS50 SQL, is entirely focused on SQL. You can take CS50 SQL before CS50x, during CS50x, or after CS50x. But for an introduction to computer science itself, you should still take CS50x!
+
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s seven weeks of material. For each week, follow this workflow:
+
+Watch Lecture
+Submit Problem Set
+And then submit the course’s final project.
+
+To submit the course’s problem sets and final project for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/sql instead.
+If interested in a professional certificate from edX, enroll at cs50.edx.org/programs/databases instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/151 instead.
+
+Welcome
+This course picks up where CS50x leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security, and user experience. Through hands-on projects, students learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By semester’s end, students emerge with knowledge and experience in principles, languages, and tools that empower them to design and deploy applications on the Internet.
+
+Prerequisites
+CS50x or prior experience in any programming language.
+Watch an introduction
+How to Take this Course
+Even if you are not a student at Harvard, you are welcome to “take” this course for free via this OpenCourseWare by working your way through the course’s nine weeks of material. For each week, follow this workflow:
+
+Watch Lecture
+Submit Project
+And then submit the course’s final project.
+
+To submit the course’s projects and final project for feedback, be sure to create an edX account, if you haven’t already. Ask questions along the way via any of the course’s communities!
+
+If interested in a verified certificate from edX, enroll at cs50.edx.org/web instead.
+If interested in a professional certificate from edX, enroll at cs50.edx.org/programs/web instead.
+If interested in transfer credit and accreditation from Harvard Extension School, register at web.dce.harvard.edu/extension/csci/e/33a instead.
+If interested in transfer credit and accreditation from Harvard Summer School, register at web.dce.harvard.edu/summer/csci/s/33a instead.
+
+The Only ML Roadmap, that you will ever need!
+So, you want to dive deep into Machine Learning and do something in the field of Artificial Intelligence but don't know where to begin. You have come to the right place! I would be putting out everything that I know and things that I feel you need to know to get into any kind of data role. This document would also help you explore every broad data role and might help you decide what you should be doing.
+
+Is ML and Data Science for you?
+Before you dive in any deeper. I guess it makes sense to understand if you should even pursue this field. I would jot down a few points and if it matches your personality, then you should definitely give it a shot!
+
+You love mathematics (or atleast you don't hate it).
+You like looking at percentages, statistical data and would love to create such insights if given a chance.
+You have an eye for patterns and you figure out interesting details that most people might miss.
+You don't get scared of large excel sheets and would be okay to clean them to work on cool projects with the cleaned data.
+You are a good communicator, or you are comfortable with communicating your ideas and findings to people around you (SUPER IMPORTANT).
+You are okay with not finding the right answer and have accepted that you will never find one. Your job would be to get as close to the correct answer as possible but it's okay if you don't reach it.
+You like brainstorming about things and can tolerate working with vague problem statements and figure out what to do.
+It is absolutely fine if all the points do not match the person you are, but if most of them make sense then you should continue reading further.
+
+The paths to choose from
+If you are still reading, I believe you want to give a chance to data science and Machine Learning. In this section, I would talk about the paths which you can choose from. Follow the table below, to get a basic idea.
+
+Role	What do they do?
+Data Analyst	Analyze data provided to them to generate insights. Present their findings using visualization tools and PPTs.
+Data Engineer	The data which data analysts work with doesn't come easily. The ones who work hard to create data pipelines to bring the data to the table are data engineers.
+Machine Learning Engineer	Data analysts provide insights of the data based on what happened in the past. The ones who build predictive models to forecast the future using the present data are machine learning engineers
+MLOps Engineer	Building a model doesn't mean that the model would perform well all the time. every model degrades with time. The ones who look after the deployment of the model and maintain it's performance are MLOps engineers.
+Data Scientist	The one who has the ability to handle most of the above mentioned roles has the potential to be a data scientist. They are also more inclined towards doing mathematical and statistical research to improve model performance
+AI Researcher	A data scientist who focuses more on maths and statistics. Focuses less on data engineering but puts a lot of effort to read about the recent advancements in the field of AI and tries to build better and more sophisticated algorithms. They are more often than not in specialized fields like Computer Vision (image related tasks), Natural Language processing (text related tasks), speech recognition, etc.
+What to learn?
+Now that you are aware of the types of roles that are present in the data realm, you might want to know how to get started and what you need to learn for each role.
+
+Data Analyst
+A skilled data analyst has
+
+strong communication skills
+good presentation skills and ability to explain visualizations
+Proficiency in SQL
+Proficiency in data visualization tools
+Proficiency in Python (optional but recommended)
+So to be a data analyst, the primary skill you need is SQL. There's no substitute of SQL, so prepare this well. There are multiple resources to learn SQL There is this amazing playlist from campusX to learn SQL. You should also check out Joey Blue who has done exceptional work as well. Practice Questions from Data Lemur after you learn SQL and you are good to go. You need to learn a data visualization tool like Power BI or Tableau. I personally prefer Power BI. There's an amazing course by Codebasics to learn Power BI. The link is attached here. In case, you want to learn python, you need to learn the fundamentals and a few libraries like Numpy, Pandas and matplotlib/seaborn (I prefer matplotlib). FreeCodeCamp is an youtube channel that provides enormous amount of knowledge for free! There's a 12 hour long video that teaches you how to install python even if you have never done any programming and it also makes you learn about these above-mentioned libraries.
+
+Finally, I would also ask you to do something that most people ignore. LEARN ADVANCED EXCEL. You might feel, you know how to use Excel, I promise you that you don't. There are so many ways that excel can simplify your life, it's just amazing. Check out this playlist from freecodecamp where they teach you excel from basics and progressively teach you the advanced concepts.
+
+If youtube is not for you and you require structured online courses, I have a few suggestions as well.
+
+Google Data Analytics Professional Certificate
+Google Business Intelligence Professional Certificate
+Google Advanced Data Analytics
+Try to do it in the mentioned order. Coursera offers financial aid, so you can do all three of the above mentioned courses for FREE.
+
+Data Engineer
+I would be honest here, the purpose of this roadmap is to make you guys aware of all the roles present in the data industry. I am not pursuing Data Engineering, so I am not the right person to advise you about this. yet there are things that I can tell you about data engineering. It is mostly for people who are very efficient programmers. Infact, I would say, data engineering is one of the most programmatically heavy roles out of all the above-mentioned roles. Yet, if you are someone who would prefer to code more than talking to people, then data engineering is something that you might like.
+
+A few tools that data engineers use are:
+
+SQL
+Python
+Scala
+Hadoop/Spark/Kafka for handling big data
+Apache Nifi and Apache Airflow for building ETL pipelines
+Snowflake/Google Big Query, etc for data warehousing
+Familiarity with Cloud Systems like GCP/AWS
+Familiarity with containerization technologies like Docker and Kubernetes.
+I am sorry but since I don't have much experience with data engineering technologies, I can't help here. Yet, you can google and find resources in this field that you deem useful. I have a better option though in the opportunities section down below.
+
+Machine Learning Engineer
+If you made it here. I hope you like maths. Data Analytics was communication heavy and Data Engineering was programming heavy. The roles that you would be seeing now are all mathematics and statistics heavy. This shouldn't scare you but you need to learn a bit of Linear Algebra, Calculus and Probability to do well in these fields, to properly understand how things work. Let's dive deep into it.
+
+If you are a Machine Learning Engineer, you probably would have your data prepared by a team of data engineers. Depending on the size of the company, it would be either analyzed by data analysts or in a small company, you would have to analyze the data before working on your machine learning models. So, to be well prepared, you need to already have the necessary data analyst skills (you can leave out the dashboarding aspects but it's good to know to keep your options open). The extra skills that a machine learning engineer has other than just having data analysis skills are:
+
+Solid foundations of linear algebra, probability statistics and calculus.
+Knowledge of some other python libraries like Scikit learn, beautiful_soup/spacy, etc.
+Knowledge of frameworks like tensorflow/pytorch.
+Understanding of Standard Machine Learning Algorithms like Linear Regression, Logistic Regression, K nearest Neighbors, Support Vector Machine, Decision tree, Random Forest, Gaussian Naive Bayes, etc.
+Understanding of concepts like gradient descent, multi-layer perceptrons, feed-forward neural networks, back propagation, etc. to build the base for understanding deep learning.
+Knowing how to deploy your projects using Streamlit (if possible learn Flask too).
+Learning about specialized fields like Computer Vision and Natural Language Processing (optional).
+There are a lot of free courses available on the internet related to Machine Learning. I would tell you guys to look at the ones that I feel the most important and have actually helped me learn.
+
+Machine Learning Specialization by Andrew Ng
+Deep Learning Specialization by Andrew Ng
+Data Science Playlist by Codebasics
+If you like reading books, you can try reading:
+
+Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2 by Sebastian Raschka Vahid Mirjalili
+Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems
+For Mathematics and Statistics you can read:
+
+Practical Statistics for Data Scientists (Oreilly)
+Mathematics of Machine Learning by Martin Lotz
+CS229 Lecture Notes Andrew Ng and Tengyu Ma (this is much more than notes trust me.)
+For Advanced Readers out there:
+
+Approaching (Almost) Any Machine Learning Problem by Abhishek Thakur
+The Black Swan: The Impact of the Highly Improbable (you can easily go ahead without reading this but this is one of the greatest books that I have ever read).
+For the ones who want to dive deep into Computer Vision and NLP:
+
+For NLP, you should follow Pradip Nichite. He is one of my personal favourites.
+For Computer Vision, You should follow Nicholas Renotte. He has also done work in NLP as well but his tutorials on Motion Sensing are amazing.
+For an all rounder, you can follow Rob Mulla.
+MLOps Engineer
+This is another field that I have very low idea about and hence I won't be talking much about it. Yet, in layman's terms, MLOps Engineer = Devops Engineer who understands ML
+
+You can follow Ayush Singh (I know he's amazing, just don't feel you haven't done anything in your life. You weren't aware. Now you are). Also, be aware that this role is also very programmatically heavy but requires lower communication skills compared to other roles. You can look at the MLOps roadmap by Marvelous MLOps which I feel is a good place to start. That's all that I can help you guys with here. You would find something interesting in the opportunities section below.
+
+Data Scientist
+If you're reading this, then know that this role prefers candidates with a masters. Although there is a probability that you can get hired as a data scientist right after your undergraduate degree but the chances are extremely slim. Read Further, only if you wish to go for a master's (if not a PhD). To become a data scientist you need to understand the image below.
+
+Data Science Venn Diagram
+
+To be a data scientist you need to:
+
+Know python and machine learning.
+Understand statistics and mathematics
+Have domain specific knowledge.
+Data Scientists use data to help companies make decisions that have a direct impact. So being comfortable with hypothesis testing and performing statistical tests to check if your decisions are correct would be important.
+
+As mentioned above, this isn't an entry level role and requires expertise. So the best you could do is try to get expertise in mathematical and statistical concepts that are important to data science. The books presented above in Machine Learning would help you with that.
+
+AI Researcher
+I consider this to be the top role in the field of AI and machine learning. The ones who are in this role definitely have a masters and in most cases, a PhD. You need to have publications in top conferences and a lot of interest in research to actually get to this position. The data scientists use algorithms to solve problems. AI Researchers are the ones who study the underlying mathematics of these algorithms and try to improve them. This is very technical and is only for ones who want to study and dissect the field of Artificial intelligence. This is where I want to reach. I hope some of you guys do as well. It is very academically heavy and is easily the most mathematical. Yet, if you are very interested in solving mathematical problems and proving theorems, this could be for you.
+
+What Next?
+Thank you for reading this far! I hope you have got an idea of all the major roles that exist and have a vague idea of what you want to pursue. Now, to get a job in the data industry, you need to stand out from the rest. For that you need to have a portfolio website.
+
+A portfolio website consists of all the projects that you have built and helps the recruiter figure out what you are good at in a few seconds. The resources mentioned above already have a lot of guided projects that you can mention in your resume but other than that you can also do a few projects on the side to help you out.
+
+Opportunities
+I talked about portfolio website but I did not mention how you can do projects of your own. For that there's a platform that comes to your rescue. It's called Kaggle. Here you would find thousands of datasets to practice your data analysis/machine learning skills to work on and there are also experienced people sharing their code that could help you learn the best practices (What more do you need?).
+
+Hackathons
+Showcasing that you have experience to build an end to end solution in a small time is very attractive to potential employers. There are multiple websites where you can find Data Science/Machine Learning related hackathons. I would name a few:
+
+Kaggle
+MachineHack
+Unstop
+Keep checking these websites on a timely basis as new opportunities can come up any time. Stay aware. Knowing about opportunities is a gift that people take for granted.
+
+Special mentions
+There are a few opportunities that I would like to talk about which do not fit the above mentioned criterias but could be helpful.
+
+AWS AI & ML Scholarship: This is a 20 hour long course that you need to take. After which you have to give an exam and score 80% to be eligible to apply. The top 2000 students who apply get a 4 month long nanodegree course about Python programming and AI on Udacity by AWS (worth $4000) for FREE. The top 500 who do well in that course get another advanced nanodegree program for free and receive guidance from AWS Mentors for a year. The last date to complete your application after completing all the tests and course work is 30th September, 2023. BE QUICK!
+Hamoye: This one is for the Data Engineering Enthusiasts and MLOps Enthusiasts. I asked you to scroll to the opportunities section for this. Hamoye is an excellent platform that offers students the chance to study in a competitive environment. They offer you four tracks to choose from:
+Data Science
+Data Engineering
+Cloud Engineering and Devops
+Data Storytelling
+You would be in a 4 month long internship here where you would have to submit weekly quizzes and assignments to get a rank among every other student who applied for the internship. The best performers tend to get internship opportunities (and even if you don't, you would have learnt a lot, made projects to showcase and would have a leaderboard position to flex about ). The last date to apply to the fall cohort 2023 is 8th September, 2023. Be QUICKER!!!
+
+Omdena: You have built some projects and have some experience to contribute to projects that actually make an impact. Omdena could help you with that. They offer you a chance to work with people from all around the world for 6-8 weeks where you try to solve a real world problem and make an impact. The project actually gets implemented in the real world and is a very solid add to your resume. Projects on omdena are open all around the year and you can apply whenever you feel ready.
+Conclusion
+Whoa, this was long, Thanks for reading this far. I would admit that I am not an experienced professional and I am still learning but this is everything that I had used (or still am using) to improve myself. I believe all these resources could help you all as well. If you feel there's something that you don't agree with or want to contribute something that I missed out. Feel free to raise a PR. I hope this helps some of you!
+
+To become a Web Developer, you should have an understanding of HTML, CSS, and JavaScript. It’s also recommended to learn about CSS and CSS frameworks. Developing these fundamental web development skills will give you the foundation and logic for communicating with programming languages.
+
+How to become a Web Developer in five steps:
+
+Learn web development fundamentals
+Choose a development specialization
+Learn key programming languages for web development
+Work on projects to develop your Web Developer skills
+Build a web development portfolio
+1. Learn Web Development Fundamentals
+The best first step to becoming a Web Developer is to start learning web development fundamentals, including an understanding of HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript.
+
+Many aspiring Web Developers are now using coding bootcamps to fast-track the learning process. Coding bootcamps have thrived because they are short, immersive, and focused on outcomes and employment – their goal is to develop job-ready skills as efficiently as possible, making them an increasingly worthwhile investment for a would-be Web Developer. According to the job site Indeed, four out of five companies in the U.S. have hired a graduate from a coding bootcamp.
+
+In fact, the practical advantages of coding bootcamps are only getting clearer over time. For one thing, the field of web development naturally attracts people from all other fields, many of them making mid-career transitions – people for whom a clear and efficient path to skills expansion is a top priority. Further, employers increasingly value skills and experience over education, placing anyone who can prove their abilities on more equal footing with Developers holding a college degree.
+
+It’s important to note that Web Developers – more than most other fields – must be committed to ongoing learning to stay on top of changes in web development and programming languages, tools, and trends. This makes mid-career retraining a must whether or not it’s the line of work you started out in.
+
+What Is Multi-Chain?
+Last Updated Date:
+June 14, 2024
+DEFINITION
+Multi-chain refers to the growing ecosystem of hundreds of blockchains that exists today.
+
+Since its beginnings as a single network called Bitcoin in 2009, the blockchain industry has grown in leaps and bounds, with pioneers continuously pushing forward the capabilities of blockchain technology. An early example of this was Ethereum, which was the first blockchain to expand the concept of blockchain technology past transaction verification to a full-fledged decentralized computing platform. This resulted in the birth of DeFi, NFTs, and other verticals, which represent the lion’s share of user-facing applications that exist today.
+
+This innovation was not limited to Bitcoin and Ethereum—hundreds of blockchains have since been created to attempt to solve the blockchain scalability trilemma and provide developers with new technology to build decentralized applications. With these blockchains, the era of multi-chain began.
+
+What Is Multi-Chain?
+At the highest level, the term “multi-chain” simply refers to the ecosystem of hundreds of blockchains that exist today. However, the term is used most frequently to describe applications that launch on multiple blockchains, widely known as “multi-chain applications.”
+
+How Does Multi-Chain Work?
+Multi-chain is the result of blockchain fragmentation. Because each blockchain is effectively an island with little to no connectivity with other blockchains or the outside world, an application on one blockchain can’t be accessed by a user on another blockchain.
+
+In a multi-chain application, developers configure a separate and isolated instance of their smart contracts for each different blockchain. This is because the immediate goal for any application after its launch is to garner more users, and so multi-chain expansion is the natural next step.
+
+A diagram showing how a multi-chain application works
+In a multi-chain application, there are separate and isolated smart contracts on each blockchain.
+Multi-chain applications are needed because decentralized applications (dApps) that exist solely on one blockchain may be missing out on millions of users on another blockchain. A user who’s already onboarded onto a different blockchain must take many steps to access that application—for example, adding a new network or downloading a new wallet, bridging funds from one blockchain to another, and then acquiring the native gas token to transact. Multi-chain expansions solve this problem by meeting users on the blockchain environments they’re already familiar with.
+
+Problems With Multi-Chain
+Multi-chain applications are a solution for developers to access the widest possible net of users, but they come with their own set of limitations.
+
+Technical Burden
+The effort to build, maintain, and update a multi-chain application is immense, especially because new blockchains are constantly emerging. For each new blockchain, developers must change their code to fit the blockchain’s specific technical requirements, ensure the code is well-written and secure, and maintain each instance separately.
+
+This is why multi-chain applications often stay within a certain ecosystem, reducing the technical complexity of launching a new application. Applications on Ethereum are far more likely to expand to EVM-compatible chains, for example.
+
+Isolated Liquidity
+Increasing liquidity results in a self-reinforcing cycle. A decentralized exchange (DEX) with the highest liquidity can offer the lowest slippage for transactions, the most expansive liquidity rails, and the highest yields to liquidity providers. It is one of the largest competitive differentiators between DeFi protocols.
+
+The lack of connectivity between individual instances of a multi-chain application is a large problem for decentralized finance (DeFi) applications specifically because it fragments this liquidity. In the current paradigm, multi-chain DeFi applications have separate liquidity pools for each blockchain, fragmenting the liquidity available to the end user.
+
+A diagram showcasing how Synthetix unifies liquidity using Chainlink CCIP.
+Synthetix leverages Chainlink CCIP to unlock cross-chain collateral for users, enabling universal liquidity pools.
+Multi-Chain vs. Cross-Chain
+The difference between cross-chain and multi-chain applications is nuanced. While cross-chain and multi-chain applications differ significantly today, it’s possible that the two terms will become synonymous in the future.
+
+Today, the largest difference is in the technical implementation of these applications. Multi-chain applications have separate and isolated smart contracts on each blockchain. In contrast, cross-chain applications have a unified set of smart contracts that communicate seamlessly across chains, unlocking a best-of-both-worlds approach given the application has access to a secure cross-chain messaging protocol.
+
+A diagram showing the difference between a cross-chain and multi-chain application.
+Cross-chain applications help abstract away the technical complexities of blockchains for both user and developer.
+Cross-chain applications unlock modularity in application design: Instead of building redundant smart contracts for each chain, developers can run separate different parts of their application on the chains they’re best suited for. A Web3 game can process game transactions on a high-throughput, low-cost chain that then mints an NFT for the player on a chain purpose-built for security. A DeFi protocol can unify liquidity by enabling users to access liquidity across any chain.
+
+With cross-chain applications, users don’t have to care about which blockchain they’re on. They only need to know how to navigate the application—a vision that started with multi-chain, but is being expanded, and fully realized, by cross-chain.
+
+Why Do We Need Multi-Chain?
+The proliferation of a multi-chain ecosystem is a healthy evolution for Web3, where different blockchains have competitive differentiators that make them the best fit for a particular type of application. It breeds competition, which then inspires innovation.
+
+Multi-chain is also a necessity for users in order for them to access the widest range of applications possible. In any user-facing application, the burden of effort lies on the developers. Users deserve a frictionless experience, and that’s what multi-chain—and cross-chain—applications offer. They meet users on the blockchain environments they’re already comfortable with.
+
+How Chainlink Empowers a Multi-Chain Ecosystem
+Cross-chain is the natural next step for multi-chain. It unlocks elegant application design, enables specialized division of labor between blockchains, and abstracts away technical complexities from both user and developer.
+
+That said, the cross-chain connectivity problem has been difficult to solve, to say the least. Historically, cross-chain bridges and messaging protocols have suffered from poor security, resulting in $2.5B+ in total value being hacked from bridges in 2022. But the demand for cross-chain—and the potential of what can be built with access to a secure cross-chain messaging protocol—has remained steady, evidenced by $7B+ in monthly bridge volume.
+
+A diagram showing bridge hack amounts and monthly bridge volume.
+Though cross-chain bridges are an integral part of Web3, they’ve historically suffered from poor security.
+That’s where Chainlink Cross-Chain Interoperability Protocol (CCIP) steps in. As the industry-leading cross-chain messaging solution, CCIP leverages the same high-quality Chainlink node operators that have securely enabled more than $12 trillion in value for DeFi protocols. With an existing platform of proven Web3 services for dApps to access price data feeds, verifiable randomness, smart contract automation, and more, Chainlink has helped power over 1,800 projects in the Web3 ecosystem to date.
+
+A diagram showing the CCIP tech stack.
+Chainlink CCIP is the most secure cross-chain messaging protocol in Web3.
+Chainlink CCIP introduces a variety of unique features that help ensure dApps can securely and reliably build cross-chain applications, such as:
+
+Simplified Token Transfers: CCIP has a plug-and-play solution that handles the complexity of burning and minting or locking and minting tokens across chains.
+Rate Limits: CCIP supports customizable rate limits on the amount of tokens able to be transferred between blockchains within a given time period.
+Smart Execution: CCIP utilizes a gas-locked fee payment mechanism to help ensure the reliable execution of cross-chain transactions regardless of destination chain gas spikes.
+Risk Management Network: The Risk Management Network continually monitors and validates the behavior of the primary CCIP network, providing an additional layer of security by independently verifying cross-chain operations.
+For full details on CCIP’s unique differentiators and technical implementation, read this blog.  
+
+Simply put, CCIP provides developers with the full functionality they need to confidently build cross-chain applications. In a vertical where security is not just a nice to have but a necessity, Chainlink’s ability to provide secure Web3 services is paramount for long-term success when building seamless decentralized applications.
+
+A New Era of Multi-Chain Is Beginning
+One key goal of all decentralized applications is to eliminate the barriers that cause users and developers alike to make a clear distinction between Web2 and Web3. It’s not difficult to imagine a universe where a user doesn’t know which blockchain they’re using, or whether an app uses blockchain technology or not. But in order to make this a reality, developers need better tools to build seamless applications that can abstract away all the technical complexities that exist today.
+
+CCIP is that technology, the start of a new multi-chain era.
+
+PROFESSIONAL CERTIFICATION
+Become a Web Developer in 12 Weeks
+#1 in-demand job title in tech
+47,000+ new development jobs created last year
+Learn More
+2. Choose a Development Specialization
+As you continue to grow your skills, you’ll need to choose an area of specialization. But what are the types of web development? All Web Developers are categorized into three main types:
+
+Front-End Developer. A Front-End Developer works on the “client-side” of web development, meaning any portion of the site or app that users interact with. This can include a site’s layout, design, and the way users interact with it.
+Back-End Developer. A Back-End Developer works on the “server-side” of web development. This is focused on the way a site functions and can include databases, servers, networks and hosting, and more.
+Full-Stack Developer. A Full-Stack Developer is familiar with both front-and back-end development and works with both sides of a website.
+3. Learn Key Programming Languages for Web Development
+Whatever your area of concentration, you’ll need to learn to code and know how to use a handful of different programming languages for web development and web design. So, what are the most common programming languages?
+
+Three families of programming languages form the basic tools involved in virtually all aspects of web development:
+
+HTML (Hypertext Markup Language)
+CSS (Cascading Style Sheets)
+JavaScript
+Of course, the list goes on – these are just the beginning. In fact, web development is such a diverse and varied field that the list of all the tasks it can include (and all the coding languages and markup languages you might use to accomplish them) is too long to fit in this space. Fortunately, as a specialist, you can find and concentrate on the ones that work best for you.
+
+4. Build Projects to Develop Your Web Developer Skills
+With a grasp of the basics in HTML, CSS, and JavaScript, and a foundation of programming skills, you’re ready to begin building. As you go, you’ll gain experience using an ever-growing set of Web Developer skills. Some of these are technical skills, or “hard” skills, like programming in SQL or Python, using the jQuery library of functions for more efficient programming, or using tools like Git for version control. The best way to improve these web development skills is simply to start messing around – the more you use them, the better you’ll be.
+
+
+There are also a number web design skills that are useful for Web Developers to have, with an understanding that responsive design is perhaps the most crucial. While Web Developers are not typically tasked with the overall site design, it’s an advantage for Developers to also have a solid understanding of common design principles. Front-End Developers, in particular, program the screens that users interact with – and they can be far more successful with a good grasp of user-centered design.
+
+5. Build a Web Development Portfolio
+A riveting Web Developer portfolio that shows off your strongest skills is your best tool when applying for web development jobs. There are three things to keep in mind when building a portfolio that will stand out from the pack.
+
+First, your Web Developer portfolio should include a diverse selection of web development work. You don’t want to use every project you’ve ever worked on – your professional portfolio should be a highlight reel that not only demonstrates your best work, but shows your versatility. You want to be selective and highlight your best work, but your selection should be diverse enough that it demonstrates a solid understanding of the various elements of the position. When applying for Web Developer jobs, do a bit of research into the company and the role you’re looking to fill – then refine your portfolio even further, editing out unrelated examples and spotlighting your most relevant work.
+
+
+Second, think about what makes you and your work unique. Emphasize the web development skills that most make you stand out – not just in the work you include in your portfolio, but in how the portfolio itself is presented. If you’re applying for design-related roles, for instance, your portfolio website should have a solid front end – a great user experience with a beautiful interface. And if you’re applying for a Web Developer role, ensure that your portfolio is displayed on a flawless site. That means no messy code.
+
+Third, show your process. Employers aren’t looking only at the quality of work you produce, but at how you approach problems. Don’t be afraid to frame each example as a case study, providing a narrative of your thought process and the problem you were trying to solve with the project. Showing background on how your projects were created will help Recruiters and Hiring Managers make sense of your work, and say more than just a standalone piece. This is also a great opportunity to demonstrate your communication skills – an important part of excelling in a position.
+
+Is Web Development a Growing Field?
+
+Yes, the web development field is booming. There are more than 1.3 million Developer jobs available in North America, and more than 47,000 new development jobs were created in the last two years, with the market expected to grow an additional 15% in the next 5 years. For these reasons, Mondo found “Web Developer” the most in-demand job title in tech and one of its top-paying jobs.
+
+
+How Can I Become a Web Developer Fast?
+Coding bootcamps have become an increasingly popular option for aspiring Web Developers as they provide a hands-on learning experience and the chance to develop job-ready skills – in as little as 12 weeks.
+
+Traditionally, many Web Developers have started with higher education in software engineering, computer science, or related fields. However, it’s also possible to come from a completely different industry. In fact, a growing number of professionals are taking steps later in their careers to learn development from scratch either by becoming self-taught or pursuing a diploma with a coding bootcamp. In fact, BrainStation’s Digital Skills Survey found that 55 percent of development respondents began their career in a different field and 58 percent have only been programming for five years or less.
+
+What Is Needed to Become a Web Developer?
+Here are some of the things you’ll need to learn to become a Web Developer:
+
+Foundations: Web Developers create websites, so to become a Web Developer, you should develop a comprehensive understanding of how the web works. This will deepen your HTML and CSS knowledge to build and style more advanced static web pages, using frameworks such as Flexbox. It will also help you establish problem-solving practices and logic to understand advanced programming concepts.
+Programming fundamentals: Foundational knowledge of computer programming, JavaScript, and object-oriented programming should be a starting point for aspiring Web Developers, as it will improve your ability to write and build components.
+Front-end frameworks: It’s important for aspiring Web Developers to learn how to use React, a JavaScript framework, to build complex and dynamic web pages and professional-level user interfaces.
+Web servers: To become a Web Developer, you’ll need to know how to build servers using a modern back-end framework and how to develop custom APIs and serve static websites and files.
+Server-side programming: It’s important for Web Developers to have an understanding of Server Side Rendering and Templating Engines, which are used to create empty page templates populated with dynamic data, such as a series of product pages for an eCommerce store.
+Databases: Aspiring Web Developers will also have to understand core concepts around data and learn how to manage databases and data on a web server.
+As in other tech fields, it’s important for Web Developers to network and to keep learning, as programming languages and techniques change frequently. Apart from coding bootcamps, web development courses, panel discussions, and workshops, you can also stay current by contributing to an open-source commons, such as GitHub or Bootstrap.
+
+And of course, to become a Web Developer, you will need a portfolio of completed projects for your job search. Regardless of your specific interests, it’s important to showcase your versatility to ensure clients from various industries get a sense of your abilities.
+
+How Many Programming Languages Should I Know?
+A simple question with a complicated answer. It’s complicated because it depends, like so many things in life, on multiple variables. Are you a beginner Web Developer or a pro? What types of projects do you work on, or want to work on? And what does the future hold?
+
+If you’re a new Web Developer, it makes sense to start with the basics—but on the other hand, a certain amount of specialization can set you apart from your competitors. Ultimately, the solution is to determine which languages are useful in your field, with the degree of specialization that’s right for you, and are growing in popularity rather than falling out of it.
+
+To get a handle on these trends, BrainStation conducted a survey of the current digital landscape. Based on the answers from thousands of professional respondents, we’ve put together an overview to help guide you toward the programming language you should begin learning now.
+
+The More Programming Languages You Know, The Better
+If you’re a Web Developer, take comfort in the fact that you’re in a growth industry. The market for Web Developers is expected to grow by another 15 percent by 2026, according to the U.S. Bureau of Labor. Because of this rapid growth, the field has seen an influx of relatively new talent; 58 percent of our survey respondents said they’ve been working in development for five years or less.
+
+Our survey also revealed that the more experience Web Developers have under their belt, the more likely they are to work in full-stack development, and the broader their range of specialties. The takeaway: for a Web Developer to move forward in their careers, it’s crucial to continue learning new and more specialized languages—which, ironically, make them less specialized, and better able to collaborate with or manage teams working at more stages of a broader range of projects.
+
+The Most Popular Coding Languages
+Another paradox: when it comes to languages, a small number crop up almost everywhere—and yet the long tail of highly specialized and esoteric languages is just as important.
+
+Asked which programming languages they use currently, respondents overwhelmingly pointed to JavaScript (80 percent), with SQL (47 percent), Python (35 percent), and Java (27 percent) rounding out the leaderboard. Consider these the basics: if you’re a Web Developer, one or more of these is a virtual necessity, no matter what your area of expertise.
+
+Respondents also identified JavaScript and Python as the most enjoyable languages to work in, which not only explains their popularity but also suggests that their popularity in the future is reasonably assured.
+
+Most remarkable, even with a list of no less than 17 programming languages to choose from, 33 percent of respondents checked “Other”—making it the third most common response, and proving that while the industry may have its favorites, there’s still plenty of demand for more obscure languages.
+
+Fastest-Growing Languages
+As new applications emerge, we should expect the list of most frequently used languages to change. Asked what will have the biggest effect on their industry over the next five to 10 years, a large majority of respondents (78 percent) chose artificial intelligence and its subset of machine learning as the biggest opportunities for growth.
+
+Other trends they’re anticipating: the Internet of things (54 percent), augmented reality (53 percent), and blockchain (41 percent). But while they’re anticipating these technologies will gain prominence, only a minority of Developers have worked with them directly—83 percent of respondents have yet to work on AI platforms or blockchain tech, and 80 percent have no experience with IoT devices.
+
+In fact, blockchain tech is still so new that intermediate-level respondents were more likely to have experience working with it than senior-level Developers—but this was still only one in four. These figures suggest that blockchain tech is an area beginners should brush up on to improve their chances of advancement—and Senior Developers should learn to ensure they stay relevant.
+
+What Languages Should a New Web Developer Learn?
+Given the “Big five” areas where growth is expected to happen—AI and machine learning, IoT, AR, and blockchain—what languages should you learn? While the answer depends, to some extent, on which of these five areas you choose to focus on, the same three names came up again and again: C++, Java, and Python.
+
+Within each of the aforementioned concentrations, more languages crop up in addition to these three. In Blockchain: Ruby and Solidity. In IoT: C, JavaScript, and PHP. In AI and machine learning: R, Lisp, and Prolog. And in AR: C#, JavaScript, and Swift. But in every case, C++, Java, and Python are among the leaders.
+
+These are the languages people are using today to work in what they’ve identified as development’s most burgeoning fields. What about tomorrow? There’s no surefire way to predict the future, but we can look at which languages are growing in use the fastest. One way to do this is to compare search queries—a proxy for measuring which languages people are currently learning. Over at Github, a compilation of search queries suggests that the fastest-growing languages are relatively new—as you’d expect.
+
+In 2018, Java-compatible Kotlin grew the fastest year-over-year, more than doubling. HashiCorp Configuration Language (HCL) for cloud infrastructure, the JavaScript superset language TypeScript, Microsoft’s automation framework PowerShell, and systems programming language Rust round out the top five.
+
+But not far behind, in the eighth position, is Python. Despite its popularity, Python still managed to chalk up 50 percent year-over-year growth—the sign of a true juggernaut on the rise.
+
+Web Development Skills
+Although there are a variety of different skills required to become a Web Developer, knowing how to code is likely at the top of the list of the most important web development skills. As the core of web development work involves writing code, Web Developers must have advanced programming skills, and be fluent in a number of programming languages and libraries.
+
+According to a recent BrainStation Digital Skills Survey, JavaScript is by far the most widely used language, with 75 percent of respondents citing it. This was followed by SQL, at 47 percent. However, 86 percent, use Git for version control.
+
+Skills Required to Be a Web Developer
+Although Web Developers need a mixture of education, soft skills, and technical skills, ultimately a core job responsibility is writing code, and that means that any Web Developer must have advanced programming skills with a thorough knowledge of any number of programming languages and libraries.
+
+Even though specific duties will of course vary by job, all Web Developers should have a complete understanding of programming languages including CSS, HTML (HyperText Markup Language), and JavaScript. If you have little experience writing code or you’ve only worked with one programming language, you might consider attending a coding bootcamp or looking into other free online courses and other resources that highlight steps you can take to become more proficient.
+
+There are also certain back-end or front-end skills that all Web Developers should possess regardless of where they tend to work. For example, it’s helpful for someone who works only on the front-end to have database, cybersecurity or SQL experience.
+
+Technical Web Developer Skills
+There are a range of technical skills or “hard skills” required for web development.
+
+First, it’s important that Web Developers build experience with the following programming languages:
+
+HTML and CSS. Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are the foundation of any Web Developer’s knowledge. HTML is the standard markup language used for creating web pages, while CSS enables you to program the appearance of the web page, with things like colors and fonts. Learning HTML and CSS is crucial for any number of job roles, given that taken together, HTML and CSS are the building blocks for web development.
+JavaScript, which is often abbreviated as JS, is a crucial programming language, which enables website functionality on both the front-end and back-end.
+Structured Query Language (SQL) is a programming language that is designed to manage, query, and manipulate data stored in a database.
+Python is an object-oriented programming language. Learning Python is important for many data science applications, including machine learning.
+jQuery. A JS library that helps with the efficiency of JavaScript programming by providing a library of common tasks in a compressed, single-line format.
+Beyond programming languages and libraries, becoming comfortable with commonly used tools like Git, or other version control software is a skill every experienced Web Developer should have. Version control is a method of tracking different versions of code to ensure you can access it or restore it at any time.
+
+There are also a number of design skills that are useful for a successful Web Developer to have, with an understanding of responsive design being perhaps the most crucial. Responsive design is a method of web design that ensures a website responds to the screen size or platform used to view the content. With over 52 percent of global web traffic coming from mobile phones, 43 percent from desktop, and the remainder from tablets, the screen size used to view websites is extremely varied. To ensure that the experience is seamless across all platforms and screen sizes, Developers must be fluent in responsive design.
+
+While Web Developers are not typically tasked with the overall site design (that would be the job of a Web Designer), it’s an advantage for Developers to also have a solid understanding of common design principles (including user experience design and user interface design). Front-End Developers, in particular, program the screens that users interact with – they can be far more successful with a good grasp of user-centered design. With SEO looming as an increasingly important part of many companies’ overall tech strategy, it will also make you a better Web Developer to understand how site organization, architecture, and speed will help or hurt overall SEO efforts.
+
+Soft Web Developer Skills
+As Web Developers must work with diverse teams, there are also a number “soft skills” that are important to develop. Here are some of the most important soft skills for Web Developers:
+
+Communication. From design, to marketing, to management, Web Developers are in communication with a host of departments to create products and services. Effective communication and interpersonal skills are essential to stay on track and complete projects. And for a freelance Web Developer, written communication skills are even more important.
+Problem-solving. Because a portion of every Developer’s day involves debugging and maintenance, problem-solving skills are high on the list of requirements. Web Developers earn a living by thinking critically and finding creative workarounds and solutions where others have failed. They’ll also have to work independently when need be.
+Time management. Web Developers are frequently tasked with multiple short-term and long-term projects in the web development process, and must know how to prioritize tasks and accurately gauge time-to-completion. Having excellent time management skills also makes working with large teams easier, resulting in timely project delivery.
+Analytical skills. Good Web Developers are problem solvers, and being able to work backward through a project to spot areas for improvement is key. It’s also helpful to have a head for data.
+What Makes a Good Web Developer?
+According to BrainStation’s Digital Skills Survey, 50 percent of executives say they will be doing the most hiring in development. Interestingly, though, our respondents also found development the most difficult field to hire for, and as the demand for these skills increases, it will only become more challenging.
+
+What should companies be looking for? And how can aspiring Developers stand out when entering the market?
+
+To start, consider the following definition, which provides a well-rounded picture of a good Developer:
+
+“Writes working code, that has been tested for correctness, in the time allocated, following accepted best practices, in a way that can be easily maintained and enhanced, in collaboration with their team, and continuously improves their knowledge and skills throughout their career.”
+
+Let’s take a closer look at these ideas to see what makes a good Developer.
+
+A good Web Developer must:
+
+Write Working Code
+Computers are extremely precise, digital machines. The slightest deviation from what a computer expects means that code won’t compile, won’t run or will crash. The whole point of programming and building software is to write code that the computer successfully processes, producing the desired result. In other words, a good Web Developer has to write code that works.
+
+He or she has a sharp eye for details and is constantly scanning code for anything that looks “off.” They write clean code that is well structured and uses tools to identify potential errors before the code runs.
+
+Write Code That Works Correctly
+Just because the code works, doesn’t mean it works correctly. Getting the code to work is only the first hurdle.
+
+Code that doesn’t work correctly is as useless as code that doesn’t work at all, and potentially more dangerous. Wrong results can have consequences, from mundane (and occasionally humorous) UI annoyances that frustrate end-users and inhibit their productivity — to the disastrous with loss of life or business revenue.
+
+All errors missed by Developers will cause program crashes, system failure, data corruption, security breaches, or turn away users who expect reliability. These errors become increasingly expensive to fix as they find their way into production and are discovered by end-users. Just as physical structures require thorough testing to ensure they are “up to code,” software requires the same stringent standards.
+
+A good Developer, therefore, adopts a test-driven mindset, actively imagining all scenarios where errors can occur, how they should be handled, and writing tests that prove the code is correct.
+
+Respect Timelines and Deadlines
+Computers represent the promise of efficiency and productivity. They allow users to accomplish and understand more. Web Developers work within this fast-paced world using computers to bring this productivity and efficiency to reality.
+
+A side-effect of this world is the expectation of having everything done now. That pressure comes from managers, clients, users, and the business climate of getting to market first. That can create a lot of pressure, and Software Developers are only human.
+
+Estimating time on projects is a difficult task, as there are many unknown and unexpected problems that come up when building complex software. There is always a temptation to underestimate and overlook the true details required to complete tasks. Yet underestimating time to delivery is dangerous, creating stress and burnout, the pressure to cut corners, and negative feelings from all stakeholders in the project.
+
+It is important to identify all details possible for a project, have a realistic perspective of the amount of work that can be accomplished, and reasonably overestimate timelines to account for the unknown and unexpected. Communication is key when timelines start slipping and making sure that everyone is aware of difficulties ahead of time helps to handle and avoid missing deadlines.
+
+A good Developer sets reasonable expectations, communicates openly about unexpected roadblocks, and maintains the trust of their team and other stakeholders.
+
+Follow Web Development Best Practices
+Once the code works (and works correctly), then it needs to be written in the best way possible. Whatever approach the Developer has taken in writing the code, it should be weighed against the solutions of the larger Developer community. A unique, novel approach may be an innovative solution–or it may lack considerations that other Developers have discovered over the years.
+
+Writing software is a complex process with a rich history of many minds thinking about the best way to solve common problems. The result is numerous best practices.
+
+Following these best practices saves time because problems don’t need to be resolved (instead, existing solutions just need to be applied appropriately). This allows Developers to build “on the shoulders of giants.” Further, as different Developers contribute over time, there is a common understanding that any new Developer on a project can readily understand.
+
+There are two levels of best practices: industry-wide and company-wide. Company-wide practices will generally be a subset of industry-wide practices but adapted for the specifics of a company’s software domain, and the preferences of the Developers.
+
+A good Developer learns the best practices of their company and applies industry-wide best practices to save time and improve the overall quality of the code.
+
+Write Code That Is Easily Maintained and Enhanced
+The code compiles, runs, and has been tested for correctness. Things look good, but…how easy is it to change the code in the future? What happens if a new feature needs to be added?
+
+Engineer and Author Martin Fowler says: “Any fool can write code that a computer can understand. Good Programmers write code that humans can understand.”
+
+While a computer can run any valid code, ultimately the code is maintained by humans. At some point, a Developer is going to have to read, understand, and modify code that may have been written by another Developer (who may no longer be part of their team or company).
+
+Software development is a social endeavor, with many people working and relying on the codebase. Questions such as “How much is obvious from the code? How much needs to be explained? How quickly can the code be scanned and understood?” all help a Developer remember that they are not writing code for themselves.
+
+A good Developer writes high-quality code that other Web Developers can easily understand and modify.
+
+Collaborate With Their Team
+While a Web Developer spends much of their time interacting with a computer, the reality of their work environment is social. It’s important to respect the team, know the roles, and responsibilities, and what’s expected. Big picture questions ensure the Developer is properly aligned to the company and their role: “What is the vision/mission/values of the company? What is the product suite offered by the company? Who are the customers? Who do problems get reported to?”
+
+Knowing these details allows a Developer to grow within the context of their specific company or situation. A good Developer will, therefore, spend the time needed to understand the company’s best practices and standards. They will also improve the development process in ways that save time and increase productivity. Most importantly, they will have to have a positive attitude that makes the workplace more productive and supportive.
+
+A good Developer recognizes that their web development career and reputation is their responsibility. They strive to be a pleasure to work with, and always find ways to make the workload of their team lighter and more efficient.
+
+A Good Web Developer Is Continuously Learning
+Technology is always evolving, which is part of what makes it so exciting. While some principles and approaches of computer science have remained for decades, areas of software development are constantly changing. Some software domains are more stable, others are more volatile. Legacy software is entrenched with older technology that requires more maintenance with little innovation, while emerging domains may require frequent rewrites every few years as things change.
+
+In other words, web development professionals are expected to constantly look to upskill and stay on top of changing trends.
+
+That’s not necessarily a problem if it is embraced. Knowledge in domains like data science, UX design, product management, digital marketing, and SEO, can strengthen a Developer’s overall understanding of technology, helping them relate and work with colleagues and clients across departments and industries.
+
+
+Successful Web Developers, then, are lifelong learners who are always looking to expand their knowledge and skills, year over year.
+Foundry is a smart contract development toolchain.
+
+Foundry manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts.
+
+Offer
+Become a certified professional! Enjoy a flat 30% discount on any certification program, use code LABORDAY
+GET CERTIFIED
+Offer Ends In
+01
+DAYS
+:
+09
+HRS
+:
+29
+MINS
+:
+40
+SECS
+logo
+Training Library
+Platform
+Resources
+For Businesses
+
+Pricing
+Dashboard
+Join for Free
+foundry blockchain
+Blockchain Georgia Weston on November 15, 2023
+An Introduction to Foundry Blockchain
+Blockchain and web3 are the most prominent buzzwords in the domain of technology right now. With the help of blockchain technology, businesses and users could find decentralized alternatives to legacy systems and processes. On the other hand, it has also served as a core component in the growth of web3. How is an introduction to Foundry relevant to discussions about blockchain and web3?
+
+The web3 landscape depends on dApps, smart contracts, cryptocurrencies, NFTs, metaverse, and other technologies contributed by blockchain. However, it is important to lower the barriers to entry to welcome more users into the web3 ecosystem. Tools such as Foundry help in achieving the same objective by providing an effective solution for creating dApps without technical challenges. Let us learn more about the Foundry blockchain and how you can work with it to build dApps and smart contracts on Ethereum blockchain.
+
+Build your identity as a certified blockchain expert with 101 Blockchains’ Blockchain Certifications designed to provide enhanced career prospects.
+
+What is Foundry?
+Foundry is a formidable toolkit for developers who want to create new applications on Ethereum blockchain. As a matter of fact, it is a type of blockchain that offers a collection of developer tools alongside infrastructure for streamlining the development process. You can find the best answer to “What is Foundry blockchain?” on the official website of Foundry or the Foundry Book.
+
+The official website describes it as a ‘toolchain’ for smart contract development. Foundry can help in managing the project dependencies, compilation of projects, and running tests. It also helps in deploying dApps and smart contracts alongside facilitating on-chain interactions directly through the command line and Solidity scripts. 
+
+Foundry has been created with Rust programming language, and it serves as a comprehensive framework for debugging, testing, and deployment of Solidity smart contracts. The primary objective of Foundry framework revolves around simplifying the process of developing and deploying dApps. It offers a user-friendly development framework along with improved functionalities for testing and deploying smart contracts. Another crucial highlight of Foundry is the support for integration with notable blockchain frameworks, services, and tools. It allows developers to focus on their creative ideas rather than facing technical challenges.
+
+Get familiar with the terms related to blockchain with Blockchain Basics Flashcards.
+
+What Does Foundry Offer?
+Foundry offers a comprehensive collection of tools that can help you develop and deploy dApps on Ethereum blockchain. Developers can leverage the Foundry Solidity interplay for writing smart contracts and deploying them on Ethereum blockchain. It offers a command-line interface or CLI that helps in creating, deploying, and managing smart contracts on one platform. The CLI offers a collection of commands that can help you perform different tasks associated with smart contract development. For example, you can create a new project, write the smart contract in Solidity, and compile and deploy it on Ethereum.
+
+Upon creating a new project in Foundry, you could write the smart contract and use the Foundry CLI for compilation. The workflow of Foundry smart contract framework involves generation of bytecode and ABI or Application Binary Interface, which help in deploying smart contracts to Ethereum. After deploying the contract, you can use a web3.js library or Foundry CLI to interact with your smart contract.
+
+The most striking highlight of Foundry is that developers can write tests in Solidity, which simplifies the testing process. The flexibility for writing tests in Solidity for Solidity contracts serves as a formidable advantage for Foundry users. Furthermore, the advantages of Foundry blockchain explained for beginners also point to the facility of in-built fuzzing. It is an ideal software testing technique for extensive testing by leveraging random data in the form of inputs. On top of it, users have personally claimed that it is faster than other smart contract development frameworks.
+
+Learn about blockchain technology fundamentals, use cases, enterprise blockchain platforms, and BAAS vendors with Blockchain For Enterprise E-book
+
+Important Tools of Foundry
+Foundry is a modular and portable toolkit for dApp development on Ethereum. Developers can access a broad collection of tools for supporting their dApp and smart contract development projects. Anyone who wants to learn Foundry blockchain and its working mechanism should know about the important CLI tools. The important tools that define the functionalities of a Foundry include a Forge, Cast, Anvil, and Chisel. Forge is the Ethereum testing framework, similar to Hardhat and Truffle.
+
+Anvil serves as the local Ethereum node, like the Hardhat network and Ganache. The local Testnet node could help in front-end testing of smart contracts and evaluating smart contract interactions over RPC. 
+
+A cast is a multi-purpose tool for diverse interactions with EVM smart contracts, obtaining chain data, and sending transactions. Cast is an important highlight in an introduction to Foundry as it helps in using the Foundry CLI to perform Ethereum RPC calls.
+
+Chisel is a fast, verbose, and utility-centric Solidity REPL offered with Foundry that can help you test the behavior of Solidity smart contracts on local or forked networks.
+
+Certified Enterprise Blockchain Professional Certification
+
+Working Mechanism of Foundry
+The most crucial highlight in responses to “What is Foundry blockchain?” is the working mechanism of Foundry. You can develop a dApp with Foundry by using the following steps.
+
+Development 
+Foundry offers a user-friendly development environment to write and test smart contracts in Solidity. 
+
+Testing
+Developers could rely on Foundry framework for using in-built testing tools to improve the effectiveness of their dApps. The tools work through simulation of real-world scenarios to ensure that smart contracts work according to desired specifications.
+
+Deployment 
+Once you have completed the testing process, you can deploy smart contracts directly to Ethereum blockchain. Foundry offers a collection of deployment tools for ensuring that your dApp is available to all users on Ethereum network. 
+
+Monitoring 
+The Foundry Solidity smart contract development workflow offers the value advantage of real-time monitoring tools. The monitoring tools can help developers in tracking the performance of their dApps alongside identifying any potential issues.
+
+Seamless Integrations
+Another prominent highlight in the working mechanism of Foundry for smart contract development is the assurance of seamless integrations. Foundry supports integration with notable blockchain services and tools such as Metamask and Infura to offer a seamless development process.
+
+Start your blockchain journey Now with the Blockchains Fundamentals Free Course
+
+How is Foundry Different from Other Smart Contract Development Frameworks?
+The list of questions for an individual who wants to learn Foundry blockchain would also focus on its advantages over other smart contract development frameworks. Foundry is a powerful competitor to other frameworks, such as Remix IDE, Hardhat, and Ganache, in terms of different parameters. Here are some of the distinct ways in which Foundry is different from popular smart contract development frameworks.
+
+Ease of Use
+One of the most significant advantages of Foundry smart contract framework is the user-friendly interface and workflow. Developers can access all the tools required for dApp development and deployment directly through the Foundry CLI. It is a trusted and effective platform for smart contract development, even for beginners.
+
+Integration with Other Tools and Services
+The seamless integration with other blockchain tools and services, such as Infura, Truffle, web3.js, and Metamask, improves the development experience. Developers could access the power of all these tools in one platform, thereby improving their efficiency.
+
+Testing and Deployment Tools
+The facility of in-built tools for testing and deploying smart contracts directly to Ethereum blockchain also differentiates Foundry from other smart contract development frameworks. It can help developers in ensuring that their smart contracts work according to desired specifications before deploying them. In addition, the CLI also provides the flexibility of deploying to multiple environments. 
+
+The Foundry Solidity framework offers a comprehensive collection of tools and features required for easier development and deployment of dApps on Ethereum. In addition, it also supports dApp development on EVM-compatible blockchains such as Optimism, Polygon, Avalanche, and Arbitrum.
+
+Flexible and Faster Compilation
+The value advantages of Foundry for developers also focus on the assurance of flexible and faster compilation. Foundry supports automatic detection and installation of the recent Solidity compiler version. In addition, the details of the compilation pipeline of Foundry blockchain explained for beginners also emphasize parallel compilation.
+
+It also supports incremental compilation and caching, which ensures that only the modified files go through compilation again. In addition, Foundry also offers support for non-standard directory structures, such as Hardhat repos. GitHub sources have reported that compilation with Foundry is faster by almost 1.7 to 11.3 times, according to the amount of caching required for compilation. 
+
+Fast and Portable
+Another distinct aspect that differentiates Foundry from other smart contract development frameworks is the advantage of speed and portability. The introduction to Foundry shows that you can write tests directly in Solidity, thereby speeding up the development and testing processes. On top of it, Foundry also offers the advantage of speed with fuzz testing, which involves shrinking inputs and printing counter-examples.
+
+Foundry also supports a remote RPC forking mode, which utilizes the async infrastructure of Rust. It also supports flexibility for creating debug logs by using ‘DsTest’ emitted logs or the popular ‘console.sol’ contract like Hardhat. Foundry also offers the advantages of portability and ease of installation without any package manager.
+
+Curious to understand the complete smart contract development lifecycle? Enroll now in Smart Contracts Development Course!
+
+How Can You Install Foundry?
+The guides to “What is Foundry blockchain?” also invite attention to the recommended steps for installing Foundry. You can use the Foundry toolchain installer, Foundryup, for updating or reverting to a particular Foundry branch easily. You can install Foundry by running the following command in the terminal,
+
+curl -L https://foundry.paradigm.xyz | bashCopy
+The command would start the Foundryup installation, and you have to follow the on-screen instructions. It would help in ensuring availability of the ‘foundryup’ command in your Foundry command-line interface. Upon running the ‘foundryup’ command, Foundry would install all the recent precompiled libraries or CLI tools, such as forge, chisel, anvil, and cast.
+
+Do You Need a Different Installation Process for Windows?
+The ‘foundryup’ command is an effective resource for installing Foundry tools on MacOS and Linux systems. However, you can install Foundry framework on Windows only by building from source. The important requirements for building from source are Cargo, which is the Rust package manager, and the Rust compiler. You can install both of them by using the ‘rustup.rs’ command. In addition, you would also require the latest version of Visual Studio on your system with the Workloads option set to “Desktop Development with C++.”
+
+Developers can install Foundry smart contract framework on Windows by using three different methods. The first option involves the use of Foundryup flags such as the following,
+
+foundryup --branch master
+
+foundryup --path path/to/foundryCopy
+The second option for building from source is simpler with the use of a single Cargo command like the following:
+
+cargo install --git https://github.com/foundry-rs/foundry --profile local --locked forge cast chisel anvilCopy
+Another option for installing the Foundry Solidity development framework on Windows systems involves manual efforts. Developers can build from source by using a local copy of Foundry repository.
+
+Start learning Blockchain with World’s first Blockchain Skill Paths with quality resources tailored by industry experts Now!
+
+How Can You Start New Projects in Foundry?
+The next crucial question for beginners learning about Foundry blockchain deals with the ideal method for starting new Foundry projects. What is the best tool to start working with Foundry? The ‘forge’ command line tool helps you find an effective solution for creating, compiling, and testing new projects. The working of Foundry blockchain explained the simplicity of using the Foundry CLI for developing dApps and smart contracts. You can use ‘forge init’ to start a new project on Foundry. Here is an example of the command you must use in the CLI.
+
+$ forge init hello_foundryCopy
+In the next step, the ‘forge’ would generate the following output.
+
+$ cd hello_foundry
+
+$ tree . -d -L 1
+
+.
+
+├── lib
+
+├── script
+
+├── src
+
+└── testCopy
+4 directories               
+
+Subsequently, you can use the ‘forge build’ command for building the project and ‘forge test’ command for running tests. Developers can also print help for subcommands by using ‘–help’ towards the end.
+
+Start learning Blockchain with World’s first Blockchain Career Paths with quality resources tailored by industry experts Now!
+
+Conclusion 
+The introduction to Foundry showcased the exclusive benefits it offers in comparison to other smart contract development frameworks. As the web3 revolution gains momentum, it is important to look for tools that can support easier web3 development. Smart contracts and dApps serve as the foundations of web3, and frameworks like Foundry could help in reducing the barriers to entry in web3. Foundry offers a comprehensive collection of tools and features for creating, testing, and deploying dApps directly from one platform. Learn more about the best practices for creating and testing projects with the help of Foundry CLI now.
+
+Advance your Career with Blockchain & Web3 Skills
+
+*Disclaimer: The article should not be taken as, and is not intended to provide any investment advice. Claims made in this article do not constitute investment advice and should not be taken as such. 101 Blockchains shall not be responsible for any loss sustained by any person who relies on this article. Do your own research!
+
+ABOUT AUTHOR
+
+GEORGIA WESTONWebsiteLinkedIn
+Georgia Weston is one of the most prolific thinkers in the blockchain space. In the past years, she came up with many clever ideas that brought scalability, anonymity and more features to the open blockchains. She has a keen interest in topics like Blockchain, NFTs, Defis, etc., and is currently working with 101 Blockchains as a content writer and customer relationship specialist.
+
+Search
+
+101 Blockchains Certification Program
+Categories
+AI & ChatGPT(123)
+Analyst Corner(30)
+Blockchain(77)
+Career Guide(45)
+Community Spotlights(10)
+Comparisons(77)
+Featured(5)
+FinTech(25)
+Guides(648)
+Interview Preparation(30)
+IoT(33)
+Metaverse(61)
+Newbies(32)
+News & Updates(126)
+NFT(46)
+Opinions(70)
+Profiles(9)
+Reviews(184)
+Web3(102)
+Featured Posts
+Announcement: 101 Blockchains is a CPD Accredited Certification Provider
+How to become Certified Web3 Professional?
+How to become Certified Metaverse Professional?
+How to become a Certified NFT Professional?
+How to Become Certified Expert in Blockchain?
+Recent Posts
+Decoding Blockchain Developer Salaries: A Comprehensive Guide
+PyTorch vs. TensorFlow vs. Keras: Key Differences
+Digital Currency vs Cryptocurrency: Key Differences
+An Ultimate List of Bitcoin Forks
+NFTs (Non-Fungible Tokens) and their Impact on Digital Ownership
+RELATED POST
+Blockchain Developer Salaries
+Blockchain
+Decoding Blockchain Developer Salaries: A Comprehensive Guide
+
+James Howell
+August 28

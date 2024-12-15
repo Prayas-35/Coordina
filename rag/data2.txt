@@ -1,0 +1,620 @@
+Interdepartmental conflicts in Indian governance present formidable obstacles to efficient policy implementation and administrative effectiveness. This paper provides a critical examination of the underlying causes of these conflicts, which include entrenched hierarchical structures, competitive resource allocation, communication deficiencies, and overlapping policy jurisdictions. The analysis underscores how these conflicts contribute to delayed implementation of policies, inefficient resource utilization, diminished governmental accountability, and erosion of public trust in governmental institutions.
+
+Drawing on legal frameworks and constitutional provisions, the paper explores the role of the Supreme Court in adjudicating disputes arising from interdepartmental conflicts, thereby shaping administrative practices and upholding constitutional principles of governance. Additionally, it highlights loopholes within current governance structures that exacerbate these conflicts, such as ambiguous policy mandates and inadequate coordination mechanisms.
+
+The research identifies key challenges in addressing interdepartmental conflicts, emphasizing the need for structural reforms to streamline bureaucratic processes, enhance interdepartmental coordination, and clarify policy responsibilities. It advocates for integrated governance models that promote collaborative decision-making, capacity-building initiatives to improve conflict resolution skills among government officials, and the establishment of robust accountability mechanisms to ensure departments are held responsible for their actions.
+
+This study also provides a comparative analysis of interdepartmental conflicts in global governance contexts, specifically examining challenges faced by the USA, UK, and Canada.
+Furthermore, the paper proposes practical strategies to mitigate interdepartmental conflicts, including leveraging technological solutions for better information sharing, harmonizing conflicting policies through legislative reforms, and fostering a culture of transparency and openness in governmental operations. By addressing these challenges comprehensively, Indian governance can enhance its efficiency, effectiveness, and ultimately rebuild public trust in governmental institutions.
+
+Keywords: Interdepartmental Conflicts, Bureaucratic Rigidities, Hierarchical Structures, Policy Implementation, Resource Competition, Coordination Failures, Jurisdictional Disputes, Accountability Issues, Public Trust, Policy Coherence, Structural Reforms, Capacity Building, Technological Solutions, Integrated Governance Models, Transparency, Grievance Redressal, Digital Platforms
+
+
+
+### Conflicts and Conflict Resolution Scenarios Between Indian Government Departments
+
+#### Scenario 1: Road Construction Scheduling Conflict
+The Public Works Department (PWD) plans to construct a major road in a bustling metropolitan area. However, the Water Supply and Sewerage Board schedules essential pipeline repairs for the same stretch during the same timeframe. This scheduling overlap causes confusion among local residents and risks delaying both projects.
+
+**Resolution:**  
+A joint task force comprising representatives from PWD, Water Supply and Sewerage Board, and the municipal corporation is established. The task force prioritizes the pipeline repairs first, ensuring no subsequent excavation is required after road construction. A shared communication platform is implemented to synchronize future project timelines.
+
+---
+
+#### Scenario 2: Dispute Over Resource Allocation
+A district administration faces a shortage of construction materials for building rural roads under the Pradhan Mantri Gram Sadak Yojana (PMGSY). Simultaneously, the Forest Department claims these materials are encroaching on protected forest areas.
+
+**Resolution:**  
+An independent environmental assessment is conducted to ensure compliance with forest laws. The district administration collaborates with the Rural Development Department to source alternative materials and adopts eco-friendly construction techniques. Regular dialogue ensures environmental conservation and infrastructure development goals are met.
+
+---
+
+#### Scenario 3: Jurisdictional Overlap in Urban Infrastructure
+The Ministry of Urban Development initiates a smart city project, which includes road widening and street beautification. However, the Traffic Police Department objects, citing disruption to traffic flow and insufficient planning for diversions.
+
+**Resolution:**  
+A comprehensive traffic management plan is created in consultation with the Traffic Police. Temporary diversions and phased construction schedules are established to minimize disruptions. A citizen feedback mechanism is introduced to address grievances promptly.
+
+---
+
+#### Scenario 4: Conflict Over Budget Utilization
+The Transport Department and the Electricity Board both claim priority for utilizing funds from the state's budget for critical upgrades. The Transport Department argues that roadways need urgent repairs, while the Electricity Board insists on upgrading aging transformers.
+
+**Resolution:**  
+A committee is formed, chaired by a senior bureaucrat, to evaluate the urgency of both projects. The decision is made to allocate a portion of the budget to both departments, with an agreement on a phased implementation plan. Additional funds are sought from central schemes to bridge the gap.
+
+---
+
+#### Scenario 5: Disagreement on Environmental Clearance
+The PWD plans a highway expansion project, but the Ministry of Environment and Forests denies clearance, citing potential harm to an adjacent wildlife sanctuary.
+
+**Resolution:**  
+The PWD revises its project plan to include wildlife corridors and noise barriers. Environmentalists are involved in the planning process to ensure compliance with conservation laws. The Ministry grants clearance after assessing the revised plan, which balances development with environmental protection.
+
+---
+
+#### Scenario 6: Delay in Land Acquisition
+A rail overbridge project is delayed due to disagreements between the Revenue Department and Railways over land acquisition costs and responsibilities.
+
+**Resolution:**  
+A joint negotiation team is set up with members from both departments. Compensation rates are standardized, and local stakeholders are consulted to ensure transparency. The Railways agree to expedite the process by covering a larger share of the costs.
+
+---
+
+#### Scenario 7: Clash Over Accountability in Disaster Response
+After heavy rainfall causes a major landslide, the PWD and National Disaster Response Force (NDRF) blame each other for delays in road clearance and evacuation efforts.
+
+**Resolution:**  
+The state government creates an integrated disaster response framework, defining clear roles and responsibilities for all departments. Regular training sessions and mock drills are conducted to improve coordination during emergencies.
+
+---
+
+#### Scenario 8: Coordination Challenges in Rural Electrification
+The Ministry of Power under the Saubhagya scheme aims to electrify rural households. However, the Panchayati Raj Department delays permissions for installing poles, citing community resistance due to land disputes.
+
+**Resolution:**  
+A public awareness campaign is launched to educate the community about the benefits of rural electrification. Mediation sessions are held with local leaders to resolve land disputes amicably. The Panchayati Raj Department works closely with the Ministry of Power to expedite approvals.
+
+---
+
+#### Scenario 9: Miscommunication in Public Works Prioritization
+The Housing Board prioritizes constructing affordable housing projects, while the Urban Development Department focuses on building urban transport hubs in the same region, leading to overlapping resource demands.
+
+**Resolution:**  
+Both departments agree to share a master plan for the region to streamline project priorities. A third-party consultant is hired to create an integrated development blueprint, ensuring complementary rather than competing initiatives.
+
+---
+
+#### Scenario 10: Technology Integration Issues
+The IT Department develops a digital dashboard for monitoring road construction projects across the state. However, the PWD staff lacks the training to use the new system effectively, causing project updates to be inconsistent.
+
+**Resolution:**  
+The IT Department conducts training workshops for PWD staff and develops a user-friendly interface for the dashboard. A helpline is established for resolving technical queries. Gradually, digital monitoring becomes the norm, improving project accountability.
+
+---
+
+These scenarios illustrate the diverse challenges faced by Indian government departments and the innovative solutions required to address them. By fostering collaboration, transparency, and adaptability, such conflicts can be minimized, ensuring the seamless delivery of civil services.
+
+
+
+A Civil Job Dispute: Collaboration Triumphs Over Bureaucracy
+
+In a bustling Indian metropolis, a young engineer named Arjun cleared the competitive exams for a prestigious civil engineering job under the government’s Smart Cities Mission. The appointment, however, led to a dispute between two departments—Urban Development and Public Works—both claiming jurisdiction over the role.
+
+The Conflict Emerges
+
+The Urban Development Department (UDD) argued that the job fell under their mandate as the Smart Cities Mission was directly linked to urban planning and infrastructure development. Meanwhile, the Public Works Department (PWD) contended that the position pertained to executing civil construction projects, their primary responsibility.
+
+Arjun found himself caught in the crossfire. His posting letter was delayed indefinitely, leaving him unable to start his career. Both departments sent contradictory instructions, leading to bureaucratic gridlock.
+
+Escalation and Stalemate
+
+The dispute reached the state Chief Secretary, who convened a high-level meeting to resolve the matter. However, both departments remained firm, citing precedence, budgetary control, and operational boundaries.
+
+The standoff began affecting project timelines for Smart Cities initiatives. Media reports criticized the inefficiency, and public outcry over delays added pressure on the administration.
+
+Resolution through Mediation
+
+Recognizing the gravity of the situation, the Chief Secretary appointed a neutral Interdepartmental Mediation Committee (IMC) comprising retired IAS officers and legal experts. The committee identified three key issues:
+
+1. Overlap of Jurisdictions: Both departments had overlapping mandates regarding infrastructure projects.
+
+
+2. Ambiguity in Guidelines: Central guidelines for the Smart Cities Mission lacked clarity on departmental roles.
+
+
+3. Public Interest: The delay in project execution harmed public welfare.
+
+
+
+The Way Forward
+
+The IMC proposed a collaborative model:
+
+Dual Reporting Mechanism: Arjun’s position was placed under the UDD for project planning but required execution support from PWD.
+
+Joint Task Force (JTF): Both departments created a JTF for seamless coordination on Smart Cities projects.
+
+Clear Role Allocation: Future appointments under the mission were redefined, with explicit guidelines to avoid jurisdictional overlap.
+
+
+A Win-Win Outcome
+
+Arjun finally received his posting, with responsibilities spanning urban planning and on-ground execution. The departments, through the JTF, began working collaboratively, which expedited stalled projects and improved interdepartmental communication.
+
+Reflection
+
+This story highlights the importance of:
+
+1. Clear Policies: Avoiding ambiguity in roles and responsibilities.
+
+
+2. Conflict Mediation: Using neutral bodies to resolve disputes.
+
+
+3. Public-Centric Approach: Prioritizing public welfare over departmental egos.
+
+
+
+The resolution not only benefitted Arjun but also became a case study for effective interdepartmental collaboration in the Indian bureaucracy.
+
+
+The Scheduling Conflict: A Story of Inter-Departmental Resolution
+
+In the heart of Delhi, a high-profile civil project had been assigned to the Public Works Department (PWD). The project was set to build a new flyover to ease traffic congestion. The planning had been meticulous, the design approved, and the contractors were ready to begin work. However, a conflict arose when two key departments—the PWD and the Department of Transport (DoT)—found themselves at odds over scheduling.
+
+The PWD had planned for the project to begin in mid-June, with the expectation that roadworks would start immediately. However, the Department of Transport had already scheduled a major road expansion project on the same stretch of road, also set to begin in mid-June. The two departments were now competing for the same resources: construction crews, machinery, and most importantly, access to the road.
+
+The conflict quickly escalated. The Department of Transport argued that their project, which aimed to expand the road to accommodate a growing population of vehicles, was more urgent. The PWD, on the other hand, contended that the flyover was crucial for decongesting the traffic at the busiest intersection in the city and that delays would severely affect daily commuters.
+
+The clash of priorities led to heated meetings, with both departments blaming each other for the lack of coordination. Each department had its own set of bureaucratic hurdles, and neither was willing to back down.
+
+It was at this point that the Chief Secretary, Dr. Rajesh Kumar, intervened. Dr. Kumar was known for his ability to mediate and bring people to the table. Calling for a joint meeting with the heads of both departments, he emphasized the need for a solution that would serve the public interest and avoid costly delays.
+
+During the meeting, Dr. Kumar suggested a phased approach. The PWD would begin preparatory work for the flyover, such as setting up the necessary supports and temporary diversions, while the Department of Transport could start work on expanding the road in areas that wouldn't interfere with the flyover’s construction. Both departments would share resources, ensuring that no major road closures would happen simultaneously.
+
+Furthermore, a new project coordinator position was created, an individual responsible for ensuring continuous communication between the two departments. This person would handle scheduling, resolve any emerging conflicts, and keep the public informed about any temporary changes to traffic patterns.
+
+The resolution was not immediate, but through a combination of phased work, open communication, and resource sharing, both departments were able to move forward with their projects without significant delays. By the end of the year, the road expansion was completed, and the flyover was well on its way to being finished, easing the traffic woes of millions of Delhi residents.
+
+Dr. Kumar’s approach had turned a scheduling conflict into an opportunity for collaboration, demonstrating how effective conflict resolution can lead to greater efficiency and improved public infrastructure.
+
+
+Scenario 1: Overlapping projects in the same area (Pipeline installation and road development)
+Solution: Pipeline installation should be prioritized to avoid rework, resource wastage, and damage to newly constructed roads.
+
+Scenario 2: Electrical line maintenance coinciding with building painting projects in the same neighborhood
+Solution: Prioritize electrical line maintenance to ensure safety and avoid accidental damage to newly painted surfaces.
+
+Scenario 3: Landscaping and gardening coinciding with underground cable installation
+Solution: Underground cable installation should be completed first to prevent damage to newly landscaped or gardened areas.
+
+Scenario 4: Water supply system repair and road widening project in the same locality
+Solution: Repair the water supply system first, as it involves digging and can damage road construction efforts.
+
+Scenario 5: Installation of streetlights and tree planting along the roadside
+Solution: Install streetlights first, as it may require heavy equipment and digging that could disturb newly planted trees.
+
+Scenario 6: Sewage system upgrade overlapping with road paving
+Solution: Complete the sewage system upgrade first to avoid damaging newly paved roads and ensure access for heavy machinery.
+
+Scenario 7: Fiber optic cable installation overlapping with sidewalk renovation
+Solution: Fiber optic cable installation should be completed first to prevent disrupting or damaging newly renovated sidewalks.
+
+Scenario 8: Stormwater drain cleaning coinciding with a pedestrian footbridge painting project
+Solution: Prioritize stormwater drain cleaning to avoid water stagnation issues and ensure safety for workers involved in painting.
+
+Scenario 9: Installation of public benches coinciding with tree trimming in parks
+Solution: Perform tree trimming first to avoid debris falling on newly installed benches, ensuring their cleanliness and safety.
+
+Scenario 10: Drainage improvement overlapping with traffic light installation
+Solution: Improve drainage first, as it might require excavation and heavy machinery that could disrupt traffic light installation work.
+
+
+Background
+Land and resource conflicts in India have
+deep implications for the wellbeing of the
+country’s people, institutions, investments,
+and long-term development. These
+conflicts reveal deep structural flaws in the
+country’s social, agrarian, and institutional
+structures, including ambiguities in
+property rights regimes and institutions.
+In 2014, a study focusing primarily on
+reports in the national media reflected the
+gravity of these conflicts. There was great
+interest in this narrow exercise, which
+prompted a more rigorous and detailed
+data collection on conflicts and creation
+of an interactive web portal on land and
+resource conflicts in India.
+While the exercise is ongoing, this
+brief provides an interim analysis of
+approximately 289 conflicts for which data
+was collected thus far, covering the period
+between January-September, 2016. This
+analysis provides a powerful instrument to
+understand land resource conflicts in India.
+The emerging patterns from the analysis of
+the 289 conflicts provide inferences about
+sectoral and spatial distribution of conflicts.
+Based on these patterns, our assessment
+is that this brief has captured roughly 25-
+40 percent of active and substantive land
+conflicts in the country.
+Methodology
+For the purposes of this study, a landrelated conflict is considered to be a situation in which a substantive group of people actively oppose change
+in the current use or ownership of land by government agencies or private parties.
+Data collection and analysis
+Local researchers were identified in most states. Geographically larger states like Uttar Pradesh and Madhya
+Pradesh had more than one researcher. These researchers are gathering data about ongoing land-related
+conflicts in their regions by scanning local newspapers, government records, online information, and through
+direct communication with affected parties, government officials, scholars, non-profit organizations, and
+other key informants.
+RRI Partners
+Land Conicts in India
+AN INTERIM ANALYSIS
+• The study analyzed 289 ongoing land-related conflicts in the
+country. Together these conflicts affect close to 32 lakhs (3.2
+million) people and span close to 12 lakhs (1.2 million) hectares
+of land in India. These conflicts affect industrial or development
+projects amounting to roughly Rs. 12 lakhs crores (Rs. 12 trillion)
+in investment.
+• Infrastructure projects account for almost half of all of the landrelated conflicts documented by the study.
+• Three-quarters of the land-related conflicts involved common
+lands, either forests or non-forests.
+• More than 40 percent of all land-related conflicts involve forest
+lands, mostly concentrated in regions where customary rights of
+tribal communities are not recognized.
+• Land acquisition by the government is a major cause of land
+conflict, involving 60 percent of all reported cases.
+• Districts affected by left-wing extremism have 1.5 times greater
+number of land conflicts compared to the national average.
+• Districts with Schedule V Areas, have 1.5 times greater number
+of conflicts than the national average. They account for almost
+one-third of the total number of people affected by conflicts.
+• In order to sustain and expand India’s socioeconomic development,
+it is imperative that the government respect its communities’ legal
+land rights, and ensure that their formal as well as customary
+jurisdiction over commons is recognized and respected.
+Findings
+November 2016
+2 RIGHTS + RESOURCES INITIATIVE
+LAND CONFLICT WATCH PORTAL
+The data collection on conflicts is being incorporated into
+a custom designed Land Conflict Watch Portal that will be
+available at www.landconflictwatch.org. The interactive
+portal maps the conflicts and allows for a preliminary
+analysis of data related to each conflict. It allows searches
+by state and district, and provides information on the
+number of conflicts, type of land involved, causes, relevant
+sector, approximate number of people affected, and the
+approximate area of land and investments involved. The
+interactive map also provides the estimated location of
+each conflict.
+Box 1 Identification of conflicts: Researchers chose at
+least three newspapers—a combination of local
+and national dailies based on circulation and
+reach in each state. In addition, they selected
+key informants working on land-related issues to
+help identify ongoing conflicts. The researchers
+also searched online for news related to land
+conflicts in each region and set up alerts to get
+information about new conflicts. Another source
+of information was the 2014 database of the
+Rights and Resources Initiative (RRI) spanning
+about 250 conflicts. The researchers verified
+if these conflicts still existed, and if they did,
+collected additional updates. Upon identification
+of a conflict, the researchers reached out to
+communities, non-profits, companies, and local
+administrations to find additional information.
+They were encouraged to collect official and legal
+documents wherever available, and to locate any
+available online information about the conflicts.
+Verification and validation: Verification requires that the researchers provide a source other than media
+reports to confirm that the conflict is actually happening on the ground, and that the facts and figures
+gathered on each conflict are valid and current. Additional sources could be court papers, police records,
+public hearing recordings or transcripts, documentation by the Pollution Control Board, Environment
+Impact Assessment reports, petitions or resolutions by communities, or similar documents which validate
+the existence of the conflict and associated facts. In cases where documented evidence was unavailable,
+the researchers reached out to resource persons on the ground to verify conflicts. So far, 90 percent of all
+reported conflicts have been verified using this methodology.
+What data is being collected: Information collected about each
+conflict includes where it is happening; the underlying reasons;
+area and type of land; the number of people affected; amount
+of investment at stake; all parties involved; and to the extent
+possible, any related documentation.
+Assumptions and caveats: While efforts have been made to
+collect data on estimated numbers of people affected, land
+areas involved, and amounts of investments at stake, these data
+remain provisional and have a substantial margin of error. In
+a number of cases, these data points were not available. Thus,
+the figures for these variables are highly conservative and likely
+underestimates. In the more detailed analysis, the study is
+limited to the number of people affected while providing only
+aggregate figures for land area and investments, to give a broad
+indication of what is at stake in these conflicts. These indicative
+numbers can provide useful insights into the magnitude and
+extent of the impacts of land-related conflicts on human
+and democratic rights, internal security, development, and
+investments.
+Data analysis: Simple data analysis including tabulating and
+spatial distribution has been carried out across various categories
+(sectors, land type, regions) to draw broad inferences.
+Findings
+The analysis covers 289 ongoing land-related conflicts in the
+country. Together they affect close to 32 lakhs (3.2 million)
+people and span over close to 12 lakhs (1.2 million) hectares
+(ha) of land in India.
+Map 1
+WWW.RIGHTSANDRESOURCES.ORG 3
+These 289 conflicts are located in 185 districts. The total investments (indicative) tied to these land conflicts
+are around Rs. 12 lakhs crore (Rs. 12 trillion). The above are estimates and only seek to provide an indication
+of the magnitude of the numbers of people and amount of investments affected.
+Conflicts by sector
+The 289 conflicts were divided into the five broad sectors in Table 1.
+The distributions of sector-wise conflicts in terms of number of conflicts and number of people affected are
+presented in Figure 1, based on data in Table 1.
+From the data, two major categories of reasons for conflicts emerge. Almost 80 percent of land conflicts
+arise out of development and industrialization processes, infrastructure being the single largest cause.
+Meanwhile, conservation and non-industrial land use-related activities account for approximately 20 percent
+of the conflicts.
+Conflicts by land type
+In contrast to accepted wisdom, the majority of land conflicts in India are related to common lands rather
+than private lands. Thirty two percent of land conflicts involved only common lands, and another 42 percent
+involved both common and private lands. In contrast, 26 percent of conflicts were found to involve only
+private land. Overall, 74 percent of conflicts involved common land. This significant finding indicates that
+governance of common lands is an important cause of conflicts in India, despite not receiving adequate
+attention to date (see Figure 2).
+The analysis also attempts to trace the involvement of forest commons in conflicts, and found that 43
+percent of all cases involved forest land (see Figure 3). Forest land-related conflicts affect 18 lakh (1.8 million)
+people.
+Classification of sectors
+Table 1
+Infrastructure Airports, townships, roads, railways, multipurpose dams, canals and SEZs, industrial corridors, and investment zones.
+Mining/Industry All kinds of mining projects and industrial projects like steel plants, petroleum and gas, textile, and food processing plants.
+Power Thermal power, nuclear power, renewable energy, hydroelectric dams (only power generation), and transmission lines.
+Land use Violations or non-settlement of rights under the 2006 Forest Rights Act, plantations on community lands, land occupation by landless,
+and displacement due to natural calamities or ethnic conflicts.
+Protected areas Conflicts arising out of conservation-related activities such as relocation of communities from protected areas.
+Figure 1
+Protected areas
+8%
+Land use
+10%
+Mining/Industry
+19%
+Infrastructure
+48%
+Power
+15%
+Sector-wise distribution of land conflicts
+Protected areas
+2% Land use
+14%
+Mining/Industry
+19%
+Infrastructure
+56%
+Power
+9%
+Sector-wise distribution of people affected by land conflicts
+4 RIGHTS + RESOURCES INITIATIVE
+Land conflicts in LWE districts
+The government of India has identified 106 districts in 10 states as affected by left-wing extremism (LWE).
+These include: Andhra Pradesh, Telangana, Bihar, Chhattisgarh, Jharkhand, Madhya Pradesh, Uttar Pradesh,
+Maharashtra, Odisha, and West Bengal. Seventy-four of the land conflicts reported are located in LWE
+districts, affecting approximately 10.1 lakh (1.01 million) people and 4.9 lakhs ha (0.49 million ha) hectares
+of land. Hence, while less than 15 percent of the country’s districts are LWE-affected, they account for 26
+percent of all ongoing land conflicts and 32 percent of the land-conflict affected population (see figure 4).
+Two clear inferences can be drawn from the LWE district land conflicts data:
+1. The number of mining and industry-related conflicts is higher in LWE districts than the national
+average.
+2. A much larger number of people are affected by mining and industry-related conflicts than the
+national average.
+This posits a potential relationship between the extractive industries and LWE that needs to be explored.
+Almost 80 percent of the conflicts in LWE districts involved common lands, and 45 percent of the conflicts in
+LWE districts involved forest lands.
+Figure 2
+Both Common
+and Private Land
+118 (42%)
+Only Common Land
+92 (32%)
+Only Private Land
+75 (26%)
+Both Common
+and Private Land
+47%
+Only Common Land
+30%
+Only Private Land
+23%
+Number of conflicts by land type Number of people affected by conflicts by land type
+Figure 3
+Others
+164 (57%)
+Forest lands
+125 (43%)
+Land-related conflicts involving forest lands
+WWW.RIGHTSANDRESOURCES.ORG 5
+Conflicts in Districs with Schedule V Areas1
+Given that the tribal population in districts with Schedule V Areas has special protections under the Indian
+Constitution, a separate analysis of land conflicts in these areas was performed. The analysis found that the
+intensity of conflicts is higher in districts with Schedule V Areas, which constitute 12 percent of total districts
+in India, but are the site of 18 percent of all land conflicts.
+Most of the conflicts in districts with Schedule V Areas relate to infrastructure, mining and industry, and
+power. However, what is far more worrisome in the context of districts with Schedule V Areas is the
+estimated number of people involved. They account for 30 percent of the total people affected by land
+conflicts in the country (see Figure 6).
+Regional distribution of conflicts
+The states of India were divided into six broad regions shown in Table 2.
+The 289 conflicts were mapped over these regions, and the distribution of conflicts was found to be largely
+uniform, with the largest number of land conflicts observed in the south. However, it is expected that as
+more conflicts are documented, better patterns would emerge. Meanwhile there are some interesting
+emerging patterns across regions in an analysis by sector or land type, providing insights and scope for a
+more detailed investigation (see Table 3).
+Figure 4
+Figure 5
+Protected areas
+Land use 4%
+6%
+Mining/Industry
+27% Infrastructure
+47%
+Power
+16%
+Protected areas
+Land use 1%
+1%
+Mining/Industry
+39%
+Infrastructure
+49%
+Power
+10%
+Sector-wise distribution of land conflicts in LWE districts Sector-wise distribution of people affected by land conflicts in LWE districts
+Protected areas
+Land use 8%
+2%
+Mining/Industry
+24%
+Infrastructure
+49%
+Power
+17%
+Protected areas
+Land use 1%
+1%
+Mining/Industry
+30%
+Infrastructure
+57%
+Power
+11%
+Sector-wise distribution of conflicts
+in districts with Schedule V Areas
+Sector-wise distribution of people
+affected by conflicts in districts with Schedule V Areas
+6 RIGHTS + RESOURCES INITIATIVE
+Almost 70 percent of conflicts in the western region are related to infrastructure projects, primarily roads.
+The share of conflicted infrastructure projects is only 33 percent for central India and 38 percent for the
+north-east. At the same time, almost one-third of conflicts in central India are linked to power projects,
+reflecting the immense number of thermal power projects coming up in Chhattisgarh and the resistance
+they are facing. In the north-east, 17 percent of the conflicts are related to the power industry—almost all of
+them on hydroelectric projects (see Table 3).
+In both central and north-east India, almost 90 percent of the conflicts involve common lands; and in
+central India three-quarters of the conflicts involve forest lands. These high numbers likely reflect the nonrecognition of customary rights over commons in these regions, which are dominated by tribal communities.
+Classification of regions
+Breakdown of conflicts by region and sector (%)
+Table 2
+Table 3
+North Uttar Pradesh, Himachal Pradesh, Uttarakhand, Punjab, Haryana, Delhi, Jammu and Kashmir.
+West Rajasthan, Gujarat, Maharashtra and Goa.
+Central Madhya Pradesh and Chhattisgarh.
+East Bihar, West Bengal, Jharkhand and Odisha.
+South Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala.
+North-East Manipur, Mizoram, Sikkim, Assam, Arunachal Pradesh, Meghalaya, and Nagaland.
+Region North West Central East South North-East
+Infrastructure related 43 70 33 50 47 38
+Power 14 7 33 15 13 17
+Mining and Industry 5 10 30 22 30 14
+Protected Area 20 10 4 4 4 3
+Land Use 18 3 0 9 6 28
+TOTAL 100 100 100 100 100 100
+Land conflict in districts with Schedule V Areas as compared to the whole country (%)
+Figure 6
+0
+5
+10
+15
+20
+25
+30
+Number of affected people
+in Fifth Schedule Areas/
+total affected people
+Number of conflicts in
+Fifth Schedule Areas/
+total number of conflicts
+Number of Fifth Schedule Areas/
+total districts
+WWW.RIGHTSANDRESOURCES.ORG 7
+Conflicts related to land acquisition
+Over 60 percent of all the conflicts documented involve land acquisition. One hundred and nine (63 percent)
+of the land acquisition conflicts involve infrastructure projects. The majority of all private land conflicts
+involve land acquisition by the Government of India.
+Major inferences
+Land conflicts are reflective of deep structural problems within societies and governance structures. The
+analysis draws the following inferences:
+Predominance of commons as a source of land conflict: The most important and perhaps surprising
+finding has been the predominance of the commons in land conflicts, with three-fourths of the conflicts
+involving public lands. A number of critical investments and infrastructure projects have been held
+up primarily because community rights on commons are not recognized in law, and land is diverted
+without obtaining community consent. The importance of conflicts related to common lands is not widely
+appreciated in Indian policy debate on land acquisition.
+Left-wing extremism and districts with Schedule V Areas: Though this study does not seek to establish
+causal links, the high intensity of land conflicts in LWE districts and districts with Schedule V Areas warrants
+policymakers’ attention. It is also important to note that most of these conflicts relate to infrastructure and
+extractive industries, and the impact on commons such as forests.
+Lack of recognition and respect of customary rights: The high incidence of conflict over common lands
+in the central, eastern and north-east regions (which often overlap with LWE and districts with Schedule V
+Areas) point to the poor state of recognition of customary rights over community lands in these regions.
+Private lands and land acquisition: Almost all conflicts related to privately owned land are linked to land
+acquisition for infrastructure, industrial, and extractive projects. This implies that in spite of the LARR 2013
+and other protective legislation, land acquisition conflicts continue, reflecting resistance by local communities
+when land is obtained without their free, prior, and informed consent.
+Breakdown of conflicts by region and land types (%)
+Table 4
+Region North West Central East South North-East
+Involvement of commons (both
+forests and non-forests)
+67 49 96 75 76 86
+Involvement of forest land 49 37 74 36 29 62
+Figure 7
+Protected areas
+1% Mining/industry
+18%
+Infrastructure
+63%
+Power
+18%
+Sector-wise distribution of conflicts involving land acquisition
+Conclusion
+This analysis of land conflicts in India concludes that a majority of conflicts involve common lands. While private
+lands have some protection and room for negotiation, especially under acquisition laws on the book, the
+situation with respect to common lands is much more adverse. Governments have treated the commons as
+state-owned, and rarely respect their customary usage or communities’ claims when changing the land use.
+It is not that there is no protection for common lands in Indian law. In fact, constitutional provisions relating
+to districts with Schedule V Areas provide ample protection to non-forest common lands, while the Forest
+Rights Act provides a robust rights regime for forest lands in both Scheduled and Non-Scheduled Areas.
+However, both legal protections are often breached, and this is reflected in the high number of conflicts in
+districts with Schedule V Areas involving forest land.
+Two measures are required to urgently address these conflicts. First, the government must respect existing
+constitutional provisions and statutes protecting land rights, and second, clear laws and policies must respect
+the customary ownership of common lands that are not covered by protective laws. Customary users of land,
+such as tribal communities, are fully cognizant of their rights even if the current governance structures provide
+no reference to them. Without clarity on land and forest rights, competing claims between communities and
+the government will continue to fuel conflict and put India’s socioeconomic future at risk.
+The views presented here are not necessarily shared by the agencies that have generously supported this work, or all
+of the Partners or Affiliated Networks of the Coalition.
+This work is licensed under a Creative Commons Attribution License CC BY 4.0.
+Tata Institute of Social Sciences
+http://www.tiss.edu
+The Rights and Resources Initiative
+The Rights and Resources Initiative (RRI) is a global coalition consisting of 15 Partners, 5 Affiliated Networks,
+14 International Fellows, and more than 150 collaborating international, regional, and community organizations
+dedicated to advancing the forest land and resource rights of Indigenous Peoples and local communities. RRI
+leverages the capacity and expertise of coalition members to promote secure local land and resource rights and
+catalyze progressive policy and market reforms. For more information, please visit www.rightsandresources.org.
+Sponsors
+Aliated Networks
+2715 M Street NW
+Suite 300
+Washington, DC 20007
+www.rightsandresources.org
+@RightsResources
+Endnote
+1 Many districts have only part of their area under Schedule V. For ease of analysis, all the conflicts in these districts have
+been included in the category “Conflicts in Districts with Schedule V Areas.”

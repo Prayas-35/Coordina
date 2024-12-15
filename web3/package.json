@@ -1,0 +1,17 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
+    "@openzeppelin/gsn-helpers": "^0.2.4",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "^2.22.15"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "@openzeppelin/defender-sdk": "^1.15.2",
+    "@openzeppelin/network": "^0.4.3"
+  }
+}
