@@ -8,13 +8,15 @@ import os
 import dotenv
 
 dotenv.load_dotenv()
+
 # Set the port for the API server
-port = os.getenv("PORT") or 8000
+port = int(os.getenv("PORT", 8000))  # Convert to int with fallback to 8000
 
 class GenerateRequest(BaseModel):
     prompt: str
     context: str
 
+# Initialize FastAPI app
 app = FastAPI(
     title="AI Content Generation API",
     version="1.0.0",
@@ -24,24 +26,25 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Specify the origin(s) allowed to access the API
+    allow_origins=["*"],  # Allow all origins (update to specific domains for production)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
 
 @app.post("/v1/generate", summary="Generate Text Content")
-def generate_response(request: GenerateRequest):
+async def generate_response(request: GenerateRequest):
     try:
+        # Call the generate helper asynchronously
         context = request.context
-        response = asyncio.run(generate(request.prompt, context))
+        response = await generate(request.prompt, context)  # Use await instead of asyncio.run
         return response
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail={
                 "error_code": "GENERATION_FAILED",
-                "error_message": "Failed to generate content. Please try again later."
+                "error_message": f"Failed to generate content. Error: {str(e)}"
             }
         )
 
@@ -80,4 +83,5 @@ def root():
     return {"message": "Welcome to the AI Content Generation API!"}
 
 if __name__ == "__main__":
+    print(f"Starting server on port {port}")
     uvicorn.run(app, host="0.0.0.0", port=port)
