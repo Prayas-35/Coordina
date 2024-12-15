@@ -10,7 +10,7 @@ import dotenv
 dotenv.load_dotenv()
 
 # Set the port for the API server
-port = int(os.getenv("PORT", 8000))  # Convert to int with fallback to 8000
+port = int(os.environ.get("PORT", 4000))  # Convert to int with fallback to 8000
 
 class GenerateRequest(BaseModel):
     prompt: str
@@ -84,4 +84,4 @@ def root():
 
 if __name__ == "__main__":
     print(f"Starting server on port {port}")
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    uvicorn.run(app, host="0.0.0.1", port=port)
