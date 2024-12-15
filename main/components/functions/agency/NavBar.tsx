@@ -15,6 +15,7 @@ import { RiDashboardFill } from "react-icons/ri";
 import { useAuth } from "@/app/_contexts/authcontext";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { House } from "lucide-react";
+import { GrWorkshop } from "react-icons/gr";
 
 interface NavLinkProps {
     href: string;
@@ -125,6 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, handleMenuToggle }) => {
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
+                                <NavLink href="/sample" icon={<GrWorkshop className="h-5 w-5" />} text="Training" />
                             </div>
                         </nav>
                         <ModeToggle />
@@ -156,6 +158,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, handleMenuToggle }) => {
                                 <NavLink href="/resources" icon={<GrResources className="h-5 w-5" />} text="Resources" />
                                 <NavLink href="/conflicts" icon={<FaCompressArrowsAlt className="h-5 w-5" />} text="Conflicts" />
                                 <NavLink href="/discussion" icon={<GoDiscussionClosed className="h-5 w-5" />} text="Discussion" />
+                                <NavLink href="/sample" icon={<GrWorkshop className="h-5 w-5" />} text="Training" />
                             </div>
                         </motion.nav>
                     </>
