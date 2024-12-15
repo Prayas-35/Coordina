@@ -4,6 +4,12 @@ from helpers import generate
 from pydantic import BaseModel
 import asyncio
 import uvicorn
+import os
+import dotenv
+
+dotenv.load_dotenv()
+# Set the port for the API server
+port = os.getenv("PORT") or 8000
 
 class GenerateRequest(BaseModel):
     prompt: str
@@ -69,5 +75,9 @@ def documentation():
         ]
     }
 
+@app.get("/", include_in_schema=False)
+def root():
+    return {"message": "Welcome to the AI Content Generation API!"}
+
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=port)
