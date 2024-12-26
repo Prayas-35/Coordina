@@ -65,9 +65,9 @@ npm install
 - Fill in the required environment variables in the `.env.local` file, including MongoDB connection details and API keys.
 
 ### 4. Run the Development Server
-bash
+```
 npm run dev
-
+```
 
 ### 5. Open the Application
 Navigate to [http://localhost:3000](http://localhost:3000) in your browser to see the application running.
